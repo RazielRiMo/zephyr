@@ -1,0 +1,15 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"name": "STM32",
+			"path": "../Users/razie/OneDrive/Documentos/PowerShell/STM32"
+		}
+	],
+	"settings": {
+		"terminal.integrated.stickyScroll.enabled": false,
+		"powershell.cwd": "STM32"
+	}
+}
