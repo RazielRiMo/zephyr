@@ -40,6 +40,10 @@ uint32_t tiempo_aleatorio;
 #define PRIORITY_TIEMPO 2
 #define PRIORITY_AUTOFAN 1
 
+K_SEM_DEFINE (juego_sem, 0, 1);
+
+K_MUTEX_DEFINE(acceso_hardware);
+
 
 
 void menu (void){
@@ -53,22 +57,29 @@ void menu (void){
 void ajustar_brillo(){
 	menuflag = true;
 	int level = 0;
+	k_mutex_lock(&acceso_hardware, K_FOREVER);
 	tm1638_clear_digits();
 	tm1638_set_digit(0, 0xCE); //P
 	tm1638_set_digit(1, 0xEE); //R
 	tm1638_set_digit(2, 0x9E); //E
 	tm1638_set_digit(3, 0xB6); //S
 	tm1638_set_digit(4, 0xB7); //S.
+	k_mutex_unlock(&acceso_hardware);
 	while (menuflag){ 
+		k_mutex_lock(&acceso_hardware, K_FOREVER);
 		level = tm1638_get_button();
-
+		k_mutex_unlock(&acceso_hardware);
 		/* Solo reaccionamos en el flanco de "recien presionado",
 		 * no en cada iteracion mientras se mantiene presionado.
 		 */
 		if (level > 0 && level != last_button) {
+
+			k_mutex_lock(&acceso_hardware, K_FOREVER);
 			tm1638_set_brightness(level-1);
 			tm1638_clear_digits();
 			tm1638_display(level-1);
+			k_mutex_unlock(&acceso_hardware);
+
 			printk("brillo ajustado a %d\n", level-1);
 			menuflag = false;
 			}
@@ -80,17 +91,21 @@ void ajustar_brillo(){
 }
 
 void mostrar_bienvenida(){
+
+	k_mutex_lock(&acceso_hardware, K_FOREVER);
 	tm1638_clear_digits();
 	tm1638_set_digit(0, 0x76); //H
 	tm1638_set_digit(1, 0x9E); //E
 	tm1638_set_digit(2, 0x1C); //L
 	tm1638_set_digit(3, 0x38); //L
 	tm1638_set_digit(4, 0xFC); //O
+	k_mutex_unlock(&acceso_hardware);
 }
 
 void mostrar_boton(){
 	menuflag = true;
 
+	k_mutex_lock(&acceso_hardware, K_FOREVER);
 	tm1638_clear_digits();
 	tm1638_set_digit(0, 0xCE); //P
 	tm1638_set_digit(1, 0xEE); //R
@@ -100,16 +115,24 @@ void mostrar_boton(){
 	tm1638_set_digit(5, 0xFC); //O
 	tm1638_set_digit(6, 0x7C); //U
 	tm1638_set_digit(7, 0xFF); //8
+	k_mutex_unlock(&acceso_hardware);
 
 	while (menuflag){ 
-		int button = tm1638_get_button();
 
+		k_mutex_lock(&acceso_hardware, K_FOREVER);
+		int button = tm1638_get_button();
+		k_mutex_unlock(&acceso_hardware);
 		/* Solo reaccionamos en el flanco de "recien presionado",
 		 * no en cada iteracion mientras se mantiene presionado.
 		 */
 		if (button > 0 && button != last_button) {
+
+			
+			k_mutex_lock(&acceso_hardware, K_FOREVER);
 			tm1638_clear_digits();
 			tm1638_display(button);
+			k_mutex_unlock(&acceso_hardware);
+
 			printk("Boton %d presionado\n", button);
 			if (button == 8){
 				menuflag = false;
@@ -118,6 +141,7 @@ void mostrar_boton(){
 				k_msleep(2000);
 			}
 		}
+
 		last_button = button;
 
 		k_msleep(20);
@@ -127,8 +151,10 @@ void mostrar_boton(){
 void leer_botones(void){
 	while (1) {
 		if (game && !maint){
-			int boton = tm1638_get_button();
 
+			k_mutex_lock(&acceso_hardware, K_FOREVER);
+			int boton = tm1638_get_button();
+			k_mutex_unlock(&acceso_hardware);
 			/* Solo reaccionamos en el flanco de "recien presionado",
 			 * no en cada iteracion mientras se mantiene presionado.
 			 */
@@ -144,10 +170,14 @@ void leer_botones(void){
 void actualizar_tiempo(void){
 	while (1) {
 		if (game && !maint){
+			k_mutex_lock(&acceso_hardware, K_FOREVER);
 			tm1638_clear_digits();
+			k_mutex_unlock(&acceso_hardware);
 			fin = k_uptime_get();
 			tiempo = (fin - inicio)/10;
+			k_mutex_lock(&acceso_hardware, K_FOREVER);
 			tm1638_display(tiempo);
+			k_mutex_unlock(&acceso_hardware);
 		}
 		k_msleep(10);
 	}
@@ -156,17 +186,27 @@ void actualizar_tiempo(void){
 void iniciar_juego(void){
 	tm1638_clear();
 	if (!game && !maint){
+		k_mutex_lock(&acceso_hardware, K_FOREVER);
 		tm1638_clear();
+		k_mutex_unlock(&acceso_hardware);
 		printk("Juego de reaccion iniciado. Espera a que se encienda el LED...\n");
+		k_mutex_lock(&acceso_hardware, K_FOREVER);
 		tm1638_display(3);
+		k_mutex_unlock(&acceso_hardware);
 		k_msleep(1000);
+		k_mutex_lock(&acceso_hardware, K_FOREVER);
 		tm1638_clear();
 		tm1638_display(2);
+		k_mutex_unlock(&acceso_hardware);
 		k_msleep(1000);
+		k_mutex_lock(&acceso_hardware, K_FOREVER);
 		tm1638_clear();
 		tm1638_display(1);
+		k_mutex_unlock(&acceso_hardware);
 		k_msleep(1000);
+		k_mutex_lock(&acceso_hardware, K_FOREVER);
 		tm1638_clear();
+		k_mutex_unlock(&acceso_hardware);
 
 		tiempo_aleatorio = (rand() % 3000) +1000;
 		k_msleep(tiempo_aleatorio);
@@ -180,11 +220,15 @@ void iniciar_juego(void){
 		autofantastico = false;
 		game = false;
 		bool ganador = false;
+		k_mutex_lock(&acceso_hardware, K_FOREVER);
 		tm1638_clear_leds();
+		k_mutex_unlock(&acceso_hardware);
 		for (int i = 0; i < 10; i++)
 		{
+			k_mutex_lock(&acceso_hardware, K_FOREVER);
 			if (ganador) tm1638_set_brightness(7);
 			else tm1638_set_brightness(0);
+			k_mutex_unlock(&acceso_hardware);
 			ganador = !ganador;
 			k_msleep(100);
 		}
@@ -195,13 +239,17 @@ void autofan(void){
 	while(1){
 		if (autofantastico && !maint){
 			for (int i = 0; i < 8; i++){
+				k_mutex_lock(&acceso_hardware, K_FOREVER);
 				tm1638_clear_leds();
 				tm1638_set_led(i, 1);
+				k_mutex_unlock(&acceso_hardware);
 				k_msleep(50);
 			}
 			for (int t = 7; t >= 0; t--){
+				k_mutex_lock(&acceso_hardware, K_FOREVER);
 				tm1638_clear_leds();
 				tm1638_set_led(t, 1);
+				k_mutex_unlock(&acceso_hardware);
 				k_msleep(50);
 			}
 		}
@@ -215,57 +263,79 @@ void mainloop(void)
 		int ret;
 
 		/* 1) Inicializar el TM1638 */
+		k_mutex_lock(&acceso_hardware, K_FOREVER);
 		ret = tm1638_init(stb_pin, clk_pin, dio_pin);
+		k_mutex_unlock(&acceso_hardware);
 		if (ret != 0) {
 			printk("Error al inicializar el TM1638 (ret=%d)\n", ret);
 			return;
 		}
 		
 		/* 2) tm1638_set_brightness(0-7): establecer el brillo */
+		k_mutex_lock(&acceso_hardware, K_FOREVER);
 		tm1638_set_brightness(7);
 
 		/* 3) tm1638_display(): mostrar un numero en los 8 digitos */
 		tm1638_display(12345678);
+		k_mutex_unlock(&acceso_hardware);
 		k_msleep(1500);
 
 		/* 4) tm1638_set_digit(): control manual de un digito.
 		*    0x77 = segmentos a,b,c,e,f,g encendidos -> dibuja una "A". */
+		k_mutex_lock(&acceso_hardware, K_FOREVER);
 		tm1638_set_digit(2, 0x77);
+		k_mutex_unlock(&acceso_hardware);
 		k_msleep(1000);
 
 		/* 5) tm1638_set_digit(): control manual de un digito.
 		*    0xFF enciende los 7 segmentos + el punto decimal del digito */
+		k_mutex_lock(&acceso_hardware, K_FOREVER);
 		tm1638_set_digit(0, 0xFF);
+		k_mutex_unlock(&acceso_hardware);
 		k_msleep(1000);
 
 		/* 6) tm1638_set_led(): encender y apagar LEDs individuales */
 		for (int i = 0; i < 8; i++) {
+			k_mutex_lock(&acceso_hardware, K_FOREVER);
 			tm1638_set_led(i, 1);
+			k_mutex_unlock(&acceso_hardware);
 			k_msleep(100);
 		}
 		k_msleep(500);
 		for (int i = 0; i < 8; i++) {
+			k_mutex_lock(&acceso_hardware, K_FOREVER);
 			tm1638_set_led(i, 0);
+			k_mutex_unlock(&acceso_hardware);
 			k_msleep(100);
 		}
 
 		/* 7) tm1638_clear_digits(): apaga solo los 7 segmentos, los LEDs
 		*    quedan como esten (se nota porque dejamos uno encendido). */
+		k_mutex_lock(&acceso_hardware, K_FOREVER);
 		tm1638_set_led(3, 1);
 		tm1638_display(8888);
+		k_mutex_unlock(&acceso_hardware);
 		k_msleep(800);
+		k_mutex_lock(&acceso_hardware, K_FOREVER);
 		tm1638_clear_digits();
+		k_mutex_unlock(&acceso_hardware);
 		k_msleep(800);
 
 		/* 8) tm1638_clear_leds(): apaga solo los LEDs */
+		k_mutex_lock(&acceso_hardware, K_FOREVER);
 		tm1638_clear_leds();
+		k_mutex_unlock(&acceso_hardware);
 		k_msleep(500);
 
 		/* 9) tm1638_clear(): apaga absolutamente todo */
+		k_mutex_lock(&acceso_hardware, K_FOREVER);
 		tm1638_display(1234);
 		tm1638_set_led(5, 1);
+		k_mutex_unlock(&acceso_hardware);
 		k_msleep(800);
+		k_mutex_lock(&acceso_hardware, K_FOREVER);
 		tm1638_clear();
+		k_mutex_unlock(&acceso_hardware);
 		k_msleep(500);
 
 		printk("Demo inicial terminada. Presiona los botones del modulo...\n");
@@ -283,7 +353,9 @@ void mainloop(void)
 		menu();
 
 		while (flag) {
+			k_mutex_lock(&acceso_hardware, K_FOREVER);
 			int button = tm1638_get_button();
+			k_mutex_unlock(&acceso_hardware);
 
 			/* Solo reaccionamos en el flanco de "recien presionado",
 			* no en cada iteracion mientras se mantiene presionado.
