@@ -1,3 +1,8 @@
+/*
+ * Copyright (c) 2012-2014 Wind River Systems, Inc.
+ *
+ * SPDX-License-Identifier: Apache-2.0
+ */
 #include <zephyr/kernel.h>
 #include <zephyr/drivers/gpio.h>
 #include <zephyr/sys/printk.h>
@@ -27,21 +32,25 @@ int main(void)
 		printk("Error al inicializar el TM1638 (ret=%d)\n", ret);
 		return 0;
 	}
+	
+	/* 2) tm1638_set_brightness(0-7): establecer el brillo */
+	tm1638_set_brightness(7);
 
-	/* 2) tm1638_display(): mostrar un numero en los 8 digitos */
+	/* 3) tm1638_display(): mostrar un numero en los 8 digitos */
 	tm1638_display(12345678);
 	k_msleep(1500);
 
-	/* 3) tm1638_set_digit(): control manual de un digito.
+	/* 4) tm1638_set_digit(): control manual de un digito.
 	 *    0x77 = segmentos a,b,c,e,f,g encendidos -> dibuja una "A". */
 	tm1638_set_digit(2, 0x77);
 	k_msleep(1000);
 
-	/* 4) 0xFF enciende los 7 segmentos + el punto decimal del digito */
+	/* 5) tm1638_set_digit(): control manual de un digito.
+	 *    0xFF enciende los 7 segmentos + el punto decimal del digito */
 	tm1638_set_digit(0, 0xFF);
 	k_msleep(1000);
 
-	/* 5) tm1638_set_led(): encender y apagar LEDs individuales */
+	/* 6) tm1638_set_led(): encender y apagar LEDs individuales */
 	for (int i = 0; i < 8; i++) {
 		tm1638_set_led(i, 1);
 		k_msleep(100);
@@ -52,7 +61,7 @@ int main(void)
 		k_msleep(100);
 	}
 
-	/* 6) tm1638_clear_digits(): apaga solo los 7 segmentos, los LEDs
+	/* 7) tm1638_clear_digits(): apaga solo los 7 segmentos, los LEDs
 	 *    quedan como esten (se nota porque dejamos uno encendido). */
 	tm1638_set_led(3, 1);
 	tm1638_display(8888);
@@ -60,11 +69,11 @@ int main(void)
 	tm1638_clear_digits();
 	k_msleep(800);
 
-	/* 7) tm1638_clear_leds(): apaga solo los LEDs */
+	/* 8) tm1638_clear_leds(): apaga solo los LEDs */
 	tm1638_clear_leds();
 	k_msleep(500);
 
-	/* 8) tm1638_clear(): apaga absolutamente todo */
+	/* 9) tm1638_clear(): apaga absolutamente todo */
 	tm1638_display(1234);
 	tm1638_set_led(5, 1);
 	k_msleep(800);
@@ -74,7 +83,7 @@ int main(void)
 	printk("Demo inicial terminada. Presiona los botones del modulo...\n");
 
 	/*
-	 * 9), 10) y 11): loop principal.
+	 * 10), 11) y 12): loop principal.
 	 *
 	 * tm1638_get_button() ya aplica antirrebote internamente, pero
 	 * necesita que se le llame de forma periodica para que ese

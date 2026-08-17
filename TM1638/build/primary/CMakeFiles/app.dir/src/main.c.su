@@ -1,2 +1,10 @@
 C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/include/zephyr/kernel.h:702:23:k_msleep	8	static
-C:/zephyr/TM1638/src/main.c:25:5:main	24	static
+C:/zephyr/TM1638/src/main.c:127:6:leer_botones	8	static
+C:/zephyr/TM1638/src/main.c:144:6:actualizar_tiempo	8	static
+C:/zephyr/TM1638/src/main.c:156:6:iniciar_juego	16	static
+C:/zephyr/TM1638/src/main.c:194:6:autofan	8	static
+C:/zephyr/TM1638/src/main.c:45:6:menu	8	static
+C:/zephyr/TM1638/src/main.c:53:6:ajustar_brillo	16	static
+C:/zephyr/TM1638/src/main.c:82:6:mostrar_bienvenida	8	static
+C:/zephyr/TM1638/src/main.c:91:6:mostrar_boton	8	static
+C:/zephyr/TM1638/src/main.c:212:6:mainloop	24	static
