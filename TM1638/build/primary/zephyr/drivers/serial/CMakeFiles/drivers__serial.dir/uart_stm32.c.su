@@ -1,0 +1,17 @@
+C:/zephyr/TM1638/build/primary/zephyr/include/generated/zephyr/syscalls/reset.h:99:19:reset_line_toggle	8	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/modules/hal/stm32/stm32cube/stm32f4xx/drivers/include/stm32f4xx_ll_usart.h:1020:22:LL_USART_SetBaudRate	8	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/drivers/serial/uart_stm32.c:218:19:uart_stm32_set_baudrate	24	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/drivers/serial/uart_stm32.c:582:12:uart_stm32_parameters_set	24	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/drivers/serial/uart_stm32.c:649:12:uart_stm32_configure	24	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/drivers/serial/uart_stm32.c:718:12:uart_stm32_config_get	0	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/drivers/serial/uart_stm32.c:745:12:uart_stm32_poll_in_visitor	16	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/drivers/serial/uart_stm32.c:771:13:uart_stm32_poll_out_visitor	8	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/drivers/serial/uart_stm32.c:819:13:poll_in_u8	0	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/drivers/serial/uart_stm32.c:824:13:poll_out_u8	0	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/drivers/serial/uart_stm32.c:829:12:uart_stm32_poll_in	8	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/drivers/serial/uart_stm32.c:834:13:uart_stm32_poll_out	8	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/drivers/serial/uart_stm32.c:863:12:uart_stm32_err_check	16	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/drivers/serial/uart_stm32.c:2266:12:uart_stm32_clocks_enable	8	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/include/zephyr/drivers/pinctrl.h:345:19:pinctrl_apply_state	16	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/drivers/serial/uart_stm32.c:2291:12:uart_stm32_registers_configure	24	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/drivers/serial/uart_stm32.c:2419:12:uart_stm32_init	16	static

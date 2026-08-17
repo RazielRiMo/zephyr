@@ -1,0 +1,4 @@
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/lib/libc/picolibc/stdio.c:11:5:z_impl_zephyr_fputc	8	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/lib/libc/picolibc/stdio.c:25:12:picolibc_put	8	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/lib/libc/picolibc/stdio.c:44:6:__stdout_hook_install	0	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/lib/libc/picolibc/stdio.c:50:6:__stdin_hook_install	0	static

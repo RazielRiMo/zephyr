@@ -1,0 +1,5 @@
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/kernel/mutex.c:83:16:new_prio_for_inheritance	0	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/kernel/mutex.c:92:13:adjust_owner_prio	8	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/kernel/mutex.c:55:5:z_impl_k_mutex_init	0	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/kernel/mutex.c:107:5:z_impl_k_mutex_lock	32	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/kernel/mutex.c:230:5:z_impl_k_mutex_unlock	16	static

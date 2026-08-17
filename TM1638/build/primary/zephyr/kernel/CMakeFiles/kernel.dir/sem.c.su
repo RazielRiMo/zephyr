@@ -1,0 +1,4 @@
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/kernel/sem.c:45:5:z_impl_k_sem_init	0	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/kernel/sem.c:95:6:z_impl_k_sem_give	16	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/kernel/sem.c:132:5:z_impl_k_sem_take	16	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/kernel/sem.c:166:6:z_impl_k_sem_reset	24	static

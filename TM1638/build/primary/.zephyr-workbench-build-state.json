@@ -1,0 +1,23 @@
+{
+  "board": "nucleo_f401re",
+  "sysbuild": false,
+  "snippets": [],
+  "cmakeArgs": "",
+  "envVars": {
+    "EXTRA_CONF_FILE": [],
+    "EXTRA_DTC_OVERLAY_FILE": [],
+    "EXTRA_ZEPHYR_MODULES": [],
+    "SHIELD": [],
+    "SNIPPETS": []
+  },
+  "toolchainEnv": {
+    "ZEPHYR_TOOLCHAIN_VARIANT": "zephyr"
+  },
+  "sdkEnv": {
+    "ZEPHYR_SDK_INSTALL_DIR": "c:\\Users\\razie\\zephyr-sdk-1.0.1"
+  },
+  "workspaceEnv": {
+    "ZEPHYR_BASE": "c:\\Users\\razie\\OneDrive\\Documentos\\PowerShell\\STM32\\deps\\zephyr",
+    "ZEPHYR_PROJECT_DIRECTORY": "c:\\Users\\razie\\OneDrive\\Documentos\\PowerShell\\STM32"
+  }
+}

@@ -1,0 +1,5 @@
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/subsys/tracing/tracing_none.c:9:13:sys_trace_isr_enter	0	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/subsys/tracing/tracing_none.c:11:13:sys_trace_isr_exit	0	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/subsys/tracing/tracing_none.c:13:13:sys_trace_isr_exit_to_scheduler	0	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/subsys/tracing/tracing_none.c:15:13:sys_trace_idle	0	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/subsys/tracing/tracing_none.c:22:13:sys_trace_idle_exit	0	static

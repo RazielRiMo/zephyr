@@ -1,0 +1,12 @@
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/kernel/mailbox.c:113:12:mbox_message_match	0	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/kernel/mailbox.c:54:12:init_mbox_module	16	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/kernel/mailbox.c:213:12:mbox_message_put	56	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/kernel/mailbox.c:40:20:mbox_async_alloc	8	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/kernel/include/ksched.h:98:20:z_reschedule_unlocked	8	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/kernel/mailbox.c:156:13:mbox_message_dispose	8	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/kernel/mailbox.c:87:6:k_mbox_init	0	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/kernel/mailbox.c:298:5:k_mbox_put	8	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/kernel/mailbox.c:314:6:k_mbox_async_put	32	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/kernel/mailbox.c:338:6:k_mbox_data_get	8	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/kernel/mailbox.c:370:12:mbox_message_data_check	8	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/kernel/mailbox.c:385:5:k_mbox_get	48	static

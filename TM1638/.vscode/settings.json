@@ -1,0 +1,15 @@
+{
+  "zephyr-workbench.build.configurations": [
+    {
+      "name": "primary",
+      "board": "nucleo_f401re",
+      "active": "true"
+    }
+  ],
+  "zephyr-workbench.westWorkspace": "${workspaceFolder}/../../Users/razie/OneDrive/Documentos/PowerShell/STM32",
+  "zephyr-workbench.toolchain": "zephyr",
+  "zephyr-workbench.sdk": "${workspaceFolder}/../../Users/razie/zephyr-sdk-1.0.1",
+  "zephyr-workbench.intellisense.provider": "cpptools",
+  "cmake.configureOnOpen": false,
+  "cmake.enableAutomaticKitScan": false
+}

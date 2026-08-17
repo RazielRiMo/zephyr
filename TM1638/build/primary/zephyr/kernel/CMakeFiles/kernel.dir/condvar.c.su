@@ -1,0 +1,4 @@
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/kernel/condvar.c:21:5:z_impl_k_condvar_init	0	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/kernel/condvar.c:44:5:z_impl_k_condvar_signal	16	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/kernel/condvar.c:76:5:z_impl_k_condvar_broadcast	24	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/kernel/condvar.c:114:5:z_impl_k_condvar_wait	32	static

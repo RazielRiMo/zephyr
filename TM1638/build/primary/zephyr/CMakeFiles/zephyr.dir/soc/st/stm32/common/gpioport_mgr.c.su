@@ -1,0 +1,11 @@
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/include/zephyr/pm/device.h:814:19:pm_device_driver_init	16	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/soc/st/stm32/common/gpioport_mgr.c:227:12:stm32_gpioport_pm_action	8	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/soc/st/stm32/common/gpioport_mgr.c:249:27:stm32_gpioport_init	8	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/modules/hal/stm32/stm32cube/stm32f4xx/drivers/include/stm32f4xx_ll_gpio.h:413:22:LL_GPIO_SetPinSpeed	4	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/modules/hal/stm32/stm32cube/stm32f4xx/drivers/include/stm32f4xx_ll_gpio.h:484:22:LL_GPIO_SetPinPull	4	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/soc/st/stm32/common/gpioport_mgr.c:58:13:ll_gpio_set_pin_pull	8	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/modules/hal/stm32/stm32cube/stm32f4xx/drivers/include/stm32f4xx_ll_gpio.h:556:22:LL_GPIO_SetAFPin_0_7	4	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/modules/hal/stm32/stm32cube/stm32f4xx/drivers/include/stm32f4xx_ll_gpio.h:633:22:LL_GPIO_SetAFPin_8_15	4	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/modules/hal/stm32/stm32cube/stm32f4xx/drivers/include/stm32f4xx_ll_gpio.h:273:22:LL_GPIO_SetPinMode	4	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/soc/st/stm32/common/gpioport_mgr.c:81:22:stm32_gpioport_get	8	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/soc/st/stm32/common/gpioport_mgr.c:94:5:stm32_gpioport_configure_pin	32	static

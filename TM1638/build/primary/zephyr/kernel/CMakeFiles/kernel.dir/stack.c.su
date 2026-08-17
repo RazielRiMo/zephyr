@@ -1,0 +1,7 @@
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/kernel/stack.c:80:12:stack_cleanup	0	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/kernel/stack.c:27:6:k_stack_init	0	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/kernel/stack.c:44:9:z_impl_k_stack_alloc_init	16	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/kernel/stack.c:101:5:k_stack_cleanup	16	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/kernel/stack.c:110:5:z_stack_cleanup_sched_locked	16	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/kernel/stack.c:119:5:z_impl_k_stack_push	24	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/kernel/stack.c:166:5:z_impl_k_stack_pop	24	static

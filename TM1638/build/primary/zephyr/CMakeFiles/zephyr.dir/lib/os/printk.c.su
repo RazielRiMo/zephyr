@@ -1,0 +1,7 @@
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/lib/os/printk.c:46:27:arch_printk_char_out	0	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/lib/os/printk.c:94:12:char_out	8	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/lib/os/printk.c:57:6:__printk_hook_install	0	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/lib/os/printk.c:62:18:__printk_get_hook	0	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/lib/os/printk.c:100:6:vprintk	24	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/lib/os/printk.c:146:6:z_impl_k_str_out	16	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/lib/os/printk.c:192:6:printk	16	static

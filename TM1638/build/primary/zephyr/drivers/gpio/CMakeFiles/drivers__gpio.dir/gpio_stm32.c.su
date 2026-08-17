@@ -1,0 +1,15 @@
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/include/zephyr/sys/slist.h:406:1:sys_slist_remove	0	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/include/zephyr/sys/slist.h:448:1:sys_slist_find_and_remove	8	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/include/zephyr/drivers/gpio/gpio_utils.h:96:19:gpio_manage_callback	16	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/include/zephyr/drivers/gpio/gpio_utils.h:127:20:gpio_fire_callbacks	16	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/drivers/gpio/gpio_stm32.c:44:13:gpio_stm32_isr	8	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/drivers/gpio/gpio_stm32.c:55:12:gpio_stm32_flags_to_conf	0	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/drivers/gpio/gpio_stm32.c:197:12:gpio_stm32_port_get_raw	0	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/drivers/gpio/gpio_stm32.c:207:12:gpio_stm32_port_set_masked_raw	0	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/drivers/gpio/gpio_stm32.c:225:12:gpio_stm32_port_set_bits_raw	0	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/drivers/gpio/gpio_stm32.c:240:12:gpio_stm32_port_clear_bits_raw	0	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/drivers/gpio/gpio_stm32.c:260:12:gpio_stm32_port_toggle_bits	0	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/drivers/gpio/gpio_stm32.c:475:12:gpio_stm32_manage_callback	8	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/drivers/gpio/gpio_stm32.c:182:20:gpio_stm32_disable_pin_irqs	16	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/drivers/gpio/gpio_stm32.c:398:12:gpio_stm32_pin_interrupt_configure	32	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/drivers/gpio/gpio_stm32.c:281:12:gpio_stm32_config	40	static

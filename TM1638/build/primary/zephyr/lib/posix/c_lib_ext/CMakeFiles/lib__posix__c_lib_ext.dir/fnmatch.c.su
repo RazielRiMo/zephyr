@@ -1,0 +1,5 @@
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/lib/posix/c_lib_ext/fnmatch.c:75:12:rangematch_cc	12	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/lib/posix/c_lib_ext/fnmatch.c:156:19:foldcase	8	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/lib/posix/c_lib_ext/fnmatch.c:165:12:rangematch	56	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/lib/posix/c_lib_ext/fnmatch.c:252:12:fnmatchx	56	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/lib/posix/c_lib_ext/fnmatch.c:373:5:fnmatch	16	static

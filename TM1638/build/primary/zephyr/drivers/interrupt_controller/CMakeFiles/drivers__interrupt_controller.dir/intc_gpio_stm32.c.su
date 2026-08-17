@@ -1,0 +1,13 @@
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/drivers/interrupt_controller/intc_gpio_stm32.c:137:13:stm32_fill_irq_table	4	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/drivers/interrupt_controller/intc_gpio_stm32.c:164:12:stm32_exti_gpio_intc_init	8	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/drivers/interrupt_controller/intc_gpio_stm32.c:109:13:stm32_intc_gpio_isr	24	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/modules/hal/stm32/stm32cube/stm32f4xx/drivers/include/stm32f4xx_ll_system.h:671:22:LL_SYSCFG_SetEXTISource	0	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/modules/hal/stm32/stm32cube/stm32f4xx/drivers/include/stm32f4xx_ll_system.h:710:26:LL_SYSCFG_GetEXTISource	0	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/drivers/interrupt_controller/intc_gpio_stm32.c:190:23:stm32_gpio_intc_get_pin_irq_line	0	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/drivers/interrupt_controller/intc_gpio_stm32.c:196:6:stm32_gpio_intc_enable_line	8	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/drivers/interrupt_controller/intc_gpio_stm32.c:212:6:stm32_gpio_intc_disable_line	0	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/drivers/interrupt_controller/intc_gpio_stm32.c:217:6:stm32_gpio_intc_select_line_trigger	0	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/drivers/interrupt_controller/intc_gpio_stm32.c:264:5:stm32_gpio_intc_set_irq_callback	4	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/drivers/interrupt_controller/intc_gpio_stm32.c:284:6:stm32_gpio_intc_remove_irq_callback	0	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/drivers/interrupt_controller/intc_gpio_stm32.c:293:6:stm32_exti_set_line_src_port	8	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/drivers/interrupt_controller/intc_gpio_stm32.c:336:10:stm32_exti_get_line_src_port	8	static

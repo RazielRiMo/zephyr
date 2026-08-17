@@ -1,0 +1,6 @@
+west:
+  command: C:\Users\razie\.zinstaller\.venv\Scripts\west build --pristine always --cmake
+    --board nucleo_f401re --build-dir c:\zephyr\TM1638\build\primary --source-dir
+    c:\zephyr\TM1638
+  topdir: c:\Users\razie\OneDrive\Documentos\PowerShell\STM32
+  version: 1.5.0

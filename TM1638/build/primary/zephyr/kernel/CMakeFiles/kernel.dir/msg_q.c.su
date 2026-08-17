@@ -1,0 +1,13 @@
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/kernel/msg_q.c:110:12:msgq_cleanup	0	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/kernel/msg_q.c:150:19:put_msg_in_queue	32	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/kernel/msg_q.c:43:6:k_msgq_init	0	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/kernel/msg_q.c:73:5:z_impl_k_msgq_alloc_init	16	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/kernel/msg_q.c:132:5:k_msgq_cleanup	16	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/kernel/msg_q.c:141:5:z_msgq_cleanup_sched_locked	16	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/kernel/msg_q.c:251:5:z_impl_k_msgq_put	16	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/kernel/msg_q.c:256:5:z_impl_k_msgq_put_front	16	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/kernel/msg_q.c:282:6:z_impl_k_msgq_get_attrs	0	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/kernel/msg_q.c:300:5:z_impl_k_msgq_get	32	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/kernel/msg_q.c:383:5:z_impl_k_msgq_peek	8	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/kernel/msg_q.c:417:5:z_impl_k_msgq_peek_at	8	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/kernel/msg_q.c:463:6:z_impl_k_msgq_purge	24	static

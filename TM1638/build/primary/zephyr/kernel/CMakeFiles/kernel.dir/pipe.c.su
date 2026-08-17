@@ -1,0 +1,7 @@
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/kernel/pipe.c:96:15:copy_to_pending_readers	40	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/kernel/pipe.c:43:12:wait_for	32	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/kernel/pipe.c:76:6:z_impl_k_pipe_init	0	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/kernel/pipe.c:150:5:z_impl_k_pipe_write	64	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/kernel/pipe.c:223:5:z_impl_k_pipe_read	80	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/kernel/pipe.c:273:6:z_impl_k_pipe_reset	16	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/kernel/pipe.c:287:6:z_impl_k_pipe_close	16	static

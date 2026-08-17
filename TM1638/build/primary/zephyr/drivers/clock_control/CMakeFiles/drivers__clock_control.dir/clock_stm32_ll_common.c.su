@@ -1,0 +1,13 @@
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/drivers/clock_control/clock_stm32_ll_common.c:66:17:get_pll_div_frequency	0	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/drivers/clock_control/clock_stm32_ll_common.c:76:17:get_bus_clock	0	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/drivers/clock_control/clock_stm32_ll_common.c:357:12:stm32_clock_control_on	8	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/drivers/clock_control/clock_stm32_ll_common.c:380:12:stm32_clock_control_off	0	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/drivers/clock_control/clock_stm32_ll_common.c:792:13:stm32_clock_switch_to_hsi	0	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/drivers/clock_control/clock_stm32_ll_common.c:916:13:set_up_fixed_clock_sources	0	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/drivers/clock_control/clock_stm32_ll_common.c:429:12:stm32_clock_control_get_subsys_rate	24	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/drivers/clock_control/clock_stm32_ll_common.c:810:13:set_up_plls	8	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/drivers/clock_control/clock_stm32_ll_common.c:96:5:enabled_clock	0	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/drivers/clock_control/clock_stm32_ll_common.c:397:12:stm32_clock_control_configure	16	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/drivers/clock_control/clock_stm32_ll_common.c:755:34:stm32_clock_control_get_status	8	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/drivers/clock_control/clock_stm32_ll_common.c:1213:13:config_regulator_voltage	0	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/drivers/clock_control/clock_stm32_ll_common.c:1106:5:stm32_clock_control_init	16	static

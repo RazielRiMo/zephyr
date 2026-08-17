@@ -1,0 +1,1 @@
+"mcuboot":"C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/bootloader/mcuboot":"C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/bootloader/mcuboot/boot/zephyr/sysbuild"

@@ -6,6 +6,14 @@
 		{
 			"name": "STM32",
 			"path": "../Users/razie/OneDrive/Documentos/PowerShell/STM32"
+		},
+		{
+			"name": "Prueba1io",
+			"path": "Prueba1io"
+		},
+		{
+			"name": "TM1638",
+			"path": "TM1638"
 		}
 	],
 	"settings": {

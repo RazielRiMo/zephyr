@@ -1,0 +1,6 @@
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/kernel/mempool.c:15:14:z_alloc_helper	16	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/kernel/mempool.c:190:14:z_thread_alloc_helper	16	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/kernel/mempool.c:59:6:k_free	8	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/kernel/mempool.c:77:6:k_free_sched_locked	8	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/kernel/mempool.c:211:7:z_thread_aligned_alloc	8	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/kernel/mempool.c:216:7:z_thread_malloc	8	static
