@@ -1,51 +1,6 @@
-cmake:
-  application:
-    configuration-dir: 'C:/zephyr/TM1638'
-    source-dir: 'C:/zephyr/TM1638'
-  board:
-    name: 'nucleo_f401re'
-    path:
-     - 'C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/boards/st/nucleo_f401re'
-    qualifiers: 'stm32f401xe'
-    revision: ''
-  devicetree:
-    bindings-dirs:
-     - 'C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/dts/bindings'
-    files:
-     - 'C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/boards/st/nucleo_f401re/nucleo_f401re.dts'
-     - 'C:/zephyr/TM1638/app.overlay'
-    include-dirs:
-     - 'C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/modules/hal/stm32/dts'
-     - 'C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/include'
-     - 'C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/include/zephyr'
-     - 'C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/dts/common'
-     - 'C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/dts/vendor'
-     - 'C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/dts/rx'
-     - 'C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/dts/x86'
-     - 'C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/dts/xtensa'
-     - 'C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/dts/sparc'
-     - 'C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/dts/riscv'
-     - 'C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/dts/posix'
-     - 'C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/dts/arm64'
-     - 'C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/dts/arm'
-     - 'C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/dts/arc'
-     - 'C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/dts'
-    user-files:
-     - 'C:/zephyr/TM1638/app.overlay'
-  kconfig:
-    files:
-     - 'C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/boards/st/nucleo_f401re/nucleo_f401re_defconfig'
-     - 'C:/zephyr/TM1638/prj.conf'
-    user-files:
-     - 'C:/zephyr/TM1638/prj.conf'
-  toolchain:
-    name: 'zephyr'
-    path: 'C:/Users/razie/zephyr-sdk-1.0.1'
-  zephyr:
-    version: '4.4.2'
-    zephyr-base: 'C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr'
-version: '0.1.0'
 west:
-  command: 'C:\Users\razie\.zinstaller\.venv\Scripts\west build --pristine always --cmake --board nucleo_f401re --build-dir c:\zephyr\TM1638\build\primary --source-dir c:\zephyr\TM1638'
-  topdir: 'c:\Users\razie\OneDrive\Documentos\PowerShell\STM32'
-  version: '1.5.0'
+  command: C:\Users\razie\.zinstaller\.venv\Scripts\west build --pristine always --cmake
+    --board nucleo_f401re --build-dir c:\zephyr\TM1638\build\primary --source-dir
+    c:\zephyr\TM1638
+  topdir: c:\Users\razie\OneDrive\Documentos\PowerShell\STM32
+  version: 1.5.0

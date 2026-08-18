@@ -27,7 +27,7 @@ static const struct gpio_dt_spec dio_pin =
 int last_button = 0;
 int counter = 0;
 int bot = 0;
-bool flag = true, menuflag = true, game = false, stop = false, autofantastico = false, maint=true;
+volatile bool flag = true, menuflag = false;
 
 uint64_t inicio, fin, tiempo;
 uint32_t tiempo_aleatorio;
@@ -40,13 +40,20 @@ uint32_t tiempo_aleatorio;
 #define PRIORITY_TIEMPO 2
 #define PRIORITY_AUTOFAN 1
 
-K_SEM_DEFINE (juego_sem, 0, 1);
+K_SEM_DEFINE (leer, 0, 1);
+K_SEM_DEFINE (display, 0, 1);
+K_SEM_DEFINE (autof, 0, 1);
+K_SEM_DEFINE (juego, 0, 1);
+K_SEM_DEFINE (stopleer, 0, 1);
+K_SEM_DEFINE (stopdis, 0, 1);
+K_SEM_DEFINE (stopauto, 0, 1);
+K_SEM_DEFINE (stopjuego, 0, 1);
 
 K_MUTEX_DEFINE(acceso_hardware);
 
 
 
-void menu (void){
+void menu (){
 		printk("Menu de opciones:\n");
 		printk("1) Ajustar brillo (0-7)\n");
 		printk("2) remostrar mensaje de bienvenida\n");
@@ -104,7 +111,6 @@ void mostrar_bienvenida(){
 
 void mostrar_boton(){
 	menuflag = true;
-
 	k_mutex_lock(&acceso_hardware, K_FOREVER);
 	tm1638_clear_digits();
 	tm1638_set_digit(0, 0xCE); //P
@@ -149,27 +155,39 @@ void mostrar_boton(){
 }
 
 void leer_botones(void){
-	while (1) {
-		if (game && !maint){
+
+	while(1){
+
+		k_sem_take(&leer ,K_FOREVER);
+
+		while (1) {
+
+			if(k_sem_take(&stopleer, K_NO_WAIT)==0) break;
 
 			k_mutex_lock(&acceso_hardware, K_FOREVER);
 			int boton = tm1638_get_button();
 			k_mutex_unlock(&acceso_hardware);
 			/* Solo reaccionamos en el flanco de "recien presionado",
-			 * no en cada iteracion mientras se mantiene presionado.
-			 */
+			* no en cada iteracion mientras se mantiene presionado.
+			*/
 			if (boton > 0 && boton != last_button) {
-				stop = true;
+				k_sem_give(&stopjuego);
 				printk("Boton %d presionado\n", boton);
 			}
 			last_button = boton;
+		
+			k_msleep(22);
 		}
-		k_msleep(22);}
+	}
 }
 
 void actualizar_tiempo(void){
 	while (1) {
-		if (game && !maint){
+
+		k_sem_take (&display, K_FOREVER);
+		
+		while(1){
+			if (k_sem_take(&stopdis, K_NO_WAIT)) break;
 			k_mutex_lock(&acceso_hardware, K_FOREVER);
 			tm1638_clear_digits();
 			k_mutex_unlock(&acceso_hardware);
@@ -178,66 +196,84 @@ void actualizar_tiempo(void){
 			k_mutex_lock(&acceso_hardware, K_FOREVER);
 			tm1638_display(tiempo);
 			k_mutex_unlock(&acceso_hardware);
+			k_msleep(10);
 		}
-		k_msleep(10);
 	}
 }
 
 void iniciar_juego(void){
-	tm1638_clear();
-	if (!game && !maint){
-		k_mutex_lock(&acceso_hardware, K_FOREVER);
-		tm1638_clear();
-		k_mutex_unlock(&acceso_hardware);
-		printk("Juego de reaccion iniciado. Espera a que se encienda el LED...\n");
-		k_mutex_lock(&acceso_hardware, K_FOREVER);
-		tm1638_display(3);
-		k_mutex_unlock(&acceso_hardware);
-		k_msleep(1000);
-		k_mutex_lock(&acceso_hardware, K_FOREVER);
-		tm1638_clear();
-		tm1638_display(2);
-		k_mutex_unlock(&acceso_hardware);
-		k_msleep(1000);
-		k_mutex_lock(&acceso_hardware, K_FOREVER);
-		tm1638_clear();
-		tm1638_display(1);
-		k_mutex_unlock(&acceso_hardware);
-		k_msleep(1000);
-		k_mutex_lock(&acceso_hardware, K_FOREVER);
-		tm1638_clear();
-		k_mutex_unlock(&acceso_hardware);
 
-		tiempo_aleatorio = (rand() % 3000) +1000;
-		k_msleep(tiempo_aleatorio);
-		inicio = k_uptime_get();
-		game = true;
-		autofantastico = true;
-		stop = false;
-		while (!stop){
-			k_msleep(3);
-		}
-		autofantastico = false;
-		game = false;
-		bool ganador = false;
-		k_mutex_lock(&acceso_hardware, K_FOREVER);
-		tm1638_clear_leds();
-		k_mutex_unlock(&acceso_hardware);
-		for (int i = 0; i < 10; i++)
-		{
+	while (1){
+	
+		k_sem_take(&juego, K_FOREVER);
+
+		while (1){
+
 			k_mutex_lock(&acceso_hardware, K_FOREVER);
-			if (ganador) tm1638_set_brightness(7);
-			else tm1638_set_brightness(0);
+			tm1638_clear();
 			k_mutex_unlock(&acceso_hardware);
-			ganador = !ganador;
-			k_msleep(100);
+			printk("Juego de reaccion iniciado. Espera a que se encienda el LED...\n");
+			k_mutex_lock(&acceso_hardware, K_FOREVER);
+			tm1638_display(3);
+			k_mutex_unlock(&acceso_hardware);
+			k_msleep(1000);
+			k_mutex_lock(&acceso_hardware, K_FOREVER);
+			tm1638_clear();
+			tm1638_display(2);
+			k_mutex_unlock(&acceso_hardware);
+			k_msleep(1000);
+			k_mutex_lock(&acceso_hardware, K_FOREVER);
+			tm1638_clear();
+			tm1638_display(1);
+			k_mutex_unlock(&acceso_hardware);
+			k_msleep(1000);
+			k_mutex_lock(&acceso_hardware, K_FOREVER);
+			tm1638_clear();
+			k_mutex_unlock(&acceso_hardware);
+
+			tiempo_aleatorio = (rand() % 3000) +1000;
+			k_msleep(tiempo_aleatorio);
+			inicio = k_uptime_get();
+
+			k_sem_give(&display);
+			k_sem_give(&leer);
+			k_sem_give(&autof);
+
+			k_sem_take(&stopjuego, K_FOREVER);
+
+			k_sem_give(&stopdis);
+			k_sem_give(&stopleer);
+
+			bool ganador = false;
+			
+			k_mutex_lock(&acceso_hardware, K_FOREVER);
+			tm1638_clear_leds();
+			k_mutex_unlock(&acceso_hardware);
+			for (int i = 0; i < 10; i++)
+			{
+				k_mutex_lock(&acceso_hardware, K_FOREVER);
+				if (ganador) tm1638_set_brightness(7);
+				else tm1638_set_brightness(0);
+				k_mutex_unlock(&acceso_hardware);
+				ganador = !ganador;
+				k_msleep(100);
+			}
+
+			k_sem_give(&stopauto);
+
 		}
 	}
 }
 
 void autofan(void){
 	while(1){
-		if (autofantastico && !maint){
+
+		k_sem_take(&autof, K_FOREVER);
+
+		while (1){
+
+			if (k_sem_take(&stopauto, K_NO_WAIT) == 0) break;
+
 			for (int i = 0; i < 8; i++){
 				k_mutex_lock(&acceso_hardware, K_FOREVER);
 				tm1638_clear_leds();
@@ -253,7 +289,6 @@ void autofan(void){
 				k_msleep(50);
 			}
 		}
-		else k_msleep(12);
 	}
 }
 
@@ -264,7 +299,9 @@ void mainloop(void)
 
 		/* 1) Inicializar el TM1638 */
 		k_mutex_lock(&acceso_hardware, K_FOREVER);
+
 		ret = tm1638_init(stb_pin, clk_pin, dio_pin);
+
 		k_mutex_unlock(&acceso_hardware);
 		if (ret != 0) {
 			printk("Error al inicializar el TM1638 (ret=%d)\n", ret);
@@ -376,6 +413,7 @@ void mainloop(void)
 						menu();
 						break;
 					case 4:
+						k_sem_give(&juego);
 						flag = false;
 						break;
 					default:
@@ -388,7 +426,6 @@ void mainloop(void)
 
 			k_msleep(20);
 		}
-	maint = false;
 	k_sleep(K_FOREVER);
 }
 }
