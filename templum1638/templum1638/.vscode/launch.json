@@ -1,0 +1,66 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Zephyr Workbench Debug [primary]",
+      "type": "cppdbg",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "program": "${workspaceFolder}/build/primary/zephyr/zephyr.elf",
+      "args": [],
+      "stopAtEntry": true,
+      "svdPath": "",
+      "environment": [],
+      "externalConsole": false,
+      "serverLaunchTimeout": 30000,
+      "filterStderr": true,
+      "filterStdout": true,
+      "serverStarted": "halted due to debug-request, current mode: Thread",
+      "MIMode": "gdb",
+      "miDebuggerPath": "${config:zephyr-workbench.sdk}\\gnu\\arm-zephyr-eabi\\bin\\arm-zephyr-eabi-gdb-py.exe",
+      "debugServerPath": "${workspaceFolder}/build/primary/.debug/west_wrapper.bat",
+      "debugServerArgs": "debugserver --build-dir \"${workspaceFolder}/build/primary\" --runner openocd --gdb-port 3333 --config openocd.cfg --config ${workspaceFolder}/build/.debug/gdb.cfg",
+      "setupCommands": [
+        {
+          "text": "-environment-cd ${workspaceFolder}/build/primary/zephyr"
+        },
+        {
+          "text": "-target-select remote localhost:3333",
+          "description": "connect to target",
+          "ignoreFailures": false
+        },
+        {
+          "text": "-file-exec-and-symbols zephyr.elf",
+          "description": "load file",
+          "ignoreFailures": false
+        },
+        {
+          "text": "-interpreter-exec console \"monitor reset\"",
+          "ignoreFailures": false
+        },
+        {
+          "text": "-target-download",
+          "description": "flash target",
+          "ignoreFailures": false
+        },
+        {
+          "text": "set breakpoint pending on",
+          "description": "Set pending",
+          "ignoreFailures": false
+        },
+        {
+          "text": "tbreak main",
+          "description": "Set a breakpoint at main",
+          "ignoreFailures": true
+        }
+      ],
+      "logging": {
+        "moduleLoad": true,
+        "trace": true,
+        "engineLogging": true,
+        "programOutput": true,
+        "exceptions": true
+      }
+    }
+  ]
+}

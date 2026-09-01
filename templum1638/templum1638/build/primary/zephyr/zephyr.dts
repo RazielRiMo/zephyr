@@ -860,7 +860,7 @@
 				zephyr,gain = "ADC_GAIN_1";            /* in ..\..\..\..\..\..\zephyr\templum1638\templum1638\app.overlay:41 */
 				zephyr,reference = "ADC_REF_INTERNAL"; /* in ..\..\..\..\..\..\zephyr\templum1638\templum1638\app.overlay:42 */
 				zephyr,vref-mv = < 0xce4 >;            /* in ..\..\..\..\..\..\zephyr\templum1638\templum1638\app.overlay:43 */
-				zephyr,acquisition-time = < 0x4028 >;  /* in ..\..\..\..\..\..\zephyr\templum1638\templum1638\app.overlay:44 */
+				zephyr,acquisition-time = < 0x0 >;     /* in ..\..\..\..\..\..\zephyr\templum1638\templum1638\app.overlay:44 */
 				zephyr,resolution = < 0xc >;           /* in ..\..\..\..\..\..\zephyr\templum1638\templum1638\app.overlay:45 */
 			};
 
@@ -870,7 +870,7 @@
 				zephyr,gain = "ADC_GAIN_1";            /* in ..\..\..\..\..\..\zephyr\templum1638\templum1638\app.overlay:49 */
 				zephyr,reference = "ADC_REF_INTERNAL"; /* in ..\..\..\..\..\..\zephyr\templum1638\templum1638\app.overlay:50 */
 				zephyr,vref-mv = < 0xce4 >;            /* in ..\..\..\..\..\..\zephyr\templum1638\templum1638\app.overlay:51 */
-				zephyr,acquisition-time = < 0x4028 >;  /* in ..\..\..\..\..\..\zephyr\templum1638\templum1638\app.overlay:52 */
+				zephyr,acquisition-time = < 0x0 >;     /* in ..\..\..\..\..\..\zephyr\templum1638\templum1638\app.overlay:52 */
 				zephyr,resolution = < 0xc >;           /* in ..\..\..\..\..\..\zephyr\templum1638\templum1638\app.overlay:53 */
 			};
 		};

@@ -63,14 +63,14 @@ K_SEM_DEFINE(stopconv,0,1);
 K_SEM_DEFINE(horastop,0,1);
 
 struct lectura_fina {
-	int16_t voltem;
-	int16_t vollum;
+	uint16_t voltem;
+	uint16_t vollum;
 	struct rtc_time horaa;
 };
 
 struct lectura_raw {
-	int16_t volte;
-	int16_t vollu;
+	uint16_t volte;
+	uint16_t vollu;
 };
 
 K_MSGQ_DEFINE(hora_act, sizeof(struct rtc_time),1 , 1);
@@ -93,7 +93,7 @@ void mainloop(void){
 	if (!device_is_ready(lum.dev)){
 		LOG_WRN("ADC no esta listo");
 	}
-	rec = adc_channel_setup_dt(&tem);
+	rec = adc_channel_setup_dt(&lum);
 	if (rec!=0){
 		LOG_WRN("ADC no se pudo configurar");
 	}
@@ -202,7 +202,7 @@ void actualizar_hora(void){
 }
 
 void lectura_adc(void){
-	int16_t rawtemp, rawlum, rawtempant = 0, rawlumant = 0;
+	uint16_t rawtemp, rawlum, rawtempant = 0, rawlumant = 0;
 
 	float a = 0.1;
 
@@ -224,10 +224,19 @@ void lectura_adc(void){
 		while(1){
 
 			if (k_sem_take(&stoprawr, K_NO_WAIT)==0) break;
-
+			ret = adc_sequence_init_dt(&tem, &temperatura);
+			if (ret!=0){
+				LOG_WRN("error al iniciar secuencia");
+				break;
+			}
 			ret = adc_read(tem.dev, &temperatura);
 			if (ret!=0){
 				LOG_WRN("no se pudo leer adc0 %d", ret);
+			}
+			ret = adc_sequence_init_dt(&lum, &lumens);
+			if (ret!=0){
+				LOG_WRN("error al iniciar secuencia");
+				break;
 			}
 			ret = adc_read(lum.dev, &lumens);
 			if (ret!=0){
@@ -251,8 +260,8 @@ void lectura_adc(void){
 }
 
 void prom_adc(void){
-	int16_t tempe [10], lume [10];
-	int16_t tempe_prom, lume_prom, tempe_ant = 0, lume_ant = 0;
+	uint16_t tempe [10], lume [10];
+	uint16_t tempe_prom, lume_prom, tempe_ant = 0, lume_ant = 0;
 	struct lectura_raw lera;
 	struct lectura_fina fin;
 	float a = 0.1;
@@ -269,14 +278,15 @@ void prom_adc(void){
 			}
 			LOG_DBG("promediando lecturas");
 			k_sem_give(&rawr);
-
+			tempe_prom = 0;
+			lume_prom = 0;
 			for (int i = 0; i < 10; i++){
 				tempe_prom += tempe[i];
 				lume_prom += lume[i];
 			}
 
-			tempe_prom = (a*(tempe_prom/10))+((1-a)*tempe_ant);
-			lume_prom = (a*(lume_prom/10))+((1-a)*lume_ant);
+			tempe_prom = (tempe_prom/10);
+			lume_prom =lume_prom/10;
 			tempe_ant = tempe_prom;
 			lume_ant = lume_prom;
 
@@ -295,17 +305,25 @@ void prom_adc(void){
 	}	
 }
 
-int16_t convlum (int16_t raw){
-	return raw; //futura ecuacion de conversion
+uint16_t convlum (int16_t raw){
+	int res = 0, a = 22650;
+	float exp;
+	uint16_t lux = 0;
+	res = (100*raw)/(4095-raw);
+	exp = 0.470576029;
+	lux = (uint16_t) (pow((a/res), (1/exp)));
+	return lux;
 }
 
-int16_t convtemp (int16_t raw){
-	return raw; //futura ecuacion de conversion
+uint16_t convtemp (int16_t raw){
+	float a = 36.92, b = -2;
+	uint16_t final =(uint16_t)((raw/a)+b);
+	return final;
 }
 
 void display_task(void){
 	struct lectura_fina lect;
-	int16_t var=0;
+	int var=0;
 	int boton;
 	while(1){
 		k_sem_take(&display, K_FOREVER);
@@ -333,6 +351,7 @@ void display_task(void){
 			}
 
 			k_mutex_lock(&hw_access, K_FOREVER);
+			tm1638_clear();
 			tm1638_display(var);
 			k_mutex_unlock(&hw_access);
 

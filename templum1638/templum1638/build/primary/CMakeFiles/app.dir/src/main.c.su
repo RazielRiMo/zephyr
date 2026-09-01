@@ -3,7 +3,7 @@ C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/include/zephyr/k
 C:/zephyr/templum1638/templum1638/src/main.c:122:6:leer_botones	24	static
 C:/zephyr/templum1638/templum1638/src/main.c:172:6:actualizar_hora	48	static
 C:/zephyr/templum1638/templum1638/src/main.c:204:6:lectura_adc	112	dynamic,bounded
-C:/zephyr/templum1638/templum1638/src/main.c:253:6:prom_adc	208	dynamic,bounded
-C:/zephyr/templum1638/templum1638/src/main.c:298:9:convlum	0	static
-C:/zephyr/templum1638/templum1638/src/main.c:302:9:convtemp	0	static
-C:/zephyr/templum1638/templum1638/src/main.c:306:6:display_task	64	static
+C:/zephyr/templum1638/templum1638/src/main.c:262:6:prom_adc	192	dynamic,bounded
+C:/zephyr/templum1638/templum1638/src/main.c:308:10:convlum	8	static
+C:/zephyr/templum1638/templum1638/src/main.c:318:10:convtemp	8	static
+C:/zephyr/templum1638/templum1638/src/main.c:324:6:display_task	64	static
