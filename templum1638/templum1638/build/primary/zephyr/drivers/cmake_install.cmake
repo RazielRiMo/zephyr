@@ -104,6 +104,11 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
+  include("C:/zephyr/templum1638/templum1638/build/primary/zephyr/drivers/rtc/cmake_install.cmake")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
   include("C:/zephyr/templum1638/templum1638/build/primary/zephyr/drivers/serial/cmake_install.cmake")
 endif()
 

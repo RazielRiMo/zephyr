@@ -36,12 +36,12 @@ static const struct adc_dt_spec lum =
 
 #define STACK_SIZE 512
 
-#define PRIORITY_MAIN 5
-#define PRIORITY_READ_TEMP 4
-#define PRIORITY_READ_LUM 4
+#define PRIORITY_MAIN 1
+#define PRIORITY_READ_ADC 4
+#define PRIORITY_PROM_ADC 4
 #define PRIORITY_DISPLAY 3
-#define PRIORITY_CONVERCION 2
-#define PRIORITY_READ_TM1638 1
+#define PRIORITY_HORA 2
+#define PRIORITY_READ_TM1638 5
 
 K_MUTEX_DEFINE(hw_access);
 
@@ -76,6 +76,7 @@ struct lectura_raw {
 K_MSGQ_DEFINE(hora_act, sizeof(struct rtc_time),1 , 1);
 K_MSGQ_DEFINE(lec_raw , sizeof(struct lectura_raw),10, 1);
 K_MSGQ_DEFINE(lec_fin , sizeof(struct lectura_fina), 1, 1);
+K_MSGQ_DEFINE(lec_disp, sizeof(int), 1, 1);
 
 static const struct device *rtc = DEVICE_DT_GET(RTC_NODE);
 
@@ -87,7 +88,7 @@ void mainloop(void){
 	}
 	rec = adc_channel_setup_dt(&tem);
 	if (rec!=0){
-		LOC_WRN("ADC no se pudo configurar");
+		LOG_WRN("ADC no se pudo configurar");
 	}
 	if (!device_is_ready(lum.dev)){
 		LOG_WRN("ADC no esta listo");
@@ -96,6 +97,9 @@ void mainloop(void){
 	if (rec!=0){
 		LOG_WRN("ADC no se pudo configurar");
 	}
+
+	k_sem_give(&rawr);
+
 	k_mutex_lock(&hw_access, K_FOREVER);
 	rec = tm1638_init(stb_pin, clk_pin, dio_pin);
 	k_mutex_unlock(&hw_access);
@@ -116,7 +120,7 @@ void mainloop(void){
 }
 
 void leer_botones(void){
-	int last_button, boton;
+	int last_button = 0, boton;
 
 	while(1){
 
@@ -137,21 +141,21 @@ void leer_botones(void){
 				switch (boton)
 				{
 				case 1:
-					if(k_sem_take(&stoplums, K_NO_WAIT)!=0) k_sem_give(&stoplums);
-					if(k_sem_take(&horastop, K_NO_WAIT)!=0) k_sem_give(&horastop);
-					k_sem_give(&rlums);
+					if(k_sem_take(&display, K_NO_WAIT)!=0) k_sem_give(&display);
+					k_msgq_purge(&lec_disp);
+					k_msgq_put(&lec_disp, &boton, K_NO_WAIT);
 					k_msleep(50);
 					break;
 				case 2:
-					if(k_sem_take(&stoptemp, K_NO_WAIT)!=0) k_sem_give(&stoptemp);
-					if(k_sem_take(&horastop, K_NO_WAIT)!=0) k_sem_give(&horastop);
-					k_sem_give(&rtemp);
+					if(k_sem_take(&display, K_NO_WAIT)!=0) k_sem_give(&display);
+					k_msgq_purge(&lec_disp);
+					k_msgq_put(&lec_disp, &boton, K_NO_WAIT);
 					k_msleep(50);
 					break;
 				case 3:
-					if(k_sem_take(&stoptemp, K_NO_WAIT)!=0) k_sem_give(&stoptemp);
-					if(k_sem_take(&stoplums, K_NO_WAIT)!=0) k_sem_give(&stoplums);
-					k_sem_give(&hora);
+					if(k_sem_take(&display, K_NO_WAIT)!=0) k_sem_give(&display);
+					k_msgq_purge(&lec_disp);
+					k_msgq_put(&lec_disp, &boton, K_NO_WAIT);
 					k_msleep(50);
 					break;
 				default:
@@ -199,11 +203,10 @@ void actualizar_hora(void){
 
 void lectura_adc(void){
 	int16_t rawtemp, rawlum, rawtempant = 0, rawlumant = 0;
-	int32_t mvtemp, mvlum;
 
 	float a = 0.1;
 
-	int ret, num;
+	int ret;
 
 	struct lectura_raw lect;
 	
@@ -280,6 +283,8 @@ void prom_adc(void){
 			fin.voltem = tempe_prom;
 			fin.vollum = lume_prom;
 
+			LOG_DBG("temp: %d lum: %d", fin.voltem, fin.vollum);
+
 			k_msgq_peek(&hora_act, &fin.horaa);
 
 			k_msgq_purge(&lec_fin);
@@ -290,3 +295,64 @@ void prom_adc(void){
 	}	
 }
 
+int16_t convlum (int16_t raw){
+	return raw; //futura ecuacion de conversion
+}
+
+int16_t convtemp (int16_t raw){
+	return raw; //futura ecuacion de conversion
+}
+
+void display_task(void){
+	struct lectura_fina lect;
+	int16_t var=0;
+	int boton;
+	while(1){
+		k_sem_take(&display, K_FOREVER);
+		while(1){
+
+			if (k_sem_take(&stopdis, K_NO_WAIT)==0) break;
+
+			k_msgq_peek(&lec_disp, &boton);
+			
+			k_msgq_peek(&lec_fin, &lect);
+
+			switch (boton)
+			{
+			case 1:
+				var = convtemp(lect.voltem);
+				break;
+			case 2:
+				var = convlum(lect.vollum);
+				break;
+			case 3:
+				var = lect.horaa.tm_hour*10000 + lect.horaa.tm_min*100 + lect.horaa.tm_sec;
+				break;
+			default:
+				break;
+			}
+
+			k_mutex_lock(&hw_access, K_FOREVER);
+			tm1638_display(var);
+			k_mutex_unlock(&hw_access);
+
+			LOG_INF("mostrando en display: %d\n", var);
+
+			k_msleep(1000);
+
+		}	
+	}
+}
+
+K_THREAD_DEFINE (main_id, STACK_SIZE, mainloop, NULL, NULL, NULL,
+	PRIORITY_MAIN, 0, 0);
+K_THREAD_DEFINE (botones_id, STACK_SIZE, leer_botones, NULL, NULL, NULL,
+	PRIORITY_READ_TM1638, 0, 0);
+K_THREAD_DEFINE (hora_id, STACK_SIZE, actualizar_hora, NULL, NULL, NULL,
+	PRIORITY_HORA, 0, 0);
+K_THREAD_DEFINE (adc_id, STACK_SIZE, lectura_adc, NULL, NULL, NULL,
+	PRIORITY_READ_ADC, 0, 0);
+K_THREAD_DEFINE (prom_id, STACK_SIZE, prom_adc, NULL, NULL, NULL,
+	PRIORITY_PROM_ADC, 0, 0);
+K_THREAD_DEFINE (display_id, STACK_SIZE, display_task, NULL, NULL, NULL,
+	PRIORITY_DISPLAY, 0, 0);

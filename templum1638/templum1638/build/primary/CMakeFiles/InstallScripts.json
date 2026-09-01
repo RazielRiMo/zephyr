@@ -78,6 +78,7 @@
 		"C:/zephyr/templum1638/templum1638/build/primary/zephyr/drivers/pinctrl/cmake_install.cmake",
 		"C:/zephyr/templum1638/templum1638/build/primary/zephyr/drivers/pinctrl/renesas/cmake_install.cmake",
 		"C:/zephyr/templum1638/templum1638/build/primary/zephyr/drivers/reset/cmake_install.cmake",
+		"C:/zephyr/templum1638/templum1638/build/primary/zephyr/drivers/rtc/cmake_install.cmake",
 		"C:/zephyr/templum1638/templum1638/build/primary/zephyr/drivers/serial/cmake_install.cmake",
 		"C:/zephyr/templum1638/templum1638/build/primary/zephyr/drivers/timer/cmake_install.cmake",
 		"C:/zephyr/templum1638/templum1638/build/primary/modules/cmsis_6/cmake_install.cmake",

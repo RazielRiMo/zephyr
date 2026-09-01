@@ -2202,5 +2202,9 @@ arduino_spi: &spi1 {};
 
 
 };
+
+&rtc {
+ status="okay";
+};
 # 0 "<command-line>" 2
 # 1 "C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/misc/empty_file.c"

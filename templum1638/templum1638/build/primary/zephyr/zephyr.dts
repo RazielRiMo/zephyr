@@ -820,7 +820,7 @@
 			alrm-exti-line = < 0x11 >;         /* in deps\zephyr\dts\arm\st\f4\stm32f4.dtsi:597 */
 			clocks = < &rcc 0x40 0x10000000 >,
 			         < &rcc 0x3 0x2280070 >;   /* in deps\zephyr\boards\st\nucleo_f401re\nucleo_f401re.dts:179 */
-			status = "okay";                   /* in deps\zephyr\boards\st\nucleo_f401re\nucleo_f401re.dts:181 */
+			status = "okay";                   /* in ..\..\..\..\..\..\zephyr\templum1638\templum1638\app.overlay:60 */
 
 			/* node '/soc/rtc@40002800/backup_regs' defined in deps\zephyr\dts\arm\st\f4\stm32f4.dtsi:600 */
 			bbram: backup_regs {

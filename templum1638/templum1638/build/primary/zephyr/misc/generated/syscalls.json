@@ -289,6 +289,70 @@
     ],
     [
         [
+            "int rtc_set_time",
+            "const struct device *dev, const struct rtc_time *timeptr"
+        ],
+        "rtc.h",
+        true
+    ],
+    [
+        [
+            "int rtc_get_time",
+            "const struct device *dev, struct rtc_time *timeptr"
+        ],
+        "rtc.h",
+        true
+    ],
+    [
+        [
+            "int rtc_alarm_get_supported_fields",
+            "const struct device *dev, uint16_t id, uint16_t *mask"
+        ],
+        "rtc.h",
+        true
+    ],
+    [
+        [
+            "int rtc_alarm_set_time",
+            "const struct device *dev, uint16_t id, uint16_t mask, const struct rtc_time *timeptr"
+        ],
+        "rtc.h",
+        true
+    ],
+    [
+        [
+            "int rtc_alarm_get_time",
+            "const struct device *dev, uint16_t id, uint16_t *mask, struct rtc_time *timeptr"
+        ],
+        "rtc.h",
+        true
+    ],
+    [
+        [
+            "int rtc_alarm_is_pending",
+            "const struct device *dev, uint16_t id"
+        ],
+        "rtc.h",
+        true
+    ],
+    [
+        [
+            "int rtc_set_calibration",
+            "const struct device *dev, int32_t calibration"
+        ],
+        "rtc.h",
+        true
+    ],
+    [
+        [
+            "int rtc_get_calibration",
+            "const struct device *dev, int32_t *calibration"
+        ],
+        "rtc.h",
+        true
+    ],
+    [
+        [
             "int uart_err_check",
             "const struct device *dev"
         ],
@@ -3381,70 +3445,6 @@
             "const struct device *dev"
         ],
         "retained_mem.h",
-        false
-    ],
-    [
-        [
-            "int rtc_set_time",
-            "const struct device *dev, const struct rtc_time *timeptr"
-        ],
-        "rtc.h",
-        false
-    ],
-    [
-        [
-            "int rtc_get_time",
-            "const struct device *dev, struct rtc_time *timeptr"
-        ],
-        "rtc.h",
-        false
-    ],
-    [
-        [
-            "int rtc_alarm_get_supported_fields",
-            "const struct device *dev, uint16_t id, uint16_t *mask"
-        ],
-        "rtc.h",
-        false
-    ],
-    [
-        [
-            "int rtc_alarm_set_time",
-            "const struct device *dev, uint16_t id, uint16_t mask, const struct rtc_time *timeptr"
-        ],
-        "rtc.h",
-        false
-    ],
-    [
-        [
-            "int rtc_alarm_get_time",
-            "const struct device *dev, uint16_t id, uint16_t *mask, struct rtc_time *timeptr"
-        ],
-        "rtc.h",
-        false
-    ],
-    [
-        [
-            "int rtc_alarm_is_pending",
-            "const struct device *dev, uint16_t id"
-        ],
-        "rtc.h",
-        false
-    ],
-    [
-        [
-            "int rtc_set_calibration",
-            "const struct device *dev, int32_t calibration"
-        ],
-        "rtc.h",
-        false
-    ],
-    [
-        [
-            "int rtc_get_calibration",
-            "const struct device *dev, int32_t *calibration"
-        ],
-        "rtc.h",
         false
     ],
     [

@@ -1,0 +1,6 @@
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/modules/hal/stm32/stm32cube/stm32f4xx/drivers/include/stm32f4xx_ll_rtc.h:1528:26:LL_RTC_DATE_Get	0	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/drivers/rtc/rtc_stm32.c:660:12:rtc_stm32_get_time	32	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/drivers/rtc/rtc_stm32.c:200:12:rtc_stm32_enter_init_mode	16	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/drivers/rtc/rtc_stm32.c:579:12:rtc_stm32_set_time	48	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/drivers/rtc/rtc_stm32.c:215:12:rtc_stm32_configure	16	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/drivers/rtc/rtc_stm32.c:480:12:rtc_stm32_init	16	static
