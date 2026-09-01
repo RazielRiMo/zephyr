@@ -183,6 +183,9 @@ C:/zephyr/TM1638/build/primary/zephyr/drivers/usb/common/stm32/CMakeFiles/edit_c
 C:/zephyr/TM1638/build/primary/zephyr/drivers/usb/common/stm32/CMakeFiles/rebuild_cache.dir
 C:/zephyr/TM1638/build/primary/zephyr/drivers/usb_c/CMakeFiles/edit_cache.dir
 C:/zephyr/TM1638/build/primary/zephyr/drivers/usb_c/CMakeFiles/rebuild_cache.dir
+C:/zephyr/TM1638/build/primary/zephyr/drivers/adc/CMakeFiles/drivers__adc.dir
+C:/zephyr/TM1638/build/primary/zephyr/drivers/adc/CMakeFiles/edit_cache.dir
+C:/zephyr/TM1638/build/primary/zephyr/drivers/adc/CMakeFiles/rebuild_cache.dir
 C:/zephyr/TM1638/build/primary/zephyr/drivers/clock_control/CMakeFiles/drivers__clock_control.dir
 C:/zephyr/TM1638/build/primary/zephyr/drivers/clock_control/CMakeFiles/edit_cache.dir
 C:/zephyr/TM1638/build/primary/zephyr/drivers/clock_control/CMakeFiles/rebuild_cache.dir

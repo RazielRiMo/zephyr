@@ -1,0 +1,9 @@
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/include/zephyr/sys/mutex.h:151:19:sys_mutex_lock	8	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/lib/libc/common/source/stdlib/malloc.c:123:1:malloc_lock	8	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/lib/libc/common/source/stdlib/malloc.c:193:12:malloc_prepare	8	static
+C:/Users/razie/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/arm-zephyr-eabi/sys-include/stdlib.h:183:7:malloc	16	static
+C:/Users/razie/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/arm-zephyr-eabi/sys-include/stdlib.h:110:9:aligned_alloc	16	static
+C:/Users/razie/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/arm-zephyr-eabi/sys-include/stdlib.h:243:7:realloc	16	static
+C:/Users/razie/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/arm-zephyr-eabi/sys-include/stdlib.h:147:6:free	8	static
+C:/Users/razie/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/arm-zephyr-eabi/sys-include/stdlib.h:136:7:calloc	16	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/lib/libc/common/source/stdlib/malloc.c:329:7:reallocarray	8	static

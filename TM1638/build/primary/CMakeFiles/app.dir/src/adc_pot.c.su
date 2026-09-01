@@ -1,0 +1,5 @@
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/include/zephyr/drivers/adc.h:1367:19:adc_raw_to_x_dt_chan	8	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/include/zephyr/drivers/adc.h:1315:19:adc_raw_to_millivolts	24	static
+C:/zephyr/TM1638/src/adc_pot.c:18:5:adc_pot_init	8	static
+C:/zephyr/TM1638/src/adc_pot.c:35:5:adc_pot_read_raw	32	static
+C:/zephyr/TM1638/src/adc_pot.c:55:5:adc_pot_read_mv	16	static

@@ -1,0 +1,10 @@
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/lib/utils/timeutil.c:35:16:time_days_from_civil	16	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/lib/utils/timeutil.c:49:9:timeutil_timegm64	16	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/lib/utils/timeutil.c:63:8:timeutil_timegm	8	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/lib/utils/timeutil.c:79:5:timeutil_sync_state_update	8	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/lib/utils/timeutil.c:101:5:timeutil_sync_state_set_skew	16	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/lib/utils/timeutil.c:118:7:timeutil_sync_estimate_skew	32	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/lib/utils/timeutil.c:134:5:timeutil_sync_ref_from_local	56	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/lib/utils/timeutil.c:164:5:timeutil_sync_local_from_ref	32	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/lib/utils/timeutil.c:191:9:timeutil_sync_skew_to_ppb	8	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/lib/utils/timeutil.c:199:6:timespec_normalize	8	static

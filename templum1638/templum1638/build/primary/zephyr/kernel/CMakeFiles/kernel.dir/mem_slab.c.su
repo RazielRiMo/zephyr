@@ -1,0 +1,7 @@
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/kernel/mem_slab.c:104:12:create_free_list	12	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/kernel/mem_slab.c:146:12:init_mem_slab_obj_core_list	8	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/kernel/mem_slab.c:221:13:slab_ptr_is_good	0	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/kernel/mem_slab.c:185:5:k_mem_slab_init	8	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/kernel/mem_slab.c:235:5:k_mem_slab_alloc	24	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/kernel/mem_slab.c:284:6:k_mem_slab_free	24	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/kernel/mem_slab.c:316:5:k_mem_slab_runtime_stats_get	0	static

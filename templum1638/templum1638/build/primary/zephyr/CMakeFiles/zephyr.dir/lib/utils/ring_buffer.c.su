@@ -1,0 +1,9 @@
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/lib/utils/ring_buffer.c:12:10:ring_buf_area_claim	8	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/include/zephyr/sys/ring_buffer.h:304:24:ring_buf_put_claim	8	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/include/zephyr/sys/ring_buffer.h:386:24:ring_buf_get_claim	8	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/lib/utils/ring_buffer.c:31:5:ring_buf_area_finish	8	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/lib/utils/ring_buffer.c:53:10:ring_buf_put	32	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/lib/utils/ring_buffer.c:78:10:ring_buf_get	32	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/lib/utils/ring_buffer.c:105:10:ring_buf_peek	32	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/lib/utils/ring_buffer.c:144:5:ring_buf_item_put	40	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/lib/utils/ring_buffer.c:186:5:ring_buf_item_get	32	static

@@ -1,0 +1,7 @@
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/arch/arm/core/cortex_m/thread.c:421:17:min_stack	0	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/arch/arm/core/cortex_m/thread.c:90:6:arch_new_thread	4	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/arch/arm/core/cortex_m/thread.c:485:10:z_check_thread_stack_fail	8	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/arch/arm/core/cortex_m/thread.c:539:5:arch_coprocessors_disable	0	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/arch/arm/core/cortex_m/thread.c:576:6:arch_switch_to_main_thread	8	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/arch/arm/core/cortex_m/thread.c:670:13:arch_irq_unlock_outlined	0	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/arch/arm/core/cortex_m/thread.c:679:21:arch_irq_lock_outlined	0	static

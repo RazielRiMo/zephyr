@@ -1,0 +1,2 @@
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/kernel/idle.c:22:6:idle	8	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/kernel/idle.c:97:13:arch_spin_relax	0	static

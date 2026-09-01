@@ -1,0 +1,2 @@
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/kernel/include/kernel_tls.h:43:20:z_tls_copy	16	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/arch/arm/core/tls.c:24:8:arch_tls_stack_setup	16	static

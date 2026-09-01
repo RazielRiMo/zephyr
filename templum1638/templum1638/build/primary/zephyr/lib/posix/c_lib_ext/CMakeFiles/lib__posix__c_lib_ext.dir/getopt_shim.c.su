@@ -1,0 +1,4 @@
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/lib/posix/c_lib_ext/getopt_shim.c:14:6:getopt_init	8	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/lib/posix/c_lib_ext/getopt_shim.c:19:22:getopt_state_get	8	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/lib/posix/c_lib_ext/getopt_shim.c:24:5:getopt	8	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/lib/posix/c_lib_ext/getopt_shim.c:29:6:z_getopt_global_state_update_shim	0	static

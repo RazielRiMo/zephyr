@@ -1,0 +1,4 @@
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/drivers/reset/reset_stm32.c:22:12:reset_stm32_status	0	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/drivers/reset/reset_stm32.c:33:12:reset_stm32_line_assert	4	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/drivers/reset/reset_stm32.c:43:12:reset_stm32_line_deassert	4	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/drivers/reset/reset_stm32.c:58:12:reset_stm32_line_toggle	16	static

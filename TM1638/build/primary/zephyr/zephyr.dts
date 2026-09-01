@@ -130,7 +130,7 @@
 						reg = < 0x2a 0x2 >;          /* in deps\zephyr\dts\arm\st\f4\stm32f4.dtsi:156 */
 						#nvmem-cell-cells = < 0x0 >; /* in deps\zephyr\dts\arm\st\f4\stm32f4.dtsi:157 */
 						read-only;                   /* in deps\zephyr\dts\arm\st\f4\stm32f4.dtsi:158 */
-						phandle = < 0x1f >;          /* in deps\zephyr\dts\arm\st\f4\stm32f4.dtsi:683 */
+						phandle = < 0x20 >;          /* in deps\zephyr\dts\arm\st\f4\stm32f4.dtsi:683 */
 					};
 
 					/* node '/soc/flash-controller@40023c00/flash@1fff7a00/nvmem-layout/ts-cal1@2c' defined in deps\zephyr\dts\arm\st\f4\stm32f4.dtsi:161 */
@@ -138,7 +138,7 @@
 						reg = < 0x2c 0x2 >;          /* in deps\zephyr\dts\arm\st\f4\stm32f4.dtsi:162 */
 						#nvmem-cell-cells = < 0x0 >; /* in deps\zephyr\dts\arm\st\f4\stm32f4.dtsi:163 */
 						read-only;                   /* in deps\zephyr\dts\arm\st\f4\stm32f4.dtsi:164 */
-						phandle = < 0x1c >;          /* in deps\zephyr\dts\arm\st\f4\stm32f4.dtsi:672 */
+						phandle = < 0x1d >;          /* in deps\zephyr\dts\arm\st\f4\stm32f4.dtsi:672 */
 					};
 
 					/* node '/soc/flash-controller@40023c00/flash@1fff7a00/nvmem-layout/ts-cal2@2e' defined in deps\zephyr\dts\arm\st\f4\stm32f4.dtsi:167 */
@@ -146,7 +146,7 @@
 						reg = < 0x2e 0x2 >;          /* in deps\zephyr\dts\arm\st\f4\stm32f4.dtsi:168 */
 						#nvmem-cell-cells = < 0x0 >; /* in deps\zephyr\dts\arm\st\f4\stm32f4.dtsi:169 */
 						read-only;                   /* in deps\zephyr\dts\arm\st\f4\stm32f4.dtsi:170 */
-						phandle = < 0x1d >;          /* in deps\zephyr\dts\arm\st\f4\stm32f4.dtsi:672 */
+						phandle = < 0x1e >;          /* in deps\zephyr\dts\arm\st\f4\stm32f4.dtsi:672 */
 					};
 				};
 			};
@@ -218,7 +218,7 @@
 				#gpio-cells = < 0x2 >;        /* in deps\zephyr\dts\arm\st\f4\stm32f4.dtsi:212 */
 				reg = < 0x40020000 0x400 >;   /* in deps\zephyr\dts\arm\st\f4\stm32f4.dtsi:213 */
 				clocks = < &rcc 0x30 0x1 >;   /* in deps\zephyr\dts\arm\st\f4\stm32f4.dtsi:214 */
-				phandle = < 0x1b >;           /* in deps\zephyr\dts\arm\st\f4\stm32f4.dtsi:666 */
+				phandle = < 0x1c >;           /* in deps\zephyr\dts\arm\st\f4\stm32f4.dtsi:666 */
 			};
 
 			/* node '/soc/pin-controller@40020000/gpio@40020400' defined in deps\zephyr\dts\arm\st\f4\stm32f4.dtsi:217 */
@@ -238,7 +238,7 @@
 				#gpio-cells = < 0x2 >;        /* in deps\zephyr\dts\arm\st\f4\stm32f4.dtsi:228 */
 				reg = < 0x40020800 0x400 >;   /* in deps\zephyr\dts\arm\st\f4\stm32f4.dtsi:229 */
 				clocks = < &rcc 0x30 0x4 >;   /* in deps\zephyr\dts\arm\st\f4\stm32f4.dtsi:230 */
-				phandle = < 0x23 >;           /* in deps\zephyr\boards\st\nucleo_f401re\arduino_r3_connector.dtsi:15 */
+				phandle = < 0x24 >;           /* in deps\zephyr\boards\st\nucleo_f401re\arduino_r3_connector.dtsi:15 */
 			};
 
 			/* node '/soc/pin-controller@40020000/gpio@40020c00' defined in deps\zephyr\dts\arm\st\f4\stm32f4.dtsi:233 */
@@ -248,7 +248,7 @@
 				#gpio-cells = < 0x2 >;        /* in deps\zephyr\dts\arm\st\f4\stm32f4.dtsi:236 */
 				reg = < 0x40020c00 0x400 >;   /* in deps\zephyr\dts\arm\st\f4\stm32f4.dtsi:237 */
 				clocks = < &rcc 0x30 0x8 >;   /* in deps\zephyr\dts\arm\st\f4\stm32f4.dtsi:238 */
-				phandle = < 0x24 >;           /* in deps\zephyr\boards\st\nucleo_f401re\st_morpho_connector.dtsi:15 */
+				phandle = < 0x25 >;           /* in deps\zephyr\boards\st\nucleo_f401re\st_morpho_connector.dtsi:15 */
 			};
 
 			/* node '/soc/pin-controller@40020000/gpio@40021000' defined in deps\zephyr\dts\arm\st\f4\stm32f4.dtsi:241 */
@@ -285,13 +285,19 @@
 				#gpio-cells = < 0x2 >;        /* in deps\zephyr\dts\arm\st\f4\stm32f4.dtsi:268 */
 				reg = < 0x40021c00 0x400 >;   /* in deps\zephyr\dts\arm\st\f4\stm32f4.dtsi:269 */
 				clocks = < &rcc 0x30 0x80 >;  /* in deps\zephyr\dts\arm\st\f4\stm32f4.dtsi:270 */
-				phandle = < 0x25 >;           /* in deps\zephyr\boards\st\nucleo_f401re\st_morpho_connector.dtsi:15 */
+				phandle = < 0x26 >;           /* in deps\zephyr\boards\st\nucleo_f401re\st_morpho_connector.dtsi:15 */
 			};
 
-			/* node '/soc/pin-controller@40020000/adc1_in0_pa0' defined in deps\modules\hal\stm32\dts\st\f4\stm32f401r(d-e)tx-pinctrl.dtsi:13 */
-			adc1_in0_pa0: adc1_in0_pa0 {
-				pinmux = < 0x10 >;  /* in deps\modules\hal\stm32\dts\st\f4\stm32f401r(d-e)tx-pinctrl.dtsi:14 */
-				phandle = < 0x13 >; /* in deps\zephyr\boards\st\nucleo_f401re\nucleo_f401re.dts:185 */
+			/* node '/soc/pin-controller@40020000/analog_pa0' defined in deps\modules\hal\stm32\dts\st\f4\stm32f401r(d-e)tx-pinctrl.dtsi:79 */
+			analog_pa0: analog_pa0 {
+				pinmux = < 0x10 >;  /* in deps\modules\hal\stm32\dts\st\f4\stm32f401r(d-e)tx-pinctrl.dtsi:80 */
+				phandle = < 0x13 >; /* in ..\..\..\..\..\..\zephyr\TM1638\app.overlay:37 */
+			};
+
+			/* node '/soc/pin-controller@40020000/analog_pa1' defined in deps\modules\hal\stm32\dts\st\f4\stm32f401r(d-e)tx-pinctrl.dtsi:83 */
+			analog_pa1: analog_pa1 {
+				pinmux = < 0x30 >;  /* in deps\modules\hal\stm32\dts\st\f4\stm32f401r(d-e)tx-pinctrl.dtsi:84 */
+				phandle = < 0x14 >; /* in ..\..\..\..\..\..\zephyr\TM1638\app.overlay:37 */
 			};
 
 			/* node '/soc/pin-controller@40020000/i2c1_scl_pb8' defined in deps\modules\hal\stm32\dts\st\f4\stm32f401r(d-e)tx-pinctrl.dtsi:287 */
@@ -339,7 +345,7 @@
 				pinmux = < 0x3c5 >;            /* in deps\modules\hal\stm32\dts\st\f4\stm32f401r(d-e)tx-pinctrl.dtsi:535 */
 				bias-pull-down;                /* in deps\modules\hal\stm32\dts\st\f4\stm32f401r(d-e)tx-pinctrl.dtsi:536 */
 				slew-rate = "very-high-speed"; /* in deps\modules\hal\stm32\dts\st\f4\stm32f401r(d-e)tx-pinctrl.dtsi:537 */
-				phandle = < 0x16 >;            /* in deps\zephyr\boards\st\nucleo_f401re\nucleo_f401re.dts:128 */
+				phandle = < 0x17 >;            /* in deps\zephyr\boards\st\nucleo_f401re\nucleo_f401re.dts:128 */
 			};
 
 			/* node '/soc/pin-controller@40020000/spi1_mosi_pa7' defined in deps\modules\hal\stm32\dts\st\f4\stm32f401r(d-e)tx-pinctrl.dtsi:560 */
@@ -355,7 +361,7 @@
 				pinmux = < 0x3e5 >;            /* in deps\modules\hal\stm32\dts\st\f4\stm32f401r(d-e)tx-pinctrl.dtsi:573 */
 				bias-pull-down;                /* in deps\modules\hal\stm32\dts\st\f4\stm32f401r(d-e)tx-pinctrl.dtsi:574 */
 				slew-rate = "very-high-speed"; /* in deps\modules\hal\stm32\dts\st\f4\stm32f401r(d-e)tx-pinctrl.dtsi:575 */
-				phandle = < 0x17 >;            /* in deps\zephyr\boards\st\nucleo_f401re\nucleo_f401re.dts:128 */
+				phandle = < 0x18 >;            /* in deps\zephyr\boards\st\nucleo_f401re\nucleo_f401re.dts:128 */
 			};
 
 			/* node '/soc/pin-controller@40020000/spi2_nss_pb12' defined in deps\modules\hal\stm32\dts\st\f4\stm32f401r(d-e)tx-pinctrl.dtsi:616 */
@@ -363,7 +369,7 @@
 				pinmux = < 0x385 >;            /* in deps\modules\hal\stm32\dts\st\f4\stm32f401r(d-e)tx-pinctrl.dtsi:617 */
 				bias-pull-up;                  /* in deps\modules\hal\stm32\dts\st\f4\stm32f401r(d-e)tx-pinctrl.dtsi:618 */
 				slew-rate = "very-high-speed"; /* in deps\modules\hal\stm32\dts\st\f4\stm32f401r(d-e)tx-pinctrl.dtsi:619 */
-				phandle = < 0x14 >;            /* in deps\zephyr\boards\st\nucleo_f401re\nucleo_f401re.dts:128 */
+				phandle = < 0x15 >;            /* in deps\zephyr\boards\st\nucleo_f401re\nucleo_f401re.dts:128 */
 			};
 
 			/* node '/soc/pin-controller@40020000/spi1_sck_pa5' defined in deps\modules\hal\stm32\dts\st\f4\stm32f401r(d-e)tx-pinctrl.dtsi:636 */
@@ -379,7 +385,7 @@
 				pinmux = < 0x3a5 >;            /* in deps\modules\hal\stm32\dts\st\f4\stm32f401r(d-e)tx-pinctrl.dtsi:655 */
 				bias-pull-down;                /* in deps\modules\hal\stm32\dts\st\f4\stm32f401r(d-e)tx-pinctrl.dtsi:656 */
 				slew-rate = "very-high-speed"; /* in deps\modules\hal\stm32\dts\st\f4\stm32f401r(d-e)tx-pinctrl.dtsi:657 */
-				phandle = < 0x15 >;            /* in deps\zephyr\boards\st\nucleo_f401re\nucleo_f401re.dts:128 */
+				phandle = < 0x16 >;            /* in deps\zephyr\boards\st\nucleo_f401re\nucleo_f401re.dts:128 */
 			};
 
 			/* node '/soc/pin-controller@40020000/tim2_ch1_pa5' defined in deps\modules\hal\stm32\dts\st\f4\stm32f401r(d-e)tx-pinctrl.dtsi:748 */
@@ -485,7 +491,7 @@
 			pinctrl-names = "default";                   /* in deps\zephyr\boards\st\nucleo_f401re\nucleo_f401re.dts:108 */
 			status = "okay";                             /* in deps\zephyr\boards\st\nucleo_f401re\nucleo_f401re.dts:109 */
 			clock-frequency = < 0x61a80 >;               /* in deps\zephyr\boards\st\nucleo_f401re\nucleo_f401re.dts:110 */
-			phandle = < 0x20 >;                          /* in deps\zephyr\dts\arm\st\f4\stm32f4.dtsi:705 */
+			phandle = < 0x21 >;                          /* in deps\zephyr\dts\arm\st\f4\stm32f4.dtsi:705 */
 		};
 
 		/* node '/soc/i2c@40005800' defined in deps\zephyr\dts\arm\st\f4\stm32f4.dtsi:327 */
@@ -501,7 +507,7 @@
 			interrupt-names = "event",
 			                  "error";       /* in deps\zephyr\dts\arm\st\f4\stm32f4.dtsi:335 */
 			status = "disabled";             /* in deps\zephyr\dts\arm\st\f4\stm32f4.dtsi:336 */
-			phandle = < 0x21 >;              /* in deps\zephyr\dts\arm\st\f4\stm32f4.dtsi:713 */
+			phandle = < 0x22 >;              /* in deps\zephyr\dts\arm\st\f4\stm32f4.dtsi:713 */
 		};
 
 		/* node '/soc/i2c@40005c00' defined in deps\zephyr\dts\arm\st\f4\stm32f4.dtsi:339 */
@@ -519,7 +525,7 @@
 			pinctrl-names = "default";                   /* in deps\zephyr\boards\st\nucleo_f401re\nucleo_f401re.dts:115 */
 			status = "okay";                             /* in deps\zephyr\boards\st\nucleo_f401re\nucleo_f401re.dts:116 */
 			clock-frequency = < 0x61a80 >;               /* in deps\zephyr\boards\st\nucleo_f401re\nucleo_f401re.dts:117 */
-			phandle = < 0x22 >;                          /* in deps\zephyr\dts\arm\st\f4\stm32f4.dtsi:721 */
+			phandle = < 0x23 >;                          /* in deps\zephyr\dts\arm\st\f4\stm32f4.dtsi:721 */
 		};
 
 		/* node '/soc/spi@40013000' defined in deps\zephyr\dts\arm\st\f4\stm32f4.dtsi:351 */
@@ -610,7 +616,7 @@
 				status = "okay";               /* in deps\zephyr\boards\st\nucleo_f401re\nucleo_f401re.dts:172 */
 				pinctrl-0 = < &tim2_ch1_pa5 >; /* in deps\zephyr\boards\st\nucleo_f401re\nucleo_f401re.dts:173 */
 				pinctrl-names = "default";     /* in deps\zephyr\boards\st\nucleo_f401re\nucleo_f401re.dts:174 */
-				phandle = < 0x26 >;            /* in deps\zephyr\boards\st\nucleo_f401re\nucleo_f401re.dts:40 */
+				phandle = < 0x27 >;            /* in deps\zephyr\boards\st\nucleo_f401re\nucleo_f401re.dts:40 */
 			};
 
 			/* node '/soc/timers@40000000/counter' defined in deps\zephyr\dts\arm\st\f4\stm32f4.dtsi:422 */
@@ -839,12 +845,34 @@
 			st,adc-oversampler = "none";                                 /* in deps\zephyr\dts\arm\st\f4\stm32f4.dtsi:618 */
 			st,adc-internal-regulator = "none";                          /* in deps\zephyr\dts\arm\st\f4\stm32f4.dtsi:619 */
 			st,adc-has-injected-support;                                 /* in deps\zephyr\dts\arm\st\f4\stm32f4.dtsi:620 */
-			pinctrl-0 = < &adc1_in0_pa0 >;                               /* in deps\zephyr\boards\st\nucleo_f401re\nucleo_f401re.dts:185 */
-			pinctrl-names = "default";                                   /* in deps\zephyr\boards\st\nucleo_f401re\nucleo_f401re.dts:186 */
 			st,adc-clock-source = "SYNC";                                /* in deps\zephyr\boards\st\nucleo_f401re\nucleo_f401re.dts:187 */
 			st,adc-prescaler = < 0x2 >;                                  /* in deps\zephyr\boards\st\nucleo_f401re\nucleo_f401re.dts:188 */
-			status = "okay";                                             /* in deps\zephyr\boards\st\nucleo_f401re\nucleo_f401re.dts:189 */
-			phandle = < 0x1e >;                                          /* in deps\zephyr\dts\arm\st\f4\stm32f4.dtsi:677 */
+			#address-cells = < 0x1 >;                                    /* in ..\..\..\..\..\..\zephyr\TM1638\app.overlay:34 */
+			#size-cells = < 0x0 >;                                       /* in ..\..\..\..\..\..\zephyr\TM1638\app.overlay:35 */
+			pinctrl-names = "default";                                   /* in ..\..\..\..\..\..\zephyr\TM1638\app.overlay:36 */
+			pinctrl-0 = < &analog_pa0 &analog_pa1 >;                     /* in ..\..\..\..\..\..\zephyr\TM1638\app.overlay:37 */
+			status = "okay";                                             /* in ..\..\..\..\..\..\zephyr\TM1638\app.overlay:38 */
+			phandle = < 0x1f >;                                          /* in deps\zephyr\dts\arm\st\f4\stm32f4.dtsi:677 */
+
+			/* node '/soc/adc@40012000/channel@0' defined in ..\..\..\..\..\..\zephyr\TM1638\app.overlay:39 */
+			channel@0 {
+				reg = < 0x0 >;                         /* in ..\..\..\..\..\..\zephyr\TM1638\app.overlay:40 */
+				zephyr,gain = "ADC_GAIN_1";            /* in ..\..\..\..\..\..\zephyr\TM1638\app.overlay:41 */
+				zephyr,reference = "ADC_REF_INTERNAL"; /* in ..\..\..\..\..\..\zephyr\TM1638\app.overlay:42 */
+				zephyr,vref-mv = < 0xce4 >;            /* in ..\..\..\..\..\..\zephyr\TM1638\app.overlay:43 */
+				zephyr,acquisition-time = < 0x4028 >;  /* in ..\..\..\..\..\..\zephyr\TM1638\app.overlay:44 */
+				zephyr,resolution = < 0xc >;           /* in ..\..\..\..\..\..\zephyr\TM1638\app.overlay:45 */
+			};
+
+			/* node '/soc/adc@40012000/channel@1' defined in ..\..\..\..\..\..\zephyr\TM1638\app.overlay:47 */
+			channel@1 {
+				reg = < 0x1 >;                         /* in ..\..\..\..\..\..\zephyr\TM1638\app.overlay:48 */
+				zephyr,gain = "ADC_GAIN_1";            /* in ..\..\..\..\..\..\zephyr\TM1638\app.overlay:49 */
+				zephyr,reference = "ADC_REF_INTERNAL"; /* in ..\..\..\..\..\..\zephyr\TM1638\app.overlay:50 */
+				zephyr,vref-mv = < 0xce4 >;            /* in ..\..\..\..\..\..\zephyr\TM1638\app.overlay:51 */
+				zephyr,acquisition-time = < 0x4028 >;  /* in ..\..\..\..\..\..\zephyr\TM1638\app.overlay:52 */
+				zephyr,resolution = < 0xc >;           /* in ..\..\..\..\..\..\zephyr\TM1638\app.overlay:53 */
+			};
 		};
 
 		/* node '/soc/dma@40026000' defined in deps\zephyr\dts\arm\st\f4\stm32f4.dtsi:624 */
@@ -855,7 +883,7 @@
 			interrupts = < 0xb 0x0 0xc 0x0 0xd 0x0 0xe 0x0 0xf 0x0 0x10 0x0 0x11 0x0 0x2f 0x0 >; /* in deps\zephyr\dts\arm\st\f4\stm32f4.dtsi:628 */
 			clocks = < &rcc 0x30 0x200000 >;                                                     /* in deps\zephyr\dts\arm\st\f4\stm32f4.dtsi:629 */
 			status = "disabled";                                                                 /* in deps\zephyr\dts\arm\st\f4\stm32f4.dtsi:630 */
-			phandle = < 0x18 >;                                                                  /* in deps\zephyr\dts\arm\st\f4\stm32f401.dtsi:61 */
+			phandle = < 0x19 >;                                                                  /* in deps\zephyr\dts\arm\st\f4\stm32f401.dtsi:61 */
 		};
 
 		/* node '/soc/dma@40026400' defined in deps\zephyr\dts\arm\st\f4\stm32f4.dtsi:633 */
@@ -971,7 +999,7 @@
 				power-state-name = "suspend-to-idle"; /* in deps\zephyr\dts\arm\st\f4\stm32f4.dtsi:44 */
 				min-residency-us = < 0x190 >;         /* in deps\zephyr\dts\arm\st\f4\stm32f4.dtsi:51 */
 				exit-latency-us = < 0x12c >;          /* in deps\zephyr\dts\arm\st\f4\stm32f4.dtsi:52 */
-				phandle = < 0x19 >;                   /* in deps\zephyr\dts\arm\st\f4\stm32f4.dtsi:38 */
+				phandle = < 0x1a >;                   /* in deps\zephyr\dts\arm\st\f4\stm32f4.dtsi:38 */
 			};
 		};
 	};
@@ -994,7 +1022,7 @@
 			hse-bypass;                        /* in deps\zephyr\boards\st\nucleo_f401re\nucleo_f401re.dts:70 */
 			clock-frequency = < 0x7a1200 >;    /* in deps\zephyr\boards\st\nucleo_f401re\nucleo_f401re.dts:71 */
 			status = "okay";                   /* in deps\zephyr\boards\st\nucleo_f401re\nucleo_f401re.dts:72 */
-			phandle = < 0x1a >;                /* in deps\zephyr\boards\st\nucleo_f401re\nucleo_f401re.dts:80 */
+			phandle = < 0x1b >;                /* in deps\zephyr\boards\st\nucleo_f401re\nucleo_f401re.dts:80 */
 		};
 
 		/* node '/clocks/clk-hsi' defined in deps\zephyr\dts\arm\st\f4\stm32f4.dtsi:69 */
@@ -1169,7 +1197,6 @@
 		           < 0x13 0x0 &gpioa 0x5 0x0 >,
 		           < 0x14 0x0 &gpiob 0x9 0x0 >,
 		           < 0x15 0x0 &gpiob 0x8 0x0 >;    /* in deps\zephyr\boards\st\nucleo_f401re\arduino_r3_connector.dtsi:15 */
-		phandle = < 0x27 >;                        /* in ..\..\..\..\..\..\zephyr\TM1638\app.overlay:23 */
 	};
 
 	/* node '/st-morpho-header' defined in deps\zephyr\boards\st\nucleo_f401re\st_morpho_connector.dtsi:10 */
@@ -1265,8 +1292,12 @@
 
 	/* node '/zephyr,user' defined in ..\..\..\..\..\..\zephyr\TM1638\app.overlay:22 */
 	zephyr,user {
-		tm1638-stb-gpios = < &arduino_header 0x2 0x0 >; /* in ..\..\..\..\..\..\zephyr\TM1638\app.overlay:23 */
-		tm1638-clk-gpios = < &arduino_header 0x4 0x0 >; /* in ..\..\..\..\..\..\zephyr\TM1638\app.overlay:24 */
-		tm1638-dio-gpios = < &arduino_header 0x7 0x0 >; /* in ..\..\..\..\..\..\zephyr\TM1638\app.overlay:25 */
+		tm1638-stb-gpios = < &gpioa 0xa 0x0 >; /* in ..\..\..\..\..\..\zephyr\TM1638\app.overlay:23 */
+		tm1638-clk-gpios = < &gpiob 0x5 0x0 >; /* in ..\..\..\..\..\..\zephyr\TM1638\app.overlay:24 */
+		tm1638-dio-gpios = < &gpioa 0x8 0x0 >; /* in ..\..\..\..\..\..\zephyr\TM1638\app.overlay:25 */
+		io-channels = < &adc1 0x0 >,
+		              < &adc1 0x1 >;           /* in ..\..\..\..\..\..\zephyr\TM1638\app.overlay:27 */
+		io-channel-names = "temp",
+		                   "lumens";           /* in ..\..\..\..\..\..\zephyr\TM1638\app.overlay:28 */
 	};
 };

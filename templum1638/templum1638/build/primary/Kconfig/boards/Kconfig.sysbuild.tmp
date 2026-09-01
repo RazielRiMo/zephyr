@@ -1,0 +1,2 @@
+# Load Sysbuild board Kconfig descriptions.
+osource "C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/boards/st/nucleo_f401re/Kconfig.sysbuild"

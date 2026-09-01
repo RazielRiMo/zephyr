@@ -1,0 +1,8 @@
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/modules/hal/cmsis_6/CMSIS/Core/Include/core_cm4.h:1794:22:__NVIC_EnableIRQ	0	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/modules/hal/cmsis_6/CMSIS/Core/Include/core_cm4.h:1832:22:__NVIC_DisableIRQ	0	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/modules/hal/cmsis_6/CMSIS/Core/Include/core_cm4.h:1924:22:__NVIC_SetPriority	0	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/arch/arm/core/cortex_m/irq_manage.c:56:6:arm_irq_enable	8	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/arch/arm/core/cortex_m/irq_manage.c:61:6:arm_irq_disable	8	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/arch/arm/core/cortex_m/irq_manage.c:66:5:arm_irq_is_enabled	0	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/arch/arm/core/cortex_m/irq_manage.c:80:6:arm_irq_priority_set	8	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/arch/arm/core/cortex_m/irq_manage.c:125:6:z_irq_spurious	8	static

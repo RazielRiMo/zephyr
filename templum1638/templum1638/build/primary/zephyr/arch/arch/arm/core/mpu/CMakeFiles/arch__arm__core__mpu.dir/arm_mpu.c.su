@@ -1,0 +1,15 @@
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/arch/arm/core/mpu/arm_mpu_v7_internal.h:29:13:region_init	0	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/arch/arm/core/mpu/arm_mpu_v7_internal.h:63:12:mpu_partition_is_valid	0	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/arch/arm/core/mpu/arm_mpu.c:82:12:region_allocate_and_init	8	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/arch/arm/core/mpu/arm_mpu.c:190:12:mpu_configure_region	24	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/arch/arm/core/mpu/arm_mpu.c:216:12:mpu_configure_regions	32	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/arch/arm/core/mpu/arm_mpu_v7_internal.h:220:12:mpu_configure_static_mpu_regions	8	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/arch/arm/core/mpu/arm_mpu_v7_internal.h:249:12:mpu_configure_dynamic_mpu_regions	8	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/arch/arm/core/mpu/arm_mpu.c:110:12:mpu_configure_regions_from_dt	40	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/arch/arm/core/mpu/arm_mpu.c:291:6:arm_core_mpu_enable	0	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/arch/arm/core/mpu/arm_mpu.c:310:6:arm_core_mpu_disable	0	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/arch/arm/core/mpu/arm_mpu.c:386:6:arm_core_mpu_configure_static_mpu_regions	8	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/arch/arm/core/mpu/arm_mpu.c:418:6:arm_core_mpu_configure_dynamic_mpu_regions	8	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/arch/arm/core/mpu/arm_mpu.c:433:6:z_arm_save_mpu_context	4	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/arch/arm/core/mpu/arm_mpu.c:464:6:z_arm_restore_mpu_context	8	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/arch/arm/core/mpu/arm_mpu.c:503:5:z_arm_mpu_init	16	static

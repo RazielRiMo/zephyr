@@ -1,0 +1,11 @@
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/include/zephyr/sys/cbprintf.h:528:19:z_cbprintf_cpy	16	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/include/zephyr/sys/cbprintf.h:576:19:cbprintf_package_copy	40	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/subsys/logging/log_msg.c:31:6:z_log_msg_finalize	16	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/subsys/logging/log_msg.c:96:13:z_log_msg_simple_create	40	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/subsys/logging/log_msg.c:133:6:z_impl_z_log_msg_simple_create_0	16	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/subsys/logging/log_msg.c:182:6:z_impl_z_log_msg_simple_create_1	16	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/subsys/logging/log_msg.c:232:6:z_impl_z_log_msg_simple_create_2	24	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/subsys/logging/log_msg.c:283:6:z_impl_z_log_msg_static_create	120	dynamic,bounded
+C:/zephyr/templum1638/templum1638/build/primary/zephyr/include/generated/zephyr/syscalls/log_msg.h:107:20:z_log_msg_static_create	8	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/subsys/logging/log_msg.c:370:6:z_log_msg_runtime_vcreate	56	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/subsys/logging/log_msg.c:438:9:log_msg_get_source_id	0	static

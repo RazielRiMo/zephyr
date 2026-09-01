@@ -1,0 +1,3 @@
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/drivers/adc/adc_common.c:38:5:adc_gain_invert	4	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/drivers/adc/adc_common.c:54:5:adc_gain_invert_64	16	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/drivers/adc/adc_common.c:70:5:adc_sequence_validate_buffer	0	static

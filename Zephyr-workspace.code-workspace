@@ -14,6 +14,14 @@
 		{
 			"name": "TM1638",
 			"path": "TM1638"
+		},
+		{
+			"name": "TM1638",
+			"path": "esp32/TM1638"
+		},
+		{
+			"name": "templum1638",
+			"path": "templum1638/templum1638"
 		}
 	],
 	"settings": {

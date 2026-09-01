@@ -1,5 +1,5 @@
 #include <zephyr/dt-bindings/gpio/gpio.h>
-
+#include <zephyr/dt-bindings/adc/adc.h>
 /*
  * Patron "zephyr,user": forma estandar de Zephyr para pasarle GPIOs
  * sueltos a la aplicacion sin necesidad de escribir un devicetree
@@ -20,8 +20,39 @@
  */
 / {
 	zephyr,user {
-		tm1638-stb-gpios = <&arduino_header 2 GPIO_ACTIVE_HIGH>;
-		tm1638-clk-gpios = <&arduino_header 4 GPIO_ACTIVE_HIGH>;
-		tm1638-dio-gpios = <&arduino_header 7 GPIO_ACTIVE_HIGH>;
+		tm1638-stb-gpios = <&gpioa 10 GPIO_ACTIVE_HIGH>;
+		tm1638-clk-gpios = <&gpiob 5 GPIO_ACTIVE_HIGH>;
+		tm1638-dio-gpios = <&gpioa 8 GPIO_ACTIVE_HIGH>;
+
+		io-channels = <&adc1 0>, <&adc1 1>;
+		io-channel-names = "temp", "lumens";
 	};
 };
+
+/* DEVICETREE-MANAGER-BEGIN: generated region, do not edit inside this block */
+&adc1 {
+	#address-cells = <1>;
+	#size-cells = <0>;
+    	pinctrl-names = "default";
+    	pinctrl-0 = <&analog_pa0 &analog_pa1>;
+    	status = "okay";
+	channel@0{
+		reg = <0>;
+		zephyr,gain = "ADC_GAIN_1";
+		zephyr,reference = "ADC_REF_INTERNAL";
+		zephyr,vref-mv = <3300>;
+		zephyr,acquisition-time = <ADC_ACQ_TIME(ADC_ACQ_TIME_MICROSECONDS, 40)>;
+		zephyr,resolution = <12>;
+	};
+	channel@1{
+		reg = <1>;
+		zephyr,gain = "ADC_GAIN_1";
+		zephyr,reference = "ADC_REF_INTERNAL";
+		zephyr,vref-mv = <3300>;
+		zephyr,acquisition-time = <ADC_ACQ_TIME(ADC_ACQ_TIME_MICROSECONDS, 40)>;
+		zephyr,resolution = <12>;
+	};
+
+
+};
+/* DEVICETREE-MANAGER-END */

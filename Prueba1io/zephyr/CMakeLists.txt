@@ -1,6 +1,12 @@
-cmake_minimum_required(VERSION 3.13.1)
-include($ENV{ZEPHYR_BASE}/cmake/app/boilerplate.cmake NO_POLICY_SCOPE)
-project(Prueba1io)
-
-FILE(GLOB app_sources ../src/*.c*)
-target_sources(app PRIVATE ${app_sources})
+cmake_minimum_required(VERSION 3.20.0)
+ 
+find_package(Zephyr REQUIRED HINTS $ENV{ZEPHYR_BASE})
+project(tm1638_demo)
+ 
+target_sources(app PRIVATE
+  ../src/main.c
+  ../src/tm1638.c
+)
+ 
+target_include_directories(app PRIVATE ../src)
+ 

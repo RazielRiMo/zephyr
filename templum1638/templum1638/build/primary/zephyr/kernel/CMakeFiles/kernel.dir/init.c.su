@@ -1,0 +1,10 @@
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/kernel/init.c:363:13:init_idle_thread	32	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/kernel/init.c:220:13:z_sys_init_run_level	16	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/kernel/include/kthread.h:51:20:thread_schedule_new	8	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/kernel/init.c:66:13:z_init_static_threads	32	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/kernel/init.c:283:13:bg_thread_main	8	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/kernel/init.c:476:27:switch_to_main_thread	8	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/kernel/init.c:393:6:z_init_cpu	8	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/kernel/init.c:442:14:prepare_multithreading	40	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/kernel/init.c:494:13:z_early_rand_get	24	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/kernel/init.c:538:20:z_cstart	8	static

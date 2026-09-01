@@ -1,0 +1,14 @@
+/*
+ * Overlay de ejemplo para el board nucleo_f411re.
+ * Para otro board, cambia "&i2c1" por el nodelabel real de tu bus
+ * I2C (revisa el .dts de tu board o la salida de `west build -t menuconfig`).
+ */
+&i2c1 {
+	status = "okay";
+
+	bmp280: bmp280@76 {
+		compatible = "bosch,bmp280";
+		reg = <0x76>;
+		status = "okay";
+	};
+};

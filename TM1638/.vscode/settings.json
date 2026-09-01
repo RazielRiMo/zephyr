@@ -3,7 +3,8 @@
     {
       "name": "primary",
       "board": "nucleo_f401re",
-      "active": "true"
+      "active": "true",
+      "default-runner": "stm32cubeprogrammer"
     }
   ],
   "zephyr-workbench.westWorkspace": "${workspaceFolder}/../../Users/razie/OneDrive/Documentos/PowerShell/STM32",

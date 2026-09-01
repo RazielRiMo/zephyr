@@ -1,0 +1,4 @@
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/drivers/clock_control/clock_stm32f2_f4_f7.c:92:17:get_pll_source	0	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/drivers/clock_control/clock_stm32f2_f4_f7.c:107:10:get_pllsrc_frequency	0	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/drivers/clock_control/clock_stm32f2_f4_f7.c:122:6:config_pll_sysclock	8	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/drivers/clock_control/clock_stm32f2_f4_f7.c:416:6:config_enable_default_clocks	8	static

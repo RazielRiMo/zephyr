@@ -454,55 +454,78 @@
     "CONFIG_INPUT",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      48
+    ]
   ],
   [
     "CONFIG_WIFI",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      49
+    ]
+  ],
+  [
+    "CONFIG_ADC_INIT_PRIORITY",
+    "y",
+    "int",
+    "50",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      50
+    ]
   ],
   [
     "CONFIG_MAIN_STACK_SIZE",
     "y",
     "int",
     "1024",
-    "default",
+    "assign",
     [
-      "C:\\Users\\razie\\OneDrive\\Documentos\\PowerShell\\STM32\\deps\\zephyr\\kernel\\Kconfig",
-      164
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      51
     ]
   ],
   [
     "CONFIG_REGULATOR",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      52
+    ]
   ],
   [
     "CONFIG_SYSTEM_WORKQUEUE_STACK_SIZE",
     "y",
     "int",
     "1024",
-    "default",
+    "assign",
     [
-      "C:\\Users\\razie\\OneDrive\\Documentos\\PowerShell\\STM32\\deps\\zephyr\\kernel\\Kconfig",
-      607
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      53
     ]
   ],
   [
     "CONFIG_FPU",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      54
+    ]
   ],
   [
     "CONFIG_SERIAL",
@@ -511,57 +534,75 @@
     "y",
     "assign",
     [
-      "C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/boards/st/nucleo_f401re/nucleo_f401re_defconfig",
-      9
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      55
     ]
   ],
   [
     "CONFIG_SPI",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      56
+    ]
   ],
   [
     "CONFIG_MIPI_DSI",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      57
+    ]
   ],
   [
     "CONFIG_MEMC",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      58
+    ]
   ],
   [
     "CONFIG_MODEM",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      59
+    ]
   ],
   [
     "CONFIG_UART_INTERRUPT_DRIVEN",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      60
+    ]
   ],
   [
     "CONFIG_GPIO_HOGS",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      61
+    ]
   ],
   [
     "CONFIG_NUM_IRQS",
@@ -579,10 +620,10 @@
     "y",
     "int",
     "84000000",
-    "default",
+    "assign",
     [
-      "C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/soc/st/stm32/Kconfig.defconfig",
-      70
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      63
     ]
   ],
   [
@@ -590,10 +631,10 @@
     "y",
     "int",
     "512",
-    "default",
+    "assign",
     [
-      "C:\\Users\\razie\\OneDrive\\Documentos\\PowerShell\\STM32\\deps\\zephyr\\arch\\Kconfig",
-      262
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      64
     ]
   ],
   [
@@ -601,10 +642,10 @@
     "y",
     "hex",
     "0x8000000",
-    "default",
+    "assign",
     [
-      "C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/soc/st/stm32/Kconfig.defconfig",
-      114
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      65
     ]
   ],
   [
@@ -612,19 +653,22 @@
     "y",
     "int",
     "1",
-    "default",
+    "assign",
     [
-      "C:\\Users\\razie\\OneDrive\\Documentos\\PowerShell\\STM32\\deps\\zephyr\\kernel\\Kconfig.smp",
-      43
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      66
     ]
   ],
   [
     "CONFIG_SOC_RESET_HOOK",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      67
+    ]
   ],
   [
     "CONFIG_DCACHE_LINE_SIZE",
@@ -653,10 +697,10 @@
     "y",
     "int",
     "320",
-    "default",
+    "assign",
     [
-      "C:\\Users\\razie\\OneDrive\\Documentos\\PowerShell\\STM32\\deps\\zephyr\\kernel\\Kconfig",
-      178
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      70
     ]
   ],
   [
@@ -664,10 +708,10 @@
     "y",
     "int",
     "2048",
-    "default",
+    "assign",
     [
-      "C:\\Users\\razie\\OneDrive\\Documentos\\PowerShell\\STM32\\deps\\zephyr\\kernel\\Kconfig",
-      188
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      71
     ]
   ],
   [
@@ -675,10 +719,10 @@
     "y",
     "bool",
     "y",
-    "default",
+    "assign",
     [
-      "C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/soc/st/stm32/Kconfig.defconfig",
-      18
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      72
     ]
   ],
   [
@@ -686,10 +730,10 @@
     "y",
     "int",
     "10000",
-    "default",
+    "assign",
     [
-      "C:\\Users\\razie\\OneDrive\\Documentos\\PowerShell\\STM32\\deps\\zephyr\\kernel\\Kconfig",
-      829
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      73
     ]
   ],
   [
@@ -697,10 +741,10 @@
     "y",
     "bool",
     "y",
-    "default",
+    "assign",
     [
-      "C:\\Users\\razie\\OneDrive\\Documentos\\PowerShell\\STM32\\deps\\zephyr\\Kconfig.zephyr",
-      833
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      74
     ]
   ],
   [
@@ -708,10 +752,10 @@
     "y",
     "hex",
     "0",
-    "default",
+    "assign",
     [
-      "C:\\Users\\razie\\OneDrive\\Documentos\\PowerShell\\STM32\\deps\\zephyr\\Kconfig.zephyr",
-      165
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      75
     ]
   ],
   [
@@ -719,10 +763,10 @@
     "y",
     "string",
     "__start",
-    "default",
+    "assign",
     [
-      "C:\\Users\\razie\\OneDrive\\Documentos\\PowerShell\\STM32\\deps\\zephyr\\Kconfig.zephyr",
-      237
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      76
     ]
   ],
   [
@@ -730,9 +774,10 @@
     "y",
     "bool",
     "y",
-    "imply",
+    "assign",
     [
-      "CPU_CORTEX_M && ARM"
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      77
     ]
   ],
   [
@@ -749,25 +794,34 @@
     "CONFIG_COUNTER",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      79
+    ]
   ],
   [
     "CONFIG_SRAM_VECTOR_TABLE",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      80
+    ]
   ],
   [
     "CONFIG_SHARED_INTERRUPTS",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      81
+    ]
   ],
   [
     "CONFIG_CPU_HAS_ARM_MPU",
@@ -784,45 +838,54 @@
     "y",
     "bool",
     "y",
-    "default",
+    "assign",
     [
-      "C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/soc/st/stm32/Kconfig",
-      42
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      83
     ]
   ],
   [
     "CONFIG_PM_DEVICE",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      84
+    ]
   ],
   [
     "CONFIG_OTP",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      85
+    ]
   ],
   [
     "CONFIG_NVMEM",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      86
+    ]
   ],
   [
     "CONFIG_TICKLESS_KERNEL",
     "y",
     "bool",
     "y",
-    "default",
+    "assign",
     [
-      "C:\\Users\\razie\\OneDrive\\Documentos\\PowerShell\\STM32\\deps\\zephyr\\kernel\\Kconfig",
-      1090
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      87
     ]
   ],
   [
@@ -830,10 +893,10 @@
     "y",
     "bool",
     "y",
-    "default",
+    "assign",
     [
-      "C:\\Users\\razie\\OneDrive\\Documentos\\PowerShell\\STM32\\deps\\zephyr\\drivers\\timer\\Kconfig.cortex_m_systick",
-      9
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      88
     ]
   ],
   [
@@ -841,83 +904,98 @@
     "y",
     "int",
     "1",
-    "default",
+    "assign",
     [
-      "C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/soc/st/stm32/Kconfig.defconfig",
-      101
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      89
     ]
   ],
   [
     "CONFIG_USE_DT_CODE_PARTITION",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      90
+    ]
   ],
   [
     "CONFIG_STM32_BACKUP_PROTECTION",
     "y",
     "bool",
     "y",
-    "default",
+    "assign",
     [
-      "C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/soc/st/stm32/Kconfig.defconfig",
-      136
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      91
     ]
   ],
   [
     "CONFIG_MULTI_LEVEL_INTERRUPTS",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      92
+    ]
   ],
   [
     "CONFIG_PM",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      93
+    ]
   ],
   [
     "CONFIG_ZERO_LATENCY_IRQS",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      94
+    ]
   ],
   [
     "CONFIG_NUM_METAIRQ_PRIORITIES",
     "y",
     "int",
     "0",
-    "default",
+    "assign",
     [
-      "C:\\Users\\razie\\OneDrive\\Documentos\\PowerShell\\STM32\\deps\\zephyr\\kernel\\Kconfig",
-      97
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      95
     ]
   ],
   [
     "CONFIG_POWER_DOMAIN",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      96
+    ]
   ],
   [
     "CONFIG_NUM_PREEMPT_PRIORITIES",
     "y",
     "int",
     "15",
-    "default",
+    "assign",
     [
-      "C:\\Users\\razie\\OneDrive\\Documentos\\PowerShell\\STM32\\deps\\zephyr\\kernel\\Kconfig",
-      55
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      97
     ]
   ],
   [
@@ -935,48 +1013,54 @@
     "y",
     "bool",
     "y",
-    "default",
+    "assign",
     [
-      "C:\\Users\\razie\\OneDrive\\Documentos\\PowerShell\\STM32\\deps\\zephyr\\arch\\Kconfig",
-      551
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      99
     ]
   ],
   [
     "CONFIG_DYNAMIC_INTERRUPTS",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      100
+    ]
   ],
   [
     "CONFIG_GEN_ISR_TABLES",
     "y",
     "bool",
     "y",
-    "default",
+    "assign",
     [
-      "C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/arch/arm\\core\\cortex_m/Kconfig",
-      326
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      101
     ]
   ],
   [
     "CONFIG_INIT_STACKS",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      102
+    ]
   ],
   [
     "CONFIG_TIMESLICE_SIZE",
     "y",
     "int",
     "20",
-    "default",
+    "assign",
     [
-      "C:\\Users\\razie\\OneDrive\\Documentos\\PowerShell\\STM32\\deps\\zephyr\\kernel\\Kconfig",
-      689
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      103
     ]
   ],
   [
@@ -984,10 +1068,10 @@
     "y",
     "hex",
     "0",
-    "default",
+    "assign",
     [
-      "C:\\Users\\razie\\OneDrive\\Documentos\\PowerShell\\STM32\\deps\\zephyr\\Kconfig.zephyr",
-      135
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      104
     ]
   ],
   [
@@ -995,59 +1079,77 @@
     "y",
     "bool",
     "y",
-    "default",
+    "assign",
     [
-      "C:\\Users\\razie\\OneDrive\\Documentos\\PowerShell\\STM32\\deps\\zephyr\\kernel\\Kconfig",
-      865
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      105
     ]
   ],
   [
     "CONFIG_INIT_ARCH_HW_AT_BOOT",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      106
+    ]
   ],
   [
     "CONFIG_BUILD_OUTPUT_S19",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      107
+    ]
   ],
   [
     "CONFIG_ROMSTART_RELOCATION_ROM",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      108
+    ]
   ],
   [
     "CONFIG_FLASH",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      109
+    ]
   ],
   [
     "CONFIG_CODE_DATA_RELOCATION",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      110
+    ]
   ],
   [
     "CONFIG_CPU_HAS_CUSTOM_FIXED_SOC_MPU_REGIONS",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      111
+    ]
   ],
   [
     "CONFIG_HW_STACK_PROTECTION",
@@ -1056,8 +1158,8 @@
     "y",
     "assign",
     [
-      "C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/boards/st/nucleo_f401re/nucleo_f401re_defconfig",
-      7
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      112
     ]
   ],
   [
@@ -1067,57 +1169,75 @@
     "y",
     "assign",
     [
-      "C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/boards/st/nucleo_f401re/nucleo_f401re_defconfig",
-      16
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      113
     ]
   ],
   [
     "CONFIG_SYSTEM_CLOCK_HW_CYCLES_PER_SEC_RUNTIME_UPDATE",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      114
+    ]
   ],
   [
     "CONFIG_MFD",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      115
+    ]
   ],
   [
     "CONFIG_CODE_DATA_RELOCATION_SRAM",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      116
+    ]
   ],
   [
     "CONFIG_CACHE",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      117
+    ]
   ],
   [
     "CONFIG_LOG",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "y",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      118
+    ]
   ],
   [
     "CONFIG_PM_CPU_OPS",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      119
+    ]
   ],
   [
     "CONFIG_RESET",
@@ -1134,46 +1254,77 @@
     "y",
     "int",
     "4",
-    "default",
+    "assign",
     [
-      "C:\\Users\\razie\\OneDrive\\Documentos\\PowerShell\\STM32\\deps\\zephyr\\arch\\Kconfig",
-      609
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      121
+    ]
+  ],
+  [
+    "CONFIG_LOG_DOMAIN_NAME",
+    "y",
+    "string",
+    "",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      122
     ]
   ],
   [
     "CONFIG_ASSERT",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      123
+    ]
+  ],
+  [
+    "CONFIG_LOG_PROCESS_THREAD_STACK_SIZE",
+    "y",
+    "int",
+    "768",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      124
+    ]
   ],
   [
     "CONFIG_DEVICE_DEPS",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      125
+    ]
   ],
   [
     "CONFIG_UART_USE_RUNTIME_CONFIGURE",
     "y",
     "bool",
     "y",
-    "default",
+    "assign",
     [
-      "C:\\Users\\razie\\OneDrive\\Documentos\\PowerShell\\STM32\\deps\\zephyr\\drivers\\serial\\Kconfig",
-      53
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      126
     ]
   ],
   [
     "CONFIG_SYSCON",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      127
+    ]
   ],
   [
     "CONFIG_SOC_EARLY_INIT_HOOK",
@@ -1192,27 +1343,30 @@
     "y",
     "assign",
     [
-      "C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/boards/st/nucleo_f401re/nucleo_f401re_defconfig",
-      12
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      129
     ]
   ],
   [
     "CONFIG_WINSTREAM",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      130
+    ]
   ],
   [
     "CONFIG_COMMON_LIBC_MALLOC_ARENA_SIZE",
     "y",
     "int",
     "-1",
-    "default",
+    "assign",
     [
-      "C:\\Users\\razie\\OneDrive\\Documentos\\PowerShell\\STM32\\deps\\zephyr\\lib\\libc\\common\\Kconfig",
-      64
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      131
     ]
   ],
   [
@@ -1220,19 +1374,22 @@
     "y",
     "bool",
     "y",
-    "default",
+    "assign",
     [
-      "C:\\Users\\razie\\OneDrive\\Documentos\\PowerShell\\STM32\\deps\\zephyr\\arch\\Kconfig",
-      598
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      132
     ]
   ],
   [
     "CONFIG_REBOOT",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      133
+    ]
   ],
   [
     "CONFIG_GEN_IRQ_START_VECTOR",
@@ -1261,10 +1418,10 @@
     "y",
     "int",
     "4",
-    "default",
+    "assign",
     [
-      "C:\\Users\\razie\\OneDrive\\Documentos\\PowerShell\\STM32\\deps\\zephyr\\arch\\Kconfig",
-      563
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      136
     ]
   ],
   [
@@ -1282,27 +1439,33 @@
     "CONFIG_BOOTLOADER_MCUBOOT",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      138
+    ]
   ],
   [
     "CONFIG_SCHED_CPU_MASK",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      139
+    ]
   ],
   [
     "CONFIG_KERNEL_MEM_POOL",
     "y",
     "bool",
     "y",
-    "default",
+    "assign",
     [
-      "C:\\Users\\razie\\OneDrive\\Documentos\\PowerShell\\STM32\\deps\\zephyr\\kernel\\Kconfig",
-      771
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      140
     ]
   ],
   [
@@ -1310,10 +1473,10 @@
     "y",
     "bool",
     "y",
-    "default",
+    "assign",
     [
-      "C:\\Users\\razie\\OneDrive\\Documentos\\PowerShell\\STM32\\deps\\zephyr\\kernel\\Kconfig",
-      14
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      141
     ]
   ],
   [
@@ -1323,44 +1486,53 @@
     "y",
     "assign",
     [
-      "C:/zephyr/TM1638/prj.conf",
-      15
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      142
     ]
   ],
   [
     "CONFIG_OUTPUT_DISASSEMBLE_ALL",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      143
+    ]
   ],
   [
     "CONFIG_LINKER_USE_RELAX",
     "y",
     "bool",
     "y",
-    "default",
+    "assign",
     [
-      "C:\\Users\\razie\\OneDrive\\Documentos\\PowerShell\\STM32\\deps\\zephyr\\Kconfig.zephyr",
-      349
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      144
     ]
   ],
   [
     "CONFIG_WATCHDOG",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      145
+    ]
   ],
   [
     "CONFIG_BUILD_ONLY_NO_BLOBS",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      150
+    ]
   ],
   [
     "CONFIG_TAINT_BLOBS",
@@ -1408,9 +1580,12 @@
     "CONFIG_CMSIS_M_CHECK_DEVICE_DEFINES",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      163
+    ]
   ],
   [
     "CONFIG_ZEPHYR_HAL_STM32_MODULE",
@@ -1460,17 +1635,23 @@
     "CONFIG_PSA_CRYPTO",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      174
+    ]
   ],
   [
     "CONFIG_MBEDTLS",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      175
+    ]
   ],
   [
     "CONFIG_ZEPHYR_MCUBOOT_MODULE",
@@ -1487,9 +1668,12 @@
     "CONFIG_PERCEPIO_DFM",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      187
+    ]
   ],
   [
     "CONFIG_ZEPHYR_PERCEPIO_MODULE",
@@ -1506,9 +1690,12 @@
     "CONFIG_PICOLIBC_MODULE",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      194
+    ]
   ],
   [
     "CONFIG_ZEPHYR_PICOLIBC_MODULE",
@@ -1546,9 +1733,12 @@
     "CONFIG_USE_SEGGER_RTT",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      203
+    ]
   ],
   [
     "CONFIG_ZEPHYR_TF_PSA_CRYPTO_MODULE",
@@ -1576,33 +1766,45 @@
     "CONFIG_LVGL",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      214
+    ]
   ],
   [
     "CONFIG_HAS_MEC_HAL",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      215
+    ]
   ],
   [
     "CONFIG_HAS_MPFS_HAL",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      216
+    ]
   ],
   [
     "CONFIG_HAS_MEC5_HAL",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      217
+    ]
   ],
   [
     "CONFIG_HAS_STM32CUBE",
@@ -1638,41 +1840,56 @@
     "CONFIG_MIPI_SYST_LIB",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      221
+    ]
   ],
   [
     "CONFIG_HAS_TELINK_DRIVERS",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      222
+    ]
   ],
   [
     "CONFIG_MCUBOOT_BOOTUTIL_LIB",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      223
+    ]
   ],
   [
     "CONFIG_WIFI_NM_WPA_SUPPLICANT",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      224
+    ]
   ],
   [
     "CONFIG_ACPI",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      309
+    ]
   ],
   [
     "CONFIG_BOARD",
@@ -1711,9 +1928,12 @@
     "CONFIG_NET_DRIVERS",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      315
+    ]
   ],
   [
     "CONFIG_BOARD_NUCLEO_F401RE",
@@ -1815,27 +2035,33 @@
     "CONFIG_HWINFO",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      334
+    ]
   ],
   [
     "CONFIG_STM32_ENABLE_DEBUG_SLEEP_STOP",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      335
+    ]
   ],
   [
     "CONFIG_SWJ_ANALOG_PRIORITY",
     "y",
     "int",
     "49",
-    "default",
+    "assign",
     [
-      "C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/soc/st/stm32\\common\\Kconfig",
-      37
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      336
     ]
   ],
   [
@@ -1843,19 +2069,22 @@
     "y",
     "int",
     "50",
-    "default",
+    "assign",
     [
-      "C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/soc/st/stm32\\common\\Kconfig",
-      64
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      337
     ]
   ],
   [
     "CONFIG_STM32_XSPIM",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      338
+    ]
   ],
   [
     "CONFIG_HAS_STM32_FLASH_PREFETCH",
@@ -1871,19 +2100,81 @@
     "CONFIG_BUILD_OUTPUT_INFO_HEADER",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      340
+    ]
   ],
   [
     "CONFIG_GPIO_INIT_PRIORITY",
     "y",
     "int",
     "40",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      341
+    ]
+  ],
+  [
+    "CONFIG_SOC_LOG_LEVEL_OFF",
+    "y",
+    "bool",
+    null,
+    "unset",
+    null
+  ],
+  [
+    "CONFIG_SOC_LOG_LEVEL_ERR",
+    "y",
+    "bool",
+    null,
+    "unset",
+    null
+  ],
+  [
+    "CONFIG_SOC_LOG_LEVEL_WRN",
+    "y",
+    "bool",
+    null,
+    "unset",
+    null
+  ],
+  [
+    "CONFIG_SOC_LOG_LEVEL_INF",
+    "y",
+    "bool",
+    null,
+    "unset",
+    null
+  ],
+  [
+    "CONFIG_SOC_LOG_LEVEL_DBG",
+    "y",
+    "bool",
+    null,
+    "unset",
+    null
+  ],
+  [
+    "CONFIG_SOC_LOG_LEVEL_DEFAULT",
+    "y",
+    "bool",
+    "y",
+    "assign",
+    null
+  ],
+  [
+    "CONFIG_SOC_LOG_LEVEL",
+    "n",
+    "int",
+    "3",
     "default",
     [
-      "C:\\Users\\razie\\OneDrive\\Documentos\\PowerShell\\STM32\\deps\\zephyr\\drivers\\gpio\\Kconfig",
-      50
+      "C:\\Users\\razie\\OneDrive\\Documentos\\PowerShell\\STM32\\deps\\zephyr\\subsys\\logging\\Kconfig.template.log_config",
+      36
     ]
   ],
   [
@@ -1901,9 +2192,12 @@
     "CONFIG_EXTRA_EXCEPTION_INFO",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      352
+    ]
   ],
   [
     "CONFIG_ARCH_HAS_SINGLE_THREAD_SUPPORT",
@@ -1940,9 +2234,12 @@
     "CONFIG_MPU_ALLOW_FLASH_WRITE",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      356
+    ]
   ],
   [
     "CONFIG_CPU_CORTEX_M",
@@ -1958,9 +2255,12 @@
     "CONFIG_ARM_ZIMAGE_HEADER",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      362
+    ]
   ],
   [
     "CONFIG_ISA_THUMB2",
@@ -1988,10 +2288,10 @@
     "y",
     "bool",
     "y",
-    "default",
+    "assign",
     [
-      "C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/arch/arm\\core/Kconfig",
-      143
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      365
     ]
   ],
   [
@@ -1999,37 +2299,43 @@
     "y",
     "bool",
     "y",
-    "default",
+    "assign",
     [
-      "C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/arch/arm\\core/Kconfig",
-      161
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      366
     ]
   ],
   [
     "CONFIG_RUNTIME_NMI",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      367
+    ]
   ],
   [
     "CONFIG_PLATFORM_SPECIFIC_INIT",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      368
+    ]
   ],
   [
     "CONFIG_FAULT_DUMP",
     "y",
     "int",
     "2",
-    "default",
+    "assign",
     [
-      "C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/arch/arm\\core/Kconfig",
-      205
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      369
     ]
   ],
   [
@@ -2048,10 +2354,10 @@
     "y",
     "bool",
     "y",
-    "default",
+    "assign",
     [
-      "C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/arch/arm\\core/Kconfig",
-      336
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      371
     ]
   ],
   [
@@ -2059,11 +2365,8 @@
     "y",
     "bool",
     "y",
-    "default",
-    [
-      "C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/arch/arm\\core/Kconfig",
-      344
-    ]
+    "assign",
+    null
   ],
   [
     "CONFIG_FP16_ALT",
@@ -2157,44 +2460,53 @@
     "CONFIG_SW_VECTOR_RELAY",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      386
+    ]
   ],
   [
     "CONFIG_CORTEX_M_DWT",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      387
+    ]
   ],
   [
     "CONFIG_CORTEX_M_DEBUG_MONITOR_HOOK",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      388
+    ]
   ],
   [
     "CONFIG_TRAP_UNALIGNED_ACCESS",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      389
+    ]
   ],
   [
     "CONFIG_NULL_POINTER_EXCEPTION_DETECTION_NONE",
     "y",
     "bool",
     "y",
-    "default",
-    [
-      "C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/arch/arm\\core\\cortex_m/Kconfig",
-      420
-    ]
+    "assign",
+    null
   ],
   [
     "CONFIG_NULL_POINTER_EXCEPTION_DETECTION_DWT",
@@ -2216,9 +2528,12 @@
     "CONFIG_ARM_GCC_FP_WORKAROUND",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      395
+    ]
   ],
   [
     "CONFIG_MPU_STACK_GUARD",
@@ -2234,36 +2549,45 @@
     "CONFIG_MPU_DISABLE_BACKGROUND_MAP",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      397
+    ]
   ],
   [
     "CONFIG_CUSTOM_SECTION_ALIGN",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      398
+    ]
   ],
   [
     "CONFIG_CUSTOM_SECTION_MIN_ALIGN_SIZE",
     "y",
     "int",
     "32",
-    "default",
+    "assign",
     [
-      "C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/arch/arm\\core\\mpu/Kconfig",
-      65
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      399
     ]
   ],
   [
     "CONFIG_ARM_MPU_SRAM_WRITE_THROUGH",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      400
+    ]
   ],
   [
     "CONFIG_HAS_SWO",
@@ -2299,9 +2623,12 @@
     "CONFIG_SEMIHOST",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      410
+    ]
   ],
   [
     "CONFIG_ARCH_SUPPORTS_ROM_OFFSET",
@@ -2318,9 +2645,12 @@
     "CONFIG_EXCEPTION_DUMP_HOOK",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      412
+    ]
   ],
   [
     "CONFIG_ARM_MPU",
@@ -2329,8 +2659,67 @@
     "y",
     "assign",
     [
-      "C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/boards/st/nucleo_f401re/nucleo_f401re_defconfig",
-      4
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      413
+    ]
+  ],
+  [
+    "CONFIG_ARCH_LOG_LEVEL_OFF",
+    "y",
+    "bool",
+    null,
+    "unset",
+    null
+  ],
+  [
+    "CONFIG_ARCH_LOG_LEVEL_ERR",
+    "y",
+    "bool",
+    null,
+    "unset",
+    null
+  ],
+  [
+    "CONFIG_ARCH_LOG_LEVEL_WRN",
+    "y",
+    "bool",
+    null,
+    "unset",
+    null
+  ],
+  [
+    "CONFIG_ARCH_LOG_LEVEL_INF",
+    "y",
+    "bool",
+    null,
+    "unset",
+    null
+  ],
+  [
+    "CONFIG_ARCH_LOG_LEVEL_DBG",
+    "y",
+    "bool",
+    null,
+    "unset",
+    null
+  ],
+  [
+    "CONFIG_ARCH_LOG_LEVEL_DEFAULT",
+    "y",
+    "bool",
+    "y",
+    "assign",
+    null
+  ],
+  [
+    "CONFIG_ARCH_LOG_LEVEL",
+    "n",
+    "int",
+    "3",
+    "default",
+    [
+      "C:\\Users\\razie\\OneDrive\\Documentos\\PowerShell\\STM32\\deps\\zephyr\\subsys\\logging\\Kconfig.template.log_config",
+      36
     ]
   ],
   [
@@ -2349,10 +2738,10 @@
     "y",
     "int",
     "96",
-    "default",
+    "assign",
     [
-      "C:\\Users\\razie\\OneDrive\\Documentos\\PowerShell\\STM32\\deps\\zephyr\\arch\\Kconfig",
-      231
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      422
     ]
   ],
   [
@@ -2360,27 +2749,33 @@
     "y",
     "hex",
     "0x20000000",
-    "default",
+    "assign",
     [
-      "C:\\Users\\razie\\OneDrive\\Documentos\\PowerShell\\STM32\\deps\\zephyr\\arch\\Kconfig",
-      239
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      423
     ]
   ],
   [
     "CONFIG_USERSPACE",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      424
+    ]
   ],
   [
     "CONFIG_NOINIT_SNIPPET_FIRST",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      425
+    ]
   ],
   [
     "CONFIG_GEN_PRIV_STACKS",
@@ -2396,35 +2791,44 @@
     "CONFIG_STACK_GROWS_UP",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      427
+    ]
   ],
   [
     "CONFIG_FRAME_POINTER",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      428
+    ]
   ],
   [
     "CONFIG_ISR_TABLES_LOCAL_DECLARATION",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      433
+    ]
   ],
   [
     "CONFIG_ARCH_DEVICE_STATE_ALIGN",
     "y",
     "int",
     "4",
-    "default",
+    "assign",
     [
-      "C:\\Users\\razie\\OneDrive\\Documentos\\PowerShell\\STM32\\deps\\zephyr\\arch\\Kconfig",
-      573
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      434
     ]
   ],
   [
@@ -2432,11 +2836,8 @@
     "y",
     "bool",
     "y",
-    "default",
-    [
-      "C:\\Users\\razie\\OneDrive\\Documentos\\PowerShell\\STM32\\deps\\zephyr\\arch\\Kconfig",
-      581
-    ]
+    "assign",
+    null
   ],
   [
     "CONFIG_IRQ_VECTOR_TABLE_JUMP_BY_CODE",
@@ -2450,28 +2851,34 @@
     "CONFIG_SRAM_SW_ISR_TABLE",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      437
+    ]
   ],
   [
     "CONFIG_EXCEPTION_DEBUG",
     "y",
     "bool",
     "y",
-    "default",
+    "assign",
     [
-      "C:\\Users\\razie\\OneDrive\\Documentos\\PowerShell\\STM32\\deps\\zephyr\\arch\\Kconfig",
-      664
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      438
     ]
   ],
   [
     "CONFIG_SIMPLIFIED_EXCEPTION_CODES",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      439
+    ]
   ],
   [
     "CONFIG_ARCH_HAS_TIMING_FUNCTIONS",
@@ -2674,6 +3081,65 @@
     ]
   ],
   [
+    "CONFIG_MPU_LOG_LEVEL_OFF",
+    "y",
+    "bool",
+    null,
+    "unset",
+    null
+  ],
+  [
+    "CONFIG_MPU_LOG_LEVEL_ERR",
+    "y",
+    "bool",
+    null,
+    "unset",
+    null
+  ],
+  [
+    "CONFIG_MPU_LOG_LEVEL_WRN",
+    "y",
+    "bool",
+    null,
+    "unset",
+    null
+  ],
+  [
+    "CONFIG_MPU_LOG_LEVEL_INF",
+    "y",
+    "bool",
+    null,
+    "unset",
+    null
+  ],
+  [
+    "CONFIG_MPU_LOG_LEVEL_DBG",
+    "y",
+    "bool",
+    null,
+    "unset",
+    null
+  ],
+  [
+    "CONFIG_MPU_LOG_LEVEL_DEFAULT",
+    "y",
+    "bool",
+    "y",
+    "assign",
+    null
+  ],
+  [
+    "CONFIG_MPU_LOG_LEVEL",
+    "n",
+    "int",
+    "3",
+    "default",
+    [
+      "C:\\Users\\razie\\OneDrive\\Documentos\\PowerShell\\STM32\\deps\\zephyr\\subsys\\logging\\Kconfig.template.log_config",
+      36
+    ]
+  ],
+  [
     "CONFIG_MPU_REQUIRES_POWER_OF_TWO_ALIGNMENT",
     "n",
     "bool",
@@ -2697,9 +3163,12 @@
     "CONFIG_CACHE_DOUBLEMAP",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      486
+    ]
   ],
   [
     "CONFIG_TOOLCHAIN_HAS_BUILTIN_FFS",
@@ -2723,14 +3192,73 @@
     ]
   ],
   [
+    "CONFIG_KERNEL_LOG_LEVEL_OFF",
+    "y",
+    "bool",
+    null,
+    "unset",
+    null
+  ],
+  [
+    "CONFIG_KERNEL_LOG_LEVEL_ERR",
+    "y",
+    "bool",
+    null,
+    "unset",
+    null
+  ],
+  [
+    "CONFIG_KERNEL_LOG_LEVEL_WRN",
+    "y",
+    "bool",
+    null,
+    "unset",
+    null
+  ],
+  [
+    "CONFIG_KERNEL_LOG_LEVEL_INF",
+    "y",
+    "bool",
+    null,
+    "unset",
+    null
+  ],
+  [
+    "CONFIG_KERNEL_LOG_LEVEL_DBG",
+    "y",
+    "bool",
+    null,
+    "unset",
+    null
+  ],
+  [
+    "CONFIG_KERNEL_LOG_LEVEL_DEFAULT",
+    "y",
+    "bool",
+    "y",
+    "assign",
+    null
+  ],
+  [
+    "CONFIG_KERNEL_LOG_LEVEL",
+    "n",
+    "int",
+    "3",
+    "default",
+    [
+      "C:\\Users\\razie\\OneDrive\\Documentos\\PowerShell\\STM32\\deps\\zephyr\\subsys\\logging\\Kconfig.template.log_config",
+      36
+    ]
+  ],
+  [
     "CONFIG_NUM_COOP_PRIORITIES",
     "y",
     "int",
     "16",
-    "default",
+    "assign",
     [
-      "C:\\Users\\razie\\OneDrive\\Documentos\\PowerShell\\STM32\\deps\\zephyr\\kernel\\Kconfig",
-      30
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      502
     ]
   ],
   [
@@ -2738,10 +3266,10 @@
     "y",
     "int",
     "0",
-    "default",
+    "assign",
     [
-      "C:\\Users\\razie\\OneDrive\\Documentos\\PowerShell\\STM32\\deps\\zephyr\\kernel\\Kconfig",
-      73
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      503
     ]
   ],
   [
@@ -2771,19 +3299,22 @@
     "y",
     "int",
     "-128",
-    "default",
+    "assign",
     [
-      "C:\\Users\\razie\\OneDrive\\Documentos\\PowerShell\\STM32\\deps\\zephyr\\kernel\\Kconfig",
-      86
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      506
     ]
   ],
   [
     "CONFIG_SCHED_DEADLINE",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      507
+    ]
   ],
   [
     "CONFIG_THREAD_STACK_INFO",
@@ -2799,28 +3330,31 @@
     "CONFIG_THREAD_CUSTOM_DATA",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      509
+    ]
   ],
   [
     "CONFIG_DYNAMIC_THREAD",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      510
+    ]
   ],
   [
     "CONFIG_SCHED_SIMPLE",
     "y",
     "bool",
     "y",
-    "default",
-    [
-      "C:\\Users\\razie\\OneDrive\\Documentos\\PowerShell\\STM32\\deps\\zephyr\\kernel\\Kconfig",
-      305
-    ]
+    "assign",
+    null
   ],
   [
     "CONFIG_SCHED_SCALABLE",
@@ -2851,11 +3385,8 @@
     "y",
     "bool",
     "y",
-    "default",
-    [
-      "C:\\Users\\razie\\OneDrive\\Documentos\\PowerShell\\STM32\\deps\\zephyr\\kernel\\Kconfig",
-      358
-    ]
+    "assign",
+    null
   ],
   [
     "CONFIG_LIBC_ERRNO",
@@ -2872,10 +3403,10 @@
     "y",
     "bool",
     "y",
-    "default",
+    "assign",
     [
-      "C:\\Users\\razie\\OneDrive\\Documentos\\PowerShell\\STM32\\deps\\zephyr\\kernel\\Kconfig",
-      395
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      521
     ]
   ],
   [
@@ -2883,29 +3414,32 @@
     "y",
     "bool",
     "y",
-    "default",
+    "assign",
     [
-      "C:\\Users\\razie\\OneDrive\\Documentos\\PowerShell\\STM32\\deps\\zephyr\\kernel\\Kconfig",
-      419
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      522
     ]
   ],
   [
     "CONFIG_NONZERO_SPINLOCK_SIZE",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      523
+    ]
   ],
   [
     "CONFIG_BOOT_BANNER",
     "y",
     "bool",
     "y",
-    "default",
+    "assign",
     [
-      "C:\\Users\\razie\\OneDrive\\Documentos\\PowerShell\\STM32\\deps\\zephyr\\kernel\\Kconfig",
-      455
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      529
     ]
   ],
   [
@@ -2913,10 +3447,10 @@
     "y",
     "string",
     "Booting Zephyr OS build",
-    "default",
+    "assign",
     [
-      "C:\\Users\\razie\\OneDrive\\Documentos\\PowerShell\\STM32\\deps\\zephyr\\kernel\\Kconfig",
-      464
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      530
     ]
   ],
   [
@@ -2924,19 +3458,22 @@
     "y",
     "int",
     "0",
-    "default",
+    "assign",
     [
-      "C:\\Users\\razie\\OneDrive\\Documentos\\PowerShell\\STM32\\deps\\zephyr\\kernel\\Kconfig",
-      471
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      531
     ]
   ],
   [
     "CONFIG_BOOT_CLEAR_SCREEN",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      532
+    ]
   ],
   [
     "CONFIG_THREAD_MONITOR",
@@ -2963,72 +3500,87 @@
     "y",
     "int",
     "32",
-    "default",
+    "assign",
     [
-      "C:\\Users\\razie\\OneDrive\\Documentos\\PowerShell\\STM32\\deps\\zephyr\\kernel\\Kconfig",
-      502
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      535
     ]
   ],
   [
     "CONFIG_THREAD_RUNTIME_STATS",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      536
+    ]
   ],
   [
     "CONFIG_THREAD_RUNTIME_STACK_SAFETY",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      537
+    ]
   ],
   [
     "CONFIG_OBJ_CORE",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      540
+    ]
   ],
   [
     "CONFIG_WORKQUEUE_WORK_TIMEOUT",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      541
+    ]
   ],
   [
     "CONFIG_SYSTEM_WORKQUEUE_PRIORITY",
     "y",
     "int",
     "-1",
-    "default",
+    "assign",
     [
-      "C:\\Users\\razie\\OneDrive\\Documentos\\PowerShell\\STM32\\deps\\zephyr\\kernel\\Kconfig",
-      613
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      546
     ]
   ],
   [
     "CONFIG_SYSTEM_WORKQUEUE_NO_YIELD",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      547
+    ]
   ],
   [
     "CONFIG_SYSTEM_WORKQUEUE_WORK_TIMEOUT_MS",
     "y",
     "int",
     "0",
-    "default",
+    "assign",
     [
-      "C:\\Users\\razie\\OneDrive\\Documentos\\PowerShell\\STM32\\deps\\zephyr\\kernel\\Kconfig",
-      631
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      548
     ]
   ],
   [
@@ -3056,10 +3608,10 @@
     "y",
     "bool",
     "y",
-    "default",
+    "assign",
     [
-      "C:\\Users\\razie\\OneDrive\\Documentos\\PowerShell\\STM32\\deps\\zephyr\\kernel\\Kconfig",
-      681
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      566
     ]
   ],
   [
@@ -3067,89 +3619,109 @@
     "y",
     "int",
     "0",
-    "default",
+    "assign",
     [
-      "C:\\Users\\razie\\OneDrive\\Documentos\\PowerShell\\STM32\\deps\\zephyr\\kernel\\Kconfig",
-      700
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      567
     ]
   ],
   [
     "CONFIG_TIMESLICE_PER_THREAD",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      568
+    ]
   ],
   [
     "CONFIG_TIMER_OBSERVER",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      569
+    ]
   ],
   [
     "CONFIG_POLL",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "y",
+    "select",
+    [
+      "ADC_ASYNC && ADC"
+    ]
   ],
   [
     "CONFIG_MEM_SLAB_POINTER_VALIDATE",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      576
+    ]
   ],
   [
     "CONFIG_MEM_SLAB_TRACE_MAX_UTILIZATION",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      577
+    ]
   ],
   [
     "CONFIG_NUM_MBOX_ASYNC_MSGS",
     "y",
     "int",
     "10",
-    "default",
+    "assign",
     [
-      "C:\\Users\\razie\\OneDrive\\Documentos\\PowerShell\\STM32\\deps\\zephyr\\kernel\\Kconfig",
-      749
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      578
     ]
   ],
   [
     "CONFIG_EVENTS",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      579
+    ]
   ],
   [
     "CONFIG_HEAP_MEM_POOL_SIZE",
     "y",
     "int",
     "0",
-    "default",
+    "assign",
     [
-      "C:\\Users\\razie\\OneDrive\\Documentos\\PowerShell\\STM32\\deps\\zephyr\\kernel\\Kconfig",
-      781
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      580
     ]
   ],
   [
     "CONFIG_HEAP_MEM_POOL_IGNORE_MIN",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      581
+    ]
   ],
   [
     "CONFIG_SWAP_NONATOMIC",
@@ -3166,10 +3738,9 @@
     "y",
     "bool",
     "y",
-    "default",
+    "select",
     [
-      "C:\\Users\\razie\\OneDrive\\Documentos\\PowerShell\\STM32\\deps\\zephyr\\kernel\\Kconfig",
-      875
+      "MPSC_PBUF"
     ]
   ],
   [
@@ -3177,10 +3748,10 @@
     "y",
     "int",
     "365",
-    "default",
+    "assign",
     [
-      "C:\\Users\\razie\\OneDrive\\Documentos\\PowerShell\\STM32\\deps\\zephyr\\kernel\\Kconfig",
-      886
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      586
     ]
   ],
   [
@@ -3208,9 +3779,12 @@
     "CONFIG_USE_SWITCH",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      603
+    ]
   ],
   [
     "CONFIG_USE_SWITCH_SUPPORTED",
@@ -3226,9 +3800,12 @@
     "CONFIG_TICKET_SPINLOCKS",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      605
+    ]
   ],
   [
     "CONFIG_TOOLCHAIN_SUPPORTS_THREAD_LOCAL_STORAGE",
@@ -3265,51 +3842,66 @@
     "CONFIG_STATIC_INIT_GNU",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      611
+    ]
   ],
   [
     "CONFIG_BOOTARGS",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      612
+    ]
   ],
   [
     "CONFIG_DEVICE_MUTABLE",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      618
+    ]
   ],
   [
     "CONFIG_DEVICE_DT_METADATA",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      619
+    ]
   ],
   [
     "CONFIG_DEVICE_DEINIT_SUPPORT",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      620
+    ]
   ],
   [
     "CONFIG_KERNEL_INIT_PRIORITY_OBJECTS",
     "y",
     "int",
     "30",
-    "default",
+    "assign",
     [
-      "C:\\Users\\razie\\OneDrive\\Documentos\\PowerShell\\STM32\\deps\\zephyr\\kernel\\Kconfig.device",
-      50
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      626
     ]
   ],
   [
@@ -3317,10 +3909,10 @@
     "y",
     "int",
     "35",
-    "default",
+    "assign",
     [
-      "C:\\Users\\razie\\OneDrive\\Documentos\\PowerShell\\STM32\\deps\\zephyr\\kernel\\Kconfig.device",
-      58
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      627
     ]
   ],
   [
@@ -3328,10 +3920,10 @@
     "y",
     "int",
     "40",
-    "default",
+    "assign",
     [
-      "C:\\Users\\razie\\OneDrive\\Documentos\\PowerShell\\STM32\\deps\\zephyr\\kernel\\Kconfig.device",
-      66
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      628
     ]
   ],
   [
@@ -3339,10 +3931,10 @@
     "y",
     "int",
     "50",
-    "default",
+    "assign",
     [
-      "C:\\Users\\razie\\OneDrive\\Documentos\\PowerShell\\STM32\\deps\\zephyr\\kernel\\Kconfig.device",
-      72
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      629
     ]
   ],
   [
@@ -3350,133 +3942,369 @@
     "y",
     "int",
     "90",
-    "default",
+    "assign",
     [
-      "C:\\Users\\razie\\OneDrive\\Documentos\\PowerShell\\STM32\\deps\\zephyr\\kernel\\Kconfig.device",
-      80
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      630
     ]
   ],
   [
     "CONFIG_SOC_EARLY_RESET_HOOK",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      646
+    ]
   ],
   [
     "CONFIG_SOC_PREP_HOOK",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      647
+    ]
   ],
   [
     "CONFIG_SOC_LATE_INIT_HOOK",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      648
+    ]
   ],
   [
     "CONFIG_SOC_PER_CORE_INIT_HOOK",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      649
+    ]
   ],
   [
     "CONFIG_BOARD_EARLY_INIT_HOOK",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      650
+    ]
   ],
   [
     "CONFIG_BOARD_LATE_INIT_HOOK",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      651
+    ]
   ],
   [
     "CONFIG_ADC",
     "y",
     "bool",
+    "y",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      657
+    ]
+  ],
+  [
+    "CONFIG_ADC_HAS_SEQUENCE_PRIORITY",
+    "n",
+    "bool",
+    "y",
+    "select",
+    [
+      "ADC_STM32 && DT_HAS_ST_STM32_ADC_ENABLED && ADC"
+    ]
+  ],
+  [
+    "CONFIG_ADC_SEQUENCE_PRIORITY",
+    "y",
+    "bool",
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      659
+    ]
+  ],
+  [
+    "CONFIG_ADC_ASYNC",
+    "y",
+    "bool",
+    "y",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      660
+    ]
+  ],
+  [
+    "CONFIG_ADC_STREAM",
+    "y",
+    "bool",
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      661
+    ]
+  ],
+  [
+    "CONFIG_ADC_DEFAULT_RTIO",
+    "y",
+    "bool",
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      662
+    ]
+  ],
+  [
+    "CONFIG_ADC_LOG_LEVEL_OFF",
+    "y",
+    "bool",
     null,
     "unset",
     null
+  ],
+  [
+    "CONFIG_ADC_LOG_LEVEL_ERR",
+    "y",
+    "bool",
+    null,
+    "unset",
+    null
+  ],
+  [
+    "CONFIG_ADC_LOG_LEVEL_WRN",
+    "y",
+    "bool",
+    null,
+    "unset",
+    null
+  ],
+  [
+    "CONFIG_ADC_LOG_LEVEL_INF",
+    "y",
+    "bool",
+    null,
+    "unset",
+    null
+  ],
+  [
+    "CONFIG_ADC_LOG_LEVEL_DBG",
+    "y",
+    "bool",
+    null,
+    "unset",
+    null
+  ],
+  [
+    "CONFIG_ADC_LOG_LEVEL_DEFAULT",
+    "y",
+    "bool",
+    "y",
+    "assign",
+    null
+  ],
+  [
+    "CONFIG_ADC_LOG_LEVEL",
+    "n",
+    "int",
+    "3",
+    "default",
+    [
+      "C:\\Users\\razie\\OneDrive\\Documentos\\PowerShell\\STM32\\deps\\zephyr\\subsys\\logging\\Kconfig.template.log_config",
+      36
+    ]
+  ],
+  [
+    "CONFIG_ADC_STM32",
+    "y",
+    "bool",
+    "y",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      670
+    ]
+  ],
+  [
+    "CONFIG_ADC_STM32_DMA",
+    "y",
+    "bool",
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      671
+    ]
   ],
   [
     "CONFIG_AUDIO",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      672
+    ]
   ],
   [
     "CONFIG_AUXDISPLAY",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      673
+    ]
   ],
   [
     "CONFIG_BBRAM",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      674
+    ]
   ],
   [
     "CONFIG_BIOMETRICS",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      675
+    ]
   ],
   [
     "CONFIG_CAN",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      676
+    ]
   ],
   [
     "CONFIG_CHARGER",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      677
+    ]
   ],
   [
-    "CONFIG_CLOCK_CONTROL_FIXED_RATE_CLOCK",
+    "CONFIG_CLOCK_CONTROL_LOG_LEVEL_OFF",
     "y",
     "bool",
     null,
     "unset",
     null
+  ],
+  [
+    "CONFIG_CLOCK_CONTROL_LOG_LEVEL_ERR",
+    "y",
+    "bool",
+    null,
+    "unset",
+    null
+  ],
+  [
+    "CONFIG_CLOCK_CONTROL_LOG_LEVEL_WRN",
+    "y",
+    "bool",
+    null,
+    "unset",
+    null
+  ],
+  [
+    "CONFIG_CLOCK_CONTROL_LOG_LEVEL_INF",
+    "y",
+    "bool",
+    null,
+    "unset",
+    null
+  ],
+  [
+    "CONFIG_CLOCK_CONTROL_LOG_LEVEL_DBG",
+    "y",
+    "bool",
+    null,
+    "unset",
+    null
+  ],
+  [
+    "CONFIG_CLOCK_CONTROL_LOG_LEVEL_DEFAULT",
+    "y",
+    "bool",
+    "y",
+    "assign",
+    null
+  ],
+  [
+    "CONFIG_CLOCK_CONTROL_LOG_LEVEL",
+    "n",
+    "int",
+    "3",
+    "default",
+    [
+      "C:\\Users\\razie\\OneDrive\\Documentos\\PowerShell\\STM32\\deps\\zephyr\\subsys\\logging\\Kconfig.template.log_config",
+      36
+    ]
+  ],
+  [
+    "CONFIG_CLOCK_CONTROL_FIXED_RATE_CLOCK",
+    "y",
+    "bool",
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      685
+    ]
   ],
   [
     "CONFIG_CLOCK_CONTROL_STM32_CUBE",
     "y",
     "bool",
     "y",
-    "default",
+    "assign",
     [
-      "C:\\Users\\razie\\OneDrive\\Documentos\\PowerShell\\STM32\\deps\\zephyr\\drivers\\clock_control\\Kconfig.stm32",
-      11
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      686
     ]
   ],
   [
@@ -3495,29 +4323,32 @@
     "y",
     "int",
     "40",
-    "default",
+    "assign",
     [
-      "C:\\Users\\razie\\OneDrive\\Documentos\\PowerShell\\STM32\\deps\\zephyr\\drivers\\clock_control\\Kconfig.tisci",
-      13
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      688
     ]
   ],
   [
     "CONFIG_COMPARATOR",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      689
+    ]
   ],
   [
     "CONFIG_CONSOLE_INPUT_MAX_LINE_LEN",
     "y",
     "int",
     "128",
-    "default",
+    "assign",
     [
-      "C:\\Users\\razie\\OneDrive\\Documentos\\PowerShell\\STM32\\deps\\zephyr\\drivers\\console\\Kconfig",
-      16
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      690
     ]
   ],
   [
@@ -3534,19 +4365,22 @@
     "CONFIG_CONSOLE_HANDLER",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      692
+    ]
   ],
   [
     "CONFIG_CONSOLE_INIT_PRIORITY",
     "y",
     "int",
     "60",
-    "default",
+    "assign",
     [
-      "C:\\Users\\razie\\OneDrive\\Documentos\\PowerShell\\STM32\\deps\\zephyr\\drivers\\console\\Kconfig",
-      37
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      693
     ]
   ],
   [
@@ -3556,302 +4390,581 @@
     "y",
     "assign",
     [
-      "C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/boards/st/nucleo_f401re/nucleo_f401re_defconfig",
-      13
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      694
     ]
   ],
   [
     "CONFIG_UART_CONSOLE_DEBUG_SERVER_HOOKS",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      695
+    ]
   ],
   [
     "CONFIG_UART_CONSOLE_MCUMGR",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      696
+    ]
   ],
   [
     "CONFIG_RAM_CONSOLE",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      697
+    ]
   ],
   [
     "CONFIG_IPM_CONSOLE_SENDER",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      698
+    ]
   ],
   [
     "CONFIG_IPM_CONSOLE_RECEIVER",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      699
+    ]
   ],
   [
     "CONFIG_UART_MCUMGR",
     "y",
     "bool",
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      700
+    ]
+  ],
+  [
+    "CONFIG_UART_CONSOLE_LOG_LEVEL_OFF",
+    "y",
+    "bool",
     null,
     "unset",
     null
+  ],
+  [
+    "CONFIG_UART_CONSOLE_LOG_LEVEL_ERR",
+    "y",
+    "bool",
+    null,
+    "unset",
+    null
+  ],
+  [
+    "CONFIG_UART_CONSOLE_LOG_LEVEL_WRN",
+    "y",
+    "bool",
+    null,
+    "unset",
+    null
+  ],
+  [
+    "CONFIG_UART_CONSOLE_LOG_LEVEL_INF",
+    "y",
+    "bool",
+    null,
+    "unset",
+    null
+  ],
+  [
+    "CONFIG_UART_CONSOLE_LOG_LEVEL_DBG",
+    "y",
+    "bool",
+    null,
+    "unset",
+    null
+  ],
+  [
+    "CONFIG_UART_CONSOLE_LOG_LEVEL_DEFAULT",
+    "y",
+    "bool",
+    "y",
+    "assign",
+    null
+  ],
+  [
+    "CONFIG_UART_CONSOLE_LOG_LEVEL",
+    "n",
+    "int",
+    "3",
+    "default",
+    [
+      "C:\\Users\\razie\\OneDrive\\Documentos\\PowerShell\\STM32\\deps\\zephyr\\subsys\\logging\\Kconfig.template.log_config",
+      36
+    ]
   ],
   [
     "CONFIG_EFI_CONSOLE",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      708
+    ]
   ],
   [
     "CONFIG_COREDUMP_DEVICE",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      709
+    ]
   ],
   [
     "CONFIG_CRC_DRIVER",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      710
+    ]
   ],
   [
     "CONFIG_CRYPTO",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      711
+    ]
   ],
   [
     "CONFIG_DAC",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      712
+    ]
   ],
   [
     "CONFIG_DAI",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      713
+    ]
   ],
   [
     "CONFIG_DEBUG_DRIVER",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      714
+    ]
   ],
   [
     "CONFIG_DISK_DRIVERS",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      715
+    ]
   ],
   [
     "CONFIG_DISPLAY",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      716
+    ]
   ],
   [
     "CONFIG_DMA",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      717
+    ]
   ],
   [
     "CONFIG_DP_DRIVER",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      718
+    ]
   ],
   [
     "CONFIG_EDAC",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      719
+    ]
   ],
   [
     "CONFIG_EEPROM",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      720
+    ]
   ],
   [
     "CONFIG_ENTROPY_GENERATOR",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      721
+    ]
   ],
   [
     "CONFIG_ESPI",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      722
+    ]
   ],
   [
     "CONFIG_MDIO",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      723
+    ]
   ],
   [
     "CONFIG_ARM_SCMI",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      728
+    ]
   ],
   [
     "CONFIG_FPGA",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      731
+    ]
   ],
   [
     "CONFIG_FUEL_GAUGE",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      732
+    ]
   ],
   [
     "CONFIG_GNSS",
     "y",
     "bool",
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      733
+    ]
+  ],
+  [
+    "CONFIG_GPIO_LOG_LEVEL_OFF",
+    "y",
+    "bool",
     null,
     "unset",
     null
+  ],
+  [
+    "CONFIG_GPIO_LOG_LEVEL_ERR",
+    "y",
+    "bool",
+    null,
+    "unset",
+    null
+  ],
+  [
+    "CONFIG_GPIO_LOG_LEVEL_WRN",
+    "y",
+    "bool",
+    null,
+    "unset",
+    null
+  ],
+  [
+    "CONFIG_GPIO_LOG_LEVEL_INF",
+    "y",
+    "bool",
+    null,
+    "unset",
+    null
+  ],
+  [
+    "CONFIG_GPIO_LOG_LEVEL_DBG",
+    "y",
+    "bool",
+    null,
+    "unset",
+    null
+  ],
+  [
+    "CONFIG_GPIO_LOG_LEVEL_DEFAULT",
+    "y",
+    "bool",
+    "y",
+    "assign",
+    null
+  ],
+  [
+    "CONFIG_GPIO_LOG_LEVEL",
+    "n",
+    "int",
+    "3",
+    "default",
+    [
+      "C:\\Users\\razie\\OneDrive\\Documentos\\PowerShell\\STM32\\deps\\zephyr\\subsys\\logging\\Kconfig.template.log_config",
+      36
+    ]
   ],
   [
     "CONFIG_GPIO_GET_DIRECTION",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      741
+    ]
   ],
   [
     "CONFIG_GPIO_GET_CONFIG",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      742
+    ]
   ],
   [
     "CONFIG_GPIO_ENABLE_DISABLE_INTERRUPT",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      743
+    ]
   ],
   [
     "CONFIG_GPIO_STM32",
     "y",
     "bool",
     "y",
-    "default",
+    "assign",
     [
-      "C:\\Users\\razie\\OneDrive\\Documentos\\PowerShell\\STM32\\deps\\zephyr\\drivers\\gpio\\Kconfig.stm32",
-      9
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      744
     ]
   ],
   [
     "CONFIG_HAPTICS",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      745
+    ]
   ],
   [
     "CONFIG_HWSPINLOCK",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      746
+    ]
   ],
   [
     "CONFIG_I2C",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      747
+    ]
   ],
   [
     "CONFIG_I2S",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      748
+    ]
   ],
   [
     "CONFIG_I3C",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      749
+    ]
   ],
   [
     "CONFIG_INTC_INIT_PRIORITY",
     "y",
     "int",
     "40",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      754
+    ]
+  ],
+  [
+    "CONFIG_INTC_LOG_LEVEL_OFF",
+    "y",
+    "bool",
+    null,
+    "unset",
+    null
+  ],
+  [
+    "CONFIG_INTC_LOG_LEVEL_ERR",
+    "y",
+    "bool",
+    null,
+    "unset",
+    null
+  ],
+  [
+    "CONFIG_INTC_LOG_LEVEL_WRN",
+    "y",
+    "bool",
+    null,
+    "unset",
+    null
+  ],
+  [
+    "CONFIG_INTC_LOG_LEVEL_INF",
+    "y",
+    "bool",
+    null,
+    "unset",
+    null
+  ],
+  [
+    "CONFIG_INTC_LOG_LEVEL_DBG",
+    "y",
+    "bool",
+    null,
+    "unset",
+    null
+  ],
+  [
+    "CONFIG_INTC_LOG_LEVEL_DEFAULT",
+    "y",
+    "bool",
+    "y",
+    "assign",
+    null
+  ],
+  [
+    "CONFIG_INTC_LOG_LEVEL",
+    "n",
+    "int",
+    "3",
     "default",
     [
-      "C:\\Users\\razie\\OneDrive\\Documentos\\PowerShell\\STM32\\deps\\zephyr\\drivers\\interrupt_controller\\Kconfig",
-      45
+      "C:\\Users\\razie\\OneDrive\\Documentos\\PowerShell\\STM32\\deps\\zephyr\\subsys\\logging\\Kconfig.template.log_config",
+      36
     ]
   ],
   [
@@ -3859,10 +4972,10 @@
     "y",
     "bool",
     "y",
-    "default",
+    "assign",
     [
-      "C:\\Users\\razie\\OneDrive\\Documentos\\PowerShell\\STM32\\deps\\zephyr\\drivers\\interrupt_controller\\Kconfig.stm32",
-      11
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      762
     ]
   ],
   [
@@ -3870,115 +4983,154 @@
     "y",
     "bool",
     "y",
-    "default",
+    "assign",
     [
-      "C:\\Users\\razie\\OneDrive\\Documentos\\PowerShell\\STM32\\deps\\zephyr\\drivers\\interrupt_controller\\Kconfig.stm32",
-      18
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      763
     ]
   ],
   [
     "CONFIG_IPM",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      766
+    ]
   ],
   [
     "CONFIG_LED",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      767
+    ]
   ],
   [
     "CONFIG_LED_STRIP",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      768
+    ]
   ],
   [
     "CONFIG_LORA",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      769
+    ]
   ],
   [
     "CONFIG_MBOX",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      770
+    ]
   ],
   [
     "CONFIG_MIPI_DBI",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      771
+    ]
   ],
   [
     "CONFIG_TIMEAWARE_GPIO",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      782
+    ]
   ],
   [
     "CONFIG_MM_DRV",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      785
+    ]
   ],
   [
     "CONFIG_MSPI",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      786
+    ]
   ],
   [
     "CONFIG_OPAMP",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      787
+    ]
   ],
   [
     "CONFIG_PCIE",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      788
+    ]
   ],
   [
     "CONFIG_PCIE_ENDPOINT",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      789
+    ]
   ],
   [
     "CONFIG_PECI",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      790
+    ]
   ],
   [
     "CONFIG_PINCTRL",
@@ -3987,50 +5139,122 @@
     "y",
     "select",
     [
+      "ADC_STM32 && DT_HAS_ST_STM32_ADC_ENABLED && ADC",
       "UART_STM32 && DT_HAS_ST_STM32_UART_ENABLED && SERIAL"
+    ]
+  ],
+  [
+    "CONFIG_PINCTRL_LOG_LEVEL_OFF",
+    "y",
+    "bool",
+    null,
+    "unset",
+    null
+  ],
+  [
+    "CONFIG_PINCTRL_LOG_LEVEL_ERR",
+    "y",
+    "bool",
+    null,
+    "unset",
+    null
+  ],
+  [
+    "CONFIG_PINCTRL_LOG_LEVEL_WRN",
+    "y",
+    "bool",
+    null,
+    "unset",
+    null
+  ],
+  [
+    "CONFIG_PINCTRL_LOG_LEVEL_INF",
+    "y",
+    "bool",
+    null,
+    "unset",
+    null
+  ],
+  [
+    "CONFIG_PINCTRL_LOG_LEVEL_DBG",
+    "y",
+    "bool",
+    null,
+    "unset",
+    null
+  ],
+  [
+    "CONFIG_PINCTRL_LOG_LEVEL_DEFAULT",
+    "y",
+    "bool",
+    "y",
+    "assign",
+    null
+  ],
+  [
+    "CONFIG_PINCTRL_LOG_LEVEL",
+    "n",
+    "int",
+    "3",
+    "default",
+    [
+      "C:\\Users\\razie\\OneDrive\\Documentos\\PowerShell\\STM32\\deps\\zephyr\\subsys\\logging\\Kconfig.template.log_config",
+      36
     ]
   ],
   [
     "CONFIG_PINCTRL_DYNAMIC",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      799
+    ]
   ],
   [
     "CONFIG_PINCTRL_KEEP_SLEEP_STATE",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      800
+    ]
   ],
   [
     "CONFIG_PINCTRL_MCHP_COMMON",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      801
+    ]
   ],
   [
     "CONFIG_PINCTRL_NPCX_EX",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      802
+    ]
   ],
   [
     "CONFIG_PINCTRL_STM32",
     "y",
     "bool",
     "y",
-    "default",
+    "assign",
     [
-      "C:\\Users\\razie\\OneDrive\\Documentos\\PowerShell\\STM32\\deps\\zephyr\\drivers\\pinctrl\\Kconfig.stm32",
-      6
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      803
     ]
   ],
   [
@@ -4038,53 +5262,65 @@
     "y",
     "int",
     "2",
-    "default",
+    "assign",
     [
-      "C:\\Users\\razie\\OneDrive\\Documentos\\PowerShell\\STM32\\deps\\zephyr\\drivers\\pinctrl\\Kconfig.stm32",
-      13
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      804
     ]
   ],
   [
     "CONFIG_PS2",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      805
+    ]
   ],
   [
     "CONFIG_PSI5",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      806
+    ]
   ],
   [
     "CONFIG_PTP_CLOCK",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      807
+    ]
   ],
   [
     "CONFIG_PWM",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      808
+    ]
   ],
   [
     "CONFIG_RESET_INIT_PRIORITY",
     "y",
     "int",
     "35",
-    "default",
+    "assign",
     [
-      "C:\\Users\\razie\\OneDrive\\Documentos\\PowerShell\\STM32\\deps\\zephyr\\drivers\\reset\\Kconfig",
-      21
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      809
     ]
   ],
   [
@@ -4092,51 +5328,66 @@
     "y",
     "bool",
     "y",
-    "default",
+    "assign",
     [
-      "C:\\Users\\razie\\OneDrive\\Documentos\\PowerShell\\STM32\\deps\\zephyr\\drivers\\reset\\Kconfig.stm32",
-      6
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      814
     ]
   ],
   [
     "CONFIG_RETAINED_MEM",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      815
+    ]
   ],
   [
     "CONFIG_RTC",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      816
+    ]
   ],
   [
     "CONFIG_SDHC",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      817
+    ]
   ],
   [
     "CONFIG_SENSOR",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      818
+    ]
   ],
   [
     "CONFIG_SENT",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      819
+    ]
   ],
   [
     "CONFIG_SERIAL_HAS_DRIVER",
@@ -4163,9 +5414,68 @@
     "y",
     "int",
     "50",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      826
+    ]
+  ],
+  [
+    "CONFIG_UART_LOG_LEVEL_OFF",
+    "y",
+    "bool",
+    null,
+    "unset",
+    null
+  ],
+  [
+    "CONFIG_UART_LOG_LEVEL_ERR",
+    "y",
+    "bool",
+    null,
+    "unset",
+    null
+  ],
+  [
+    "CONFIG_UART_LOG_LEVEL_WRN",
+    "y",
+    "bool",
+    null,
+    "unset",
+    null
+  ],
+  [
+    "CONFIG_UART_LOG_LEVEL_INF",
+    "y",
+    "bool",
+    null,
+    "unset",
+    null
+  ],
+  [
+    "CONFIG_UART_LOG_LEVEL_DBG",
+    "y",
+    "bool",
+    null,
+    "unset",
+    null
+  ],
+  [
+    "CONFIG_UART_LOG_LEVEL_DEFAULT",
+    "y",
+    "bool",
+    "y",
+    "assign",
+    null
+  ],
+  [
+    "CONFIG_UART_LOG_LEVEL",
+    "n",
+    "int",
+    "3",
     "default",
     [
-      "C:\\Users\\razie\\OneDrive\\Documentos\\PowerShell\\STM32\\deps\\zephyr\\drivers\\serial\\Kconfig",
+      "C:\\Users\\razie\\OneDrive\\Documentos\\PowerShell\\STM32\\deps\\zephyr\\subsys\\logging\\Kconfig.template.log_config",
       36
     ]
   ],
@@ -4173,76 +5483,100 @@
     "CONFIG_UART_LINE_CTRL",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      834
+    ]
   ],
   [
     "CONFIG_UART_DRV_CMD",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      835
+    ]
   ],
   [
     "CONFIG_UART_WIDE_DATA",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      836
+    ]
   ],
   [
     "CONFIG_UART_PIPE",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      837
+    ]
   ],
   [
     "CONFIG_UART_ASYNC_RX_HELPER",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      838
+    ]
   ],
   [
     "CONFIG_UART_NPCX_FIFO_EX",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      843
+    ]
   ],
   [
     "CONFIG_UART_STM32",
     "y",
     "bool",
     "y",
-    "default",
+    "assign",
     [
-      "C:\\Users\\razie\\OneDrive\\Documentos\\PowerShell\\STM32\\deps\\zephyr\\drivers\\serial\\Kconfig.stm32",
-      8
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      844
     ]
   ],
   [
     "CONFIG_SMBUS",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      845
+    ]
   ],
   [
     "CONFIG_STEPPER",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      846
+    ]
   ],
   [
     "CONFIG_TIMER_HAS_64BIT_CYCLE_COUNTER",
@@ -4258,27 +5592,33 @@
     "CONFIG_TIMER_READS_ITS_FREQUENCY_AT_RUNTIME",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      852
+    ]
   ],
   [
     "CONFIG_SYSTEM_CLOCK_SLOPPY_IDLE",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      853
+    ]
   ],
   [
     "CONFIG_SYSTEM_CLOCK_INIT_PRIORITY",
     "y",
     "int",
     "0",
-    "default",
+    "assign",
     [
-      "C:\\Users\\razie\\OneDrive\\Documentos\\PowerShell\\STM32\\deps\\zephyr\\drivers\\timer\\Kconfig",
-      55
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      854
     ]
   ],
   [
@@ -4316,43 +5656,55 @@
     "y",
     "bool",
     "y",
-    "default",
+    "assign",
     [
-      "C:\\Users\\razie\\OneDrive\\Documentos\\PowerShell\\STM32\\deps\\zephyr\\drivers\\timer\\Kconfig.cortex_m_systick",
-      32
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      858
     ]
   ],
   [
     "CONFIG_CORTEX_M_SYSTICK_LPM_TIMER_NONE",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      859
+    ]
   ],
   [
     "CONFIG_CORTEX_M_SYSTICK_LPM_TIMER_COUNTER",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      860
+    ]
   ],
   [
     "CONFIG_CORTEX_M_SYSTICK_LPM_TIMER_HOOKS",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      861
+    ]
   ],
   [
     "CONFIG_CORTEX_M_SYSTICK_RESET_BY_LPM",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      862
+    ]
   ],
   [
     "CONFIG_SYSTEM_TIMER_HAS_LPM_COMPANION_SUPPORT",
@@ -4369,152 +5721,265 @@
     "y",
     "bool",
     "y",
-    "default",
+    "assign",
     null
   ],
   [
     "CONFIG_UAOL",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      867
+    ]
   ],
   [
     "CONFIG_USB_BC12",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      868
+    ]
   ],
   [
     "CONFIG_UDC_DRIVER",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      869
+    ]
   ],
   [
     "CONFIG_UHC_DRIVER",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      870
+    ]
   ],
   [
     "CONFIG_UVB",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      871
+    ]
   ],
   [
     "CONFIG_USB_DEVICE_DRIVER",
     "y",
     "bool",
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      872
+    ]
+  ],
+  [
+    "CONFIG_STM32_USB_COMMON_LOG_LEVEL_OFF",
+    "y",
+    "bool",
     null,
     "unset",
     null
+  ],
+  [
+    "CONFIG_STM32_USB_COMMON_LOG_LEVEL_ERR",
+    "y",
+    "bool",
+    null,
+    "unset",
+    null
+  ],
+  [
+    "CONFIG_STM32_USB_COMMON_LOG_LEVEL_WRN",
+    "y",
+    "bool",
+    null,
+    "unset",
+    null
+  ],
+  [
+    "CONFIG_STM32_USB_COMMON_LOG_LEVEL_INF",
+    "y",
+    "bool",
+    null,
+    "unset",
+    null
+  ],
+  [
+    "CONFIG_STM32_USB_COMMON_LOG_LEVEL_DBG",
+    "y",
+    "bool",
+    null,
+    "unset",
+    null
+  ],
+  [
+    "CONFIG_STM32_USB_COMMON_LOG_LEVEL_DEFAULT",
+    "y",
+    "bool",
+    "y",
+    "assign",
+    null
+  ],
+  [
+    "CONFIG_STM32_USB_COMMON_LOG_LEVEL",
+    "n",
+    "int",
+    "3",
+    "default",
+    [
+      "C:\\Users\\razie\\OneDrive\\Documentos\\PowerShell\\STM32\\deps\\zephyr\\subsys\\logging\\Kconfig.template.log_config",
+      36
+    ]
   ],
   [
     "CONFIG_USBC_TCPC_DRIVER",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      886
+    ]
   ],
   [
     "CONFIG_USBC_VBUS_DRIVER",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      887
+    ]
   ],
   [
     "CONFIG_USBC_PPC_DRIVER",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      888
+    ]
   ],
   [
     "CONFIG_VIDEO",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      889
+    ]
   ],
   [
     "CONFIG_VIRTIO",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      890
+    ]
   ],
   [
     "CONFIG_VIRTUALIZATION",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      891
+    ]
   ],
   [
     "CONFIG_W1",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      892
+    ]
   ],
   [
     "CONFIG_WUC",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      893
+    ]
   ],
   [
     "CONFIG_TEE",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      894
+    ]
   ],
   [
     "CONFIG_REQUIRES_FULL_LIBC",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      897
+    ]
   ],
   [
     "CONFIG_REQUIRES_FLOAT_PRINTF",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      898
+    ]
   ],
   [
     "CONFIG_LIBC_ALLOW_LESS_THAN_64BIT_TIME",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      899
+    ]
   ],
   [
     "CONFIG_FULL_LIBC_SUPPORTED",
@@ -4561,11 +6026,8 @@
     "y",
     "bool",
     "y",
-    "default",
-    [
-      "C:\\Users\\razie\\OneDrive\\Documentos\\PowerShell\\STM32\\deps\\zephyr\\lib\\libc\\Kconfig",
-      81
-    ]
+    "assign",
+    null
   ],
   [
     "CONFIG_EXTERNAL_LIBC",
@@ -4589,17 +6051,23 @@
     "CONFIG_COMMON_LIBC_ASCTIME_R",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      911
+    ]
   ],
   [
     "CONFIG_COMMON_LIBC_CTIME_R",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      912
+    ]
   ],
   [
     "CONFIG_COMMON_LIBC_TIME",
@@ -4616,9 +6084,10 @@
     "y",
     "bool",
     "y",
-    "imply",
+    "assign",
     [
-      "PICOLIBC && PICOLIBC_SUPPORTED && <choice LIBC_IMPLEMENTATION>"
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      914
     ]
   ],
   [
@@ -4626,10 +6095,10 @@
     "y",
     "bool",
     "y",
-    "default",
+    "assign",
     [
-      "C:\\Users\\razie\\OneDrive\\Documentos\\PowerShell\\STM32\\deps\\zephyr\\lib\\libc\\common\\Kconfig",
-      88
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      915
     ]
   ],
   [
@@ -4637,19 +6106,22 @@
     "y",
     "bool",
     "y",
-    "default",
+    "assign",
     [
-      "C:\\Users\\razie\\OneDrive\\Documentos\\PowerShell\\STM32\\deps\\zephyr\\lib\\libc\\common\\Kconfig",
-      97
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      916
     ]
   ],
   [
     "CONFIG_COMMON_LIBC_REMOVE",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      917
+    ]
   ],
   [
     "CONFIG_PICOLIBC_USE_MODULE",
@@ -4664,11 +6136,8 @@
     "y",
     "bool",
     "y",
-    "default",
-    [
-      "C:\\Users\\razie\\OneDrive\\Documentos\\PowerShell\\STM32\\deps\\zephyr\\lib\\libc\\picolibc\\Kconfig",
-      8
-    ]
+    "assign",
+    null
   ],
   [
     "CONFIG_PICOLIBC_IO_FLOAT",
@@ -4683,21 +6152,18 @@
     "y",
     "bool",
     "y",
-    "default",
-    [
-      "C:\\Users\\razie\\OneDrive\\Documentos\\PowerShell\\STM32\\deps\\zephyr\\lib\\libc\\picolibc\\Kconfig",
-      34
-    ]
+    "assign",
+    null
   ],
   [
     "CONFIG_STDOUT_CONSOLE",
     "y",
     "bool",
     "y",
-    "default",
+    "assign",
     [
-      "C:\\Users\\razie\\OneDrive\\Documentos\\PowerShell\\STM32\\deps\\zephyr\\lib\\libc\\Kconfig",
-      173
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      922
     ]
   ],
   [
@@ -4715,87 +6181,111 @@
     "CONFIG_CPP",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      929
+    ]
   ],
   [
     "CONFIG_SYS_HASH_FUNC32",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      939
+    ]
   ],
   [
     "CONFIG_SYS_HASH_MAP",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      945
+    ]
   ],
   [
     "CONFIG_SYS_HEAP_VALIDATE",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      951
+    ]
   ],
   [
     "CONFIG_SYS_HEAP_STRESS",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      952
+    ]
   ],
   [
     "CONFIG_SYS_HEAP_INFO",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      953
+    ]
   ],
   [
     "CONFIG_SYS_HEAP_ALLOC_LOOPS",
     "y",
     "int",
     "3",
-    "default",
+    "assign",
     [
-      "C:\\Users\\razie\\OneDrive\\Documentos\\PowerShell\\STM32\\deps\\zephyr\\lib\\heap\\Kconfig",
-      35
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      954
     ]
   ],
   [
     "CONFIG_SYS_HEAP_RUNTIME_STATS",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      955
+    ]
   ],
   [
     "CONFIG_SYS_HEAP_ARRAY_SIZE",
     "y",
     "int",
     "0",
-    "default",
+    "assign",
     [
-      "C:\\Users\\razie\\OneDrive\\Documentos\\PowerShell\\STM32\\deps\\zephyr\\lib\\heap\\Kconfig",
-      56
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      956
     ]
   ],
   [
     "CONFIG_SYS_HEAP_LISTENER",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      957
+    ]
   ],
   [
     "CONFIG_SYS_HEAP_HARDENING_NONE",
@@ -4810,11 +6300,8 @@
     "y",
     "bool",
     "y",
-    "default",
-    [
-      "C:\\Users\\razie\\OneDrive\\Documentos\\PowerShell\\STM32\\deps\\zephyr\\lib\\heap\\Kconfig",
-      83
-    ]
+    "assign",
+    null
   ],
   [
     "CONFIG_SYS_HEAP_HARDENING_MODERATE",
@@ -4852,15 +6339,71 @@
     ]
   ],
   [
+    "CONFIG_SYS_HEAP_LOG_LEVEL_OFF",
+    "y",
+    "bool",
+    null,
+    "unset",
+    null
+  ],
+  [
+    "CONFIG_SYS_HEAP_LOG_LEVEL_ERR",
+    "y",
+    "bool",
+    null,
+    "unset",
+    null
+  ],
+  [
+    "CONFIG_SYS_HEAP_LOG_LEVEL_WRN",
+    "y",
+    "bool",
+    null,
+    "unset",
+    null
+  ],
+  [
+    "CONFIG_SYS_HEAP_LOG_LEVEL_INF",
+    "y",
+    "bool",
+    null,
+    "unset",
+    null
+  ],
+  [
+    "CONFIG_SYS_HEAP_LOG_LEVEL_DBG",
+    "y",
+    "bool",
+    null,
+    "unset",
+    null
+  ],
+  [
+    "CONFIG_SYS_HEAP_LOG_LEVEL_DEFAULT",
+    "y",
+    "bool",
+    "y",
+    "assign",
+    null
+  ],
+  [
+    "CONFIG_SYS_HEAP_LOG_LEVEL",
+    "n",
+    "int",
+    "3",
+    "default",
+    [
+      "C:\\Users\\razie\\OneDrive\\Documentos\\PowerShell\\STM32\\deps\\zephyr\\subsys\\logging\\Kconfig.template.log_config",
+      36
+    ]
+  ],
+  [
     "CONFIG_SYS_HEAP_SMALL_ONLY",
     "y",
     "bool",
     "y",
-    "default",
-    [
-      "C:\\Users\\razie\\OneDrive\\Documentos\\PowerShell\\STM32\\deps\\zephyr\\lib\\heap\\Kconfig",
-      163
-    ]
+    "assign",
+    null
   ],
   [
     "CONFIG_SYS_HEAP_BIG_ONLY",
@@ -4882,73 +6425,110 @@
     "CONFIG_MULTI_HEAP",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      974
+    ]
   ],
   [
     "CONFIG_SHARED_MULTI_HEAP",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      975
+    ]
   ],
   [
     "CONFIG_SYS_MEM_BLOCKS",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      981
+    ]
   ],
   [
     "CONFIG_MIDI2_UMP_STREAM_RESPONDER",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      987
+    ]
   ],
   [
     "CONFIG_NET_BUF",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      990
+    ]
   ],
   [
     "CONFIG_ZVFS_OPEN_IGNORE_MIN",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      995
+    ]
   ],
   [
     "CONFIG_PRINTK_SYNC",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      996
+    ]
   ],
   [
     "CONFIG_MPSC_PBUF",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "y",
+    "select",
+    [
+      "LOG_MODE_DEFERRED && <choice LOG_MODE>"
+    ]
   ],
   [
     "CONFIG_SPSC_PBUF",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      998
+    ]
+  ],
+  [
+    "CONFIG_MPSC_CLEAR_ALLOCATED",
+    "y",
+    "bool",
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      999
+    ]
   ],
   [
     "CONFIG_HAS_POWEROFF",
@@ -4964,20 +6544,20 @@
     "CONFIG_POWEROFF",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      1001
+    ]
   ],
   [
     "CONFIG_CBPRINTF_COMPLETE",
     "y",
     "bool",
     "y",
-    "default",
-    [
-      "C:\\Users\\razie\\OneDrive\\Documentos\\PowerShell\\STM32\\deps\\zephyr\\lib\\os\\Kconfig.cbprintf",
-      6
-    ]
+    "assign",
+    null
   ],
   [
     "CONFIG_CBPRINTF_NANO",
@@ -4992,11 +6572,8 @@
     "y",
     "bool",
     "y",
-    "default",
-    [
-      "C:\\Users\\razie\\OneDrive\\Documentos\\PowerShell\\STM32\\deps\\zephyr\\lib\\os\\Kconfig.cbprintf",
-      29
-    ]
+    "assign",
+    null
   ],
   [
     "CONFIG_CBPRINTF_REDUCED_INTEGRAL",
@@ -5010,41 +6587,104 @@
     "CONFIG_CBPRINTF_FP_SUPPORT",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      1006
+    ]
   ],
   [
     "CONFIG_CBPRINTF_FP_A_SUPPORT",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      1007
+    ]
   ],
   [
     "CONFIG_CBPRINTF_LIBC_SUBSTS",
     "y",
     "bool",
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      1008
+    ]
+  ],
+  [
+    "CONFIG_CBPRINTF_PACKAGE_LOG_LEVEL_OFF",
+    "y",
+    "bool",
     null,
     "unset",
     null
+  ],
+  [
+    "CONFIG_CBPRINTF_PACKAGE_LOG_LEVEL_ERR",
+    "y",
+    "bool",
+    null,
+    "unset",
+    null
+  ],
+  [
+    "CONFIG_CBPRINTF_PACKAGE_LOG_LEVEL_WRN",
+    "y",
+    "bool",
+    null,
+    "unset",
+    null
+  ],
+  [
+    "CONFIG_CBPRINTF_PACKAGE_LOG_LEVEL_INF",
+    "y",
+    "bool",
+    null,
+    "unset",
+    null
+  ],
+  [
+    "CONFIG_CBPRINTF_PACKAGE_LOG_LEVEL_DBG",
+    "y",
+    "bool",
+    null,
+    "unset",
+    null
+  ],
+  [
+    "CONFIG_CBPRINTF_PACKAGE_LOG_LEVEL_DEFAULT",
+    "y",
+    "bool",
+    "y",
+    "assign",
+    null
+  ],
+  [
+    "CONFIG_CBPRINTF_PACKAGE_LOG_LEVEL",
+    "n",
+    "int",
+    "3",
+    "default",
+    [
+      "C:\\Users\\razie\\OneDrive\\Documentos\\PowerShell\\STM32\\deps\\zephyr\\subsys\\logging\\Kconfig.template.log_config",
+      36
+    ]
   ],
   [
     "CONFIG_CBPRINTF_PACKAGE_LONGDOUBLE",
     "y",
     "bool",
-    null,
-    "unset",
-    null
-  ],
-  [
-    "CONFIG_CBPRINTF_STATIC_PACKAGE_CHECK_ALIGNMENT",
-    "y",
-    "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      1016
+    ]
   ],
   [
     "CONFIG_CBPRINTF_CONVERT_CHECK_PTR",
@@ -5061,33 +6701,104 @@
     "CONFIG_ZVFS",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      1018
+    ]
   ],
   [
     "CONFIG_CPU_LOAD_METRIC",
     "y",
     "bool",
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      1019
+    ]
+  ],
+  [
+    "CONFIG_CPU_LOAD_LOG_LEVEL_OFF",
+    "y",
+    "bool",
     null,
     "unset",
     null
+  ],
+  [
+    "CONFIG_CPU_LOAD_LOG_LEVEL_ERR",
+    "y",
+    "bool",
+    null,
+    "unset",
+    null
+  ],
+  [
+    "CONFIG_CPU_LOAD_LOG_LEVEL_WRN",
+    "y",
+    "bool",
+    null,
+    "unset",
+    null
+  ],
+  [
+    "CONFIG_CPU_LOAD_LOG_LEVEL_INF",
+    "y",
+    "bool",
+    null,
+    "unset",
+    null
+  ],
+  [
+    "CONFIG_CPU_LOAD_LOG_LEVEL_DBG",
+    "y",
+    "bool",
+    null,
+    "unset",
+    null
+  ],
+  [
+    "CONFIG_CPU_LOAD_LOG_LEVEL_DEFAULT",
+    "y",
+    "bool",
+    "y",
+    "assign",
+    null
+  ],
+  [
+    "CONFIG_CPU_LOAD_LOG_LEVEL",
+    "n",
+    "int",
+    "3",
+    "default",
+    [
+      "C:\\Users\\razie\\OneDrive\\Documentos\\PowerShell\\STM32\\deps\\zephyr\\subsys\\logging\\Kconfig.template.log_config",
+      36
+    ]
   ],
   [
     "CONFIG_POSIX_SYSTEM_INTERFACES",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      1032
+    ]
   ],
   [
     "CONFIG_POSIX_API",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      1033
+    ]
   ],
   [
     "CONFIG_POSIX_AEP_CHOICE_NONE",
@@ -5102,11 +6813,8 @@
     "y",
     "bool",
     "y",
-    "default",
-    [
-      "C:\\Users\\razie\\OneDrive\\Documentos\\PowerShell\\STM32\\deps\\zephyr\\lib\\posix\\Kconfig.profile",
-      29
-    ]
+    "assign",
+    null
   ],
   [
     "CONFIG_POSIX_AEP_CHOICE_BASE",
@@ -5174,36 +6882,42 @@
     "CONFIG_EVENTFD",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      1050
+    ]
   ],
   [
     "CONFIG_SMF",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      1051
+    ]
   ],
   [
     "CONFIG_LIBGCC_RTLIB",
     "y",
     "bool",
     "y",
-    "default",
-    [
-      "C:\\Users\\razie\\OneDrive\\Documentos\\PowerShell\\STM32\\deps\\zephyr\\lib\\runtime\\Kconfig",
-      13
-    ]
+    "assign",
+    null
   ],
   [
     "CONFIG_JSON_LIBRARY",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      1057
+    ]
   ],
   [
     "CONFIG_RING_BUFFER",
@@ -5219,49 +6933,67 @@
     "CONFIG_RING_BUFFER_LARGE",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      1059
+    ]
   ],
   [
     "CONFIG_NOTIFY",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      1060
+    ]
   ],
   [
     "CONFIG_BASE64",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      1061
+    ]
   ],
   [
     "CONFIG_ONOFF",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      1062
+    ]
   ],
   [
     "CONFIG_UTF8",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      1063
+    ]
   ],
   [
     "CONFIG_COBS",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      1064
+    ]
   ],
   [
     "CONFIG_GETOPT",
@@ -5277,108 +7009,144 @@
     "CONFIG_GETOPT_LONG",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      1066
+    ]
   ],
   [
     "CONFIG_TIMEUTIL_APPLY_SKEW",
     "y",
     "bool",
     "y",
-    "default",
+    "assign",
     [
-      "C:\\Users\\razie\\OneDrive\\Documentos\\PowerShell\\STM32\\deps\\zephyr\\lib\\utils\\Kconfig",
-      119
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      1067
     ]
   ],
   [
     "CONFIG_UUID",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      1073
+    ]
   ],
   [
     "CONFIG_MIN_HEAP",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      1076
+    ]
   ],
   [
     "CONFIG_BINDESC",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      1082
+    ]
   ],
   [
     "CONFIG_BT",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      1083
+    ]
   ],
   [
     "CONFIG_CONSOLE_SUBSYS",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      1090
+    ]
   ],
   [
     "CONFIG_CPU_FREQ",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      1091
+    ]
   ],
   [
     "CONFIG_CRC",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      1092
+    ]
   ],
   [
     "CONFIG_DAP",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      1093
+    ]
   ],
   [
     "CONFIG_THREAD_ANALYZER",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      1098
+    ]
   ],
   [
     "CONFIG_DEBUG",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      1104
+    ]
   ],
   [
     "CONFIG_UBSAN",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      1105
+    ]
   ],
   [
     "CONFIG_STACK_USAGE",
@@ -5387,8 +7155,8 @@
     "y",
     "assign",
     [
-      "C:/zephyr/TM1638/prj.conf",
-      9
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      1106
     ]
   ],
   [
@@ -5415,60 +7183,78 @@
     "CONFIG_FORCE_NO_ASSERT",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      1109
+    ]
   ],
   [
     "CONFIG_ASSERT_VERBOSE",
     "y",
     "bool",
     "y",
-    "default",
+    "assign",
     [
-      "C:\\Users\\razie\\OneDrive\\Documentos\\PowerShell\\STM32\\deps\\zephyr\\subsys\\debug\\Kconfig",
-      240
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      1110
     ]
   ],
   [
     "CONFIG_ASSERT_NO_FILE_INFO",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      1111
+    ]
   ],
   [
     "CONFIG_ASSERT_NO_COND_INFO",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      1112
+    ]
   ],
   [
     "CONFIG_ASSERT_NO_MSG_INFO",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      1113
+    ]
   ],
   [
     "CONFIG_ASSERT_TEST",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      1114
+    ]
   ],
   [
     "CONFIG_OVERRIDE_FRAME_POINTER_DEFAULT",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      1115
+    ]
   ],
   [
     "CONFIG_DEBUG_THREAD_INFO",
@@ -5477,236 +7263,1041 @@
     "y",
     "assign",
     [
-      "C:/zephyr/TM1638/prj.conf",
-      7
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      1116
     ]
   ],
   [
     "CONFIG_DEBUG_COREDUMP",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      1117
+    ]
   ],
   [
     "CONFIG_SYMTAB",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      1118
+    ]
   ],
   [
     "CONFIG_MIPI_STP_DECODER",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      1121
+    ]
   ],
   [
     "CONFIG_CS_TRACE_DEFMT",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      1122
+    ]
   ],
   [
     "CONFIG_CPU_LOAD",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      1123
+    ]
+  ],
+  [
+    "CONFIG_CPU_LOAD_LOG_PERIODICALLY",
+    "y",
+    "int",
+    "0",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      1124
+    ]
   ],
   [
     "CONFIG_DISK_ACCESS",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      1125
+    ]
   ],
   [
     "CONFIG_DSP",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      1126
+    ]
   ],
   [
     "CONFIG_EMUL",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      1127
+    ]
   ],
   [
     "CONFIG_CHARACTER_FRAMEBUFFER",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      1128
+    ]
   ],
   [
     "CONFIG_FILE_SYSTEM_LIB_LINK",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      1133
+    ]
   ],
   [
     "CONFIG_FILE_SYSTEM",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      1134
+    ]
   ],
   [
     "CONFIG_GNSS_RTK",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      1137
+    ]
   ],
   [
     "CONFIG_INSTRUMENTATION",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      1138
+    ]
   ],
   [
     "CONFIG_RPMSG_SERVICE",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      1143
+    ]
   ],
   [
     "CONFIG_IPC_SERVICE",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      1144
+    ]
   ],
   [
     "CONFIG_OPENAMP_RSC_TABLE",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      1145
+    ]
   ],
   [
     "CONFIG_JWT",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      1148
+    ]
   ],
   [
     "CONFIG_ZMS",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      1153
+    ]
   ],
   [
     "CONFIG_LLEXT",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      1156
+    ]
   ],
   [
     "CONFIG_LLEXT_EDK",
     "y",
     "bool",
-    null,
-    "unset",
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      1157
+    ]
+  ],
+  [
+    "CONFIG_LOG_CORE_INIT_PRIORITY",
+    "y",
+    "int",
+    "0",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      1162
+    ]
+  ],
+  [
+    "CONFIG_LOG_MODE_DEFERRED",
+    "y",
+    "bool",
+    "y",
+    "assign",
     null
   ],
   [
-    "CONFIG_LOG_OUTPUT",
+    "CONFIG_LOG_MODE_IMMEDIATE",
     "y",
     "bool",
     null,
     "unset",
     null
+  ],
+  [
+    "CONFIG_LOG_MODE_MINIMAL",
+    "y",
+    "bool",
+    null,
+    "unset",
+    null
+  ],
+  [
+    "CONFIG_LOG_FRONTEND",
+    "y",
+    "bool",
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      1166
+    ]
+  ],
+  [
+    "CONFIG_LOG_FRONTEND_OPT_API",
+    "y",
+    "bool",
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      1167
+    ]
+  ],
+  [
+    "CONFIG_LOG_CUSTOM_HEADER",
+    "y",
+    "bool",
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      1168
+    ]
+  ],
+  [
+    "CONFIG_LOG_MULTIDOMAIN",
+    "y",
+    "bool",
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      1169
+    ]
+  ],
+  [
+    "CONFIG_LOG_FLUSH_SLEEP_US",
+    "y",
+    "int",
+    "10000",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      1170
+    ]
+  ],
+  [
+    "CONFIG_LOG_RUNTIME_FILTERING",
+    "y",
+    "bool",
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      1175
+    ]
+  ],
+  [
+    "CONFIG_LOG_DEFAULT_LEVEL",
+    "y",
+    "int",
+    "3",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      1176
+    ]
+  ],
+  [
+    "CONFIG_LOG_OVERRIDE_LEVEL",
+    "y",
+    "int",
+    "0",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      1177
+    ]
+  ],
+  [
+    "CONFIG_LOG_MAX_LEVEL",
+    "y",
+    "int",
+    "4",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      1178
+    ]
+  ],
+  [
+    "CONFIG_LOG_PRINTK",
+    "y",
+    "bool",
+    "y",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      1184
+    ]
+  ],
+  [
+    "CONFIG_LOG_MODE_OVERFLOW",
+    "y",
+    "bool",
+    "y",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      1185
+    ]
+  ],
+  [
+    "CONFIG_LOG_BLOCK_IN_THREAD",
+    "y",
+    "bool",
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      1186
+    ]
+  ],
+  [
+    "CONFIG_LOG_PROCESS_TRIGGER_THRESHOLD",
+    "y",
+    "int",
+    "10",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      1187
+    ]
+  ],
+  [
+    "CONFIG_LOG_PROCESS_THREAD",
+    "y",
+    "bool",
+    "y",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      1188
+    ]
+  ],
+  [
+    "CONFIG_LOG_PROCESS_THREAD_STARTUP_DELAY_MS",
+    "y",
+    "int",
+    "0",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      1189
+    ]
+  ],
+  [
+    "CONFIG_LOG_PROCESS_THREAD_SLEEP_MS",
+    "y",
+    "int",
+    "1000",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      1190
+    ]
+  ],
+  [
+    "CONFIG_LOG_PROCESS_THREAD_CUSTOM_PRIORITY",
+    "y",
+    "bool",
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      1191
+    ]
+  ],
+  [
+    "CONFIG_LOG_BUFFER_SIZE",
+    "y",
+    "int",
+    "1024",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      1192
+    ]
+  ],
+  [
+    "CONFIG_LOG_TRACE_SHORT_TIMESTAMP",
+    "y",
+    "bool",
+    "y",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      1193
+    ]
+  ],
+  [
+    "CONFIG_LOG_TIMESTAMP_64BIT",
+    "y",
+    "bool",
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      1194
+    ]
+  ],
+  [
+    "CONFIG_LOG_TIMESTAMP_USE_REALTIME",
+    "y",
+    "bool",
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      1195
+    ]
+  ],
+  [
+    "CONFIG_LOG_SPEED",
+    "y",
+    "bool",
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      1196
+    ]
+  ],
+  [
+    "CONFIG_LOG_FUNC_NAME_PREFIX_ERR",
+    "y",
+    "bool",
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      1206
+    ]
+  ],
+  [
+    "CONFIG_LOG_FUNC_NAME_PREFIX_WRN",
+    "y",
+    "bool",
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      1207
+    ]
+  ],
+  [
+    "CONFIG_LOG_FUNC_NAME_PREFIX_INF",
+    "y",
+    "bool",
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      1208
+    ]
+  ],
+  [
+    "CONFIG_LOG_FUNC_NAME_PREFIX_DBG",
+    "y",
+    "bool",
+    "y",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      1209
+    ]
+  ],
+  [
+    "CONFIG_LOG_MIPI_SYST_ENABLE",
+    "y",
+    "bool",
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      1212
+    ]
+  ],
+  [
+    "CONFIG_LOG_DOMAIN_NAME_PREFIX",
+    "y",
+    "bool",
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      1213
+    ]
+  ],
+  [
+    "CONFIG_LOG_THREAD_ID_PREFIX",
+    "y",
+    "bool",
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      1214
+    ]
+  ],
+  [
+    "CONFIG_LOG_CUSTOM_FORMAT_SUPPORT",
+    "y",
+    "bool",
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      1215
+    ]
+  ],
+  [
+    "CONFIG_LOG_BACKEND_SHOW_TIMESTAMP",
+    "y",
+    "bool",
+    "y",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      1216
+    ]
+  ],
+  [
+    "CONFIG_LOG_BACKEND_SHOW_LEVEL",
+    "y",
+    "bool",
+    "y",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      1217
+    ]
+  ],
+  [
+    "CONFIG_LOG_BACKEND_SHOW_COLOR",
+    "y",
+    "bool",
+    "y",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      1218
+    ]
+  ],
+  [
+    "CONFIG_LOG_INFO_COLOR_GREEN",
+    "y",
+    "bool",
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      1219
+    ]
+  ],
+  [
+    "CONFIG_LOG_DBG_COLOR_BLUE",
+    "y",
+    "bool",
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      1220
+    ]
+  ],
+  [
+    "CONFIG_LOG_TAG_MAX_LEN",
+    "y",
+    "int",
+    "0",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      1221
+    ]
+  ],
+  [
+    "CONFIG_LOG_BACKEND_SUPPORTS_FORMAT_TIMESTAMP",
+    "n",
+    "bool",
+    "y",
+    "select",
+    [
+      "LOG_BACKEND_UART && UART_CONSOLE && !LOG_FRONTEND_ONLY && !LOG_MODE_MINIMAL && LOG"
+    ]
+  ],
+  [
+    "CONFIG_LOG_BACKEND_FORMAT_TIMESTAMP",
+    "y",
+    "bool",
+    "y",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      1223
+    ]
+  ],
+  [
+    "CONFIG_LOG_OUTPUT_FORMAT_TIME_TIMESTAMP",
+    "y",
+    "bool",
+    "y",
+    "assign",
+    null
+  ],
+  [
+    "CONFIG_LOG_OUTPUT_FORMAT_DATE_TIMESTAMP",
+    "y",
+    "bool",
+    null,
+    "unset",
+    null
+  ],
+  [
+    "CONFIG_LOG_OUTPUT_FORMAT_ISO8601_TIMESTAMP",
+    "y",
+    "bool",
+    null,
+    "unset",
+    null
+  ],
+  [
+    "CONFIG_LOG_OUTPUT_FORMAT_LINUX_TIMESTAMP",
+    "y",
+    "bool",
+    null,
+    "unset",
+    null
+  ],
+  [
+    "CONFIG_LOG_OUTPUT_FORMAT_CUSTOM_TIMESTAMP",
+    "y",
+    "bool",
+    null,
+    "unset",
+    null
+  ],
+  [
+    "CONFIG_LOG_BACKEND_CRLF_NONE",
+    "y",
+    "bool",
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      1229
+    ]
+  ],
+  [
+    "CONFIG_LOG_BACKEND_CRLF_LFONLY",
+    "y",
+    "bool",
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      1230
+    ]
+  ],
+  [
+    "CONFIG_LOG_BACKEND_SKIP_SOURCE",
+    "y",
+    "bool",
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      1231
+    ]
+  ],
+  [
+    "CONFIG_LOG_BACKEND_SWO",
+    "y",
+    "bool",
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      1237
+    ]
+  ],
+  [
+    "CONFIG_LOG_BACKEND_UART",
+    "y",
+    "bool",
+    "y",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      1238
+    ]
+  ],
+  [
+    "CONFIG_LOG_BACKEND_UART_BUFFER_SIZE",
+    "y",
+    "int",
+    "1",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      1239
+    ]
+  ],
+  [
+    "CONFIG_LOG_BACKEND_UART_AUTOSTART",
+    "y",
+    "bool",
+    "y",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      1240
+    ]
+  ],
+  [
+    "CONFIG_LOG_BACKEND_UART_OUTPUT_TEXT",
+    "y",
+    "bool",
+    "y",
+    "assign",
+    null
+  ],
+  [
+    "CONFIG_LOG_BACKEND_UART_OUTPUT_DICTIONARY",
+    "y",
+    "bool",
+    null,
+    "unset",
+    null
+  ],
+  [
+    "CONFIG_LOG_BACKEND_UART_OUTPUT_CUSTOM",
+    "y",
+    "bool",
+    null,
+    "unset",
+    null
+  ],
+  [
+    "CONFIG_LOG_BACKEND_UART_OUTPUT_DEFAULT",
+    "n",
+    "int",
+    "0",
+    "default",
+    [
+      "C:\\Users\\razie\\OneDrive\\Documentos\\PowerShell\\STM32\\deps\\zephyr\\subsys\\logging\\Kconfig.template.log_format_config",
+      42
+    ]
+  ],
+  [
+    "CONFIG_LOG_BACKEND_IPC_SERVICE",
+    "y",
+    "bool",
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      1245
+    ]
+  ],
+  [
+    "CONFIG_LOG_USE_VLA",
+    "y",
+    "bool",
+    "y",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      1251
+    ]
+  ],
+  [
+    "CONFIG_LOG_SIMPLE_MSG_OPTIMIZE",
+    "y",
+    "bool",
+    "y",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      1252
+    ]
+  ],
+  [
+    "CONFIG_LOG_ALWAYS_RUNTIME",
+    "y",
+    "bool",
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      1253
+    ]
+  ],
+  [
+    "CONFIG_LOG_FMT_SECTION",
+    "y",
+    "bool",
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      1254
+    ]
+  ],
+  [
+    "CONFIG_LOG_FMT_STRING_VALIDATE",
+    "y",
+    "bool",
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      1255
+    ]
+  ],
+  [
+    "CONFIG_LOG_MEM_UTILIZATION",
+    "y",
+    "bool",
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      1256
+    ]
+  ],
+  [
+    "CONFIG_LOG_FAILURE_REPORT_PERIOD",
+    "y",
+    "int",
+    "1000",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      1257
+    ]
+  ],
+  [
+    "CONFIG_LOG_RATELIMIT",
+    "y",
+    "bool",
+    "y",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      1260
+    ]
+  ],
+  [
+    "CONFIG_LOG_RATELIMIT_INTERVAL_MS",
+    "y",
+    "int",
+    "5000",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      1261
+    ]
+  ],
+  [
+    "CONFIG_LOG_OUTPUT",
+    "y",
+    "bool",
+    "y",
+    "select",
+    [
+      "LOG_BACKEND_UART_OUTPUT_TEXT && <choice LOG_BACKEND_UART_OUTPUT>"
+    ]
   ],
   [
     "CONFIG_MEM_ATTR",
     "y",
     "bool",
     "y",
-    "default",
+    "assign",
     [
-      "C:\\Users\\razie\\OneDrive\\Documentos\\PowerShell\\STM32\\deps\\zephyr\\subsys\\mem_mgmt\\Kconfig",
-      6
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      1265
     ]
   ],
   [
     "CONFIG_MEM_ATTR_HEAP",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      1266
+    ]
   ],
   [
     "CONFIG_EC_HOST_CMD",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      1275
+    ]
   ],
   [
     "CONFIG_OSDP",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      1278
+    ]
   ],
   [
     "CONFIG_MODBUS",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      1281
+    ]
   ],
   [
     "CONFIG_MODEM_MODULES",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      1282
+    ]
   ],
   [
     "CONFIG_NETWORKING",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      1287
+    ]
   ],
   [
     "CONFIG_HAS_PM",
@@ -5722,263 +8313,353 @@
     "CONFIG_PM_POLICY_LATENCY_STANDALONE",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      1294
+    ]
   ],
   [
     "CONFIG_MCTP",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      1300
+    ]
   ],
   [
     "CONFIG_PROFILING",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      1308
+    ]
   ],
   [
     "CONFIG_TEST_RANDOM_GENERATOR",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      1313
+    ]
   ],
   [
     "CONFIG_TIMER_RANDOM_INITIAL_STATE",
     "y",
     "int",
     "123456789",
-    "default",
+    "assign",
     [
-      "C:\\Users\\razie\\OneDrive\\Documentos\\PowerShell\\STM32\\deps\\zephyr\\subsys\\random\\Kconfig",
-      33
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      1314
     ]
   ],
   [
     "CONFIG_CSPRNG_NEEDED",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      1315
+    ]
   ],
   [
     "CONFIG_RTIO",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      1318
+    ]
   ],
   [
     "CONFIG_MMC_STACK",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      1323
+    ]
   ],
   [
     "CONFIG_SDMMC_STACK",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      1324
+    ]
   ],
   [
     "CONFIG_SDIO_STACK",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      1325
+    ]
   ],
   [
     "CONFIG_SECURE_STORAGE",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      1328
+    ]
   ],
   [
     "CONFIG_SETTINGS",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      1329
+    ]
   ],
   [
     "CONFIG_SHELL",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      1330
+    ]
   ],
   [
     "CONFIG_STATS",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      1331
+    ]
   ],
   [
     "CONFIG_STREAM_FLASH",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      1336
+    ]
   ],
   [
     "CONFIG_TASK_WDT",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      1339
+    ]
   ],
   [
     "CONFIG_ZTEST",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      1344
+    ]
   ],
   [
     "CONFIG_ZTEST_MOCKING",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      1345
+    ]
   ],
   [
     "CONFIG_ZTRESS",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      1346
+    ]
   ],
   [
     "CONFIG_ZTEST_BENCHMARK",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      1351
+    ]
   ],
   [
     "CONFIG_TEST",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      1354
+    ]
   ],
   [
     "CONFIG_TEST_USERSPACE",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      1355
+    ]
   ],
   [
     "CONFIG_FORCE_COVERAGE",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      1361
+    ]
   ],
   [
     "CONFIG_COVERAGE_DUMP_PATH_EXCLUDE",
     "y",
     "string",
     "",
-    "default",
+    "assign",
     [
-      "C:\\Users\\razie\\OneDrive\\Documentos\\PowerShell\\STM32\\deps\\zephyr\\subsys\\testsuite\\Kconfig.coverage",
-      96
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      1362
     ]
   ],
   [
     "CONFIG_TIMING_FUNCTIONS",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      1365
+    ]
   ],
   [
     "CONFIG_TRACING",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      1366
+    ]
   ],
   [
     "CONFIG_USB_DEVICE_STACK",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      1367
+    ]
   ],
   [
     "CONFIG_USB_DEVICE_STACK_NEXT",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      1368
+    ]
   ],
   [
     "CONFIG_USB_HOST_STACK",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      1369
+    ]
   ],
   [
     "CONFIG_USBC_STACK",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      1370
+    ]
   ],
   [
     "CONFIG_ZBUS",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      1371
+    ]
   ],
   [
     "CONFIG_MODULES",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      1372
+    ]
   ],
   [
     "CONFIG_TOOLCHAIN_ZEPHYR_1_0",
@@ -6037,11 +8718,8 @@
     "y",
     "bool",
     "y",
-    "default",
-    [
-      "C:\\Users\\razie\\OneDrive\\Documentos\\PowerShell\\STM32\\deps\\zephyr\\Kconfig.zephyr",
-      62
-    ]
+    "assign",
+    null
   ],
   [
     "CONFIG_LINKER_ORPHAN_SECTION_ERROR",
@@ -6056,10 +8734,10 @@
     "y",
     "hex",
     "0",
-    "default",
+    "assign",
     [
-      "C:\\Users\\razie\\OneDrive\\Documentos\\PowerShell\\STM32\\deps\\zephyr\\Kconfig.zephyr",
-      148
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      1390
     ]
   ],
   [
@@ -6067,10 +8745,10 @@
     "y",
     "hex",
     "0",
-    "default",
+    "assign",
     [
-      "C:\\Users\\razie\\OneDrive\\Documentos\\PowerShell\\STM32\\deps\\zephyr\\Kconfig.zephyr",
-      178
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      1391
     ]
   ],
   [
@@ -6089,11 +8767,8 @@
     "y",
     "bool",
     "y",
-    "default",
-    [
-      "C:\\Users\\razie\\OneDrive\\Documentos\\PowerShell\\STM32\\deps\\zephyr\\Kconfig.zephyr",
-      193
-    ]
+    "assign",
+    null
   ],
   [
     "CONFIG_CMAKE_LINKER_GENERATOR",
@@ -6107,36 +8782,45 @@
     "CONFIG_HAVE_CUSTOM_LINKER_SCRIPT",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      1395
+    ]
   ],
   [
     "CONFIG_LINKER_SORT_BY_ALIGNMENT",
     "y",
     "bool",
     "y",
-    "default",
+    "assign",
     [
-      "C:\\Users\\razie\\OneDrive\\Documentos\\PowerShell\\STM32\\deps\\zephyr\\Kconfig.zephyr",
-      243
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      1396
     ]
   ],
   [
     "CONFIG_LINKER_USE_BOOT_SECTION",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      1401
+    ]
   ],
   [
     "CONFIG_LINKER_USE_PINNED_SECTION",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      1402
+    ]
   ],
   [
     "CONFIG_LINKER_GENERIC_SECTIONS_PRESENT_AT_BOOT",
@@ -6154,10 +8838,10 @@
     "y",
     "bool",
     "y",
-    "default",
+    "assign",
     [
-      "C:\\Users\\razie\\OneDrive\\Documentos\\PowerShell\\STM32\\deps\\zephyr\\Kconfig.zephyr",
-      317
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      1404
     ]
   ],
   [
@@ -6165,10 +8849,10 @@
     "y",
     "hex",
     "0xE015E015",
-    "default",
+    "assign",
     [
-      "C:\\Users\\razie\\OneDrive\\Documentos\\PowerShell\\STM32\\deps\\zephyr\\Kconfig.zephyr",
-      333
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      1405
     ]
   ],
   [
@@ -6197,9 +8881,12 @@
     "CONFIG_LINKER_DEVNULL_MEMORY",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      1410
+    ]
   ],
   [
     "CONFIG_STD_C90",
@@ -6230,11 +8917,8 @@
     "y",
     "bool",
     "y",
-    "default",
-    [
-      "C:\\Users\\razie\\OneDrive\\Documentos\\PowerShell\\STM32\\deps\\zephyr\\Kconfig.zephyr",
-      416
-    ]
+    "assign",
+    null
   ],
   [
     "CONFIG_STD_C23",
@@ -6258,25 +8942,34 @@
     "CONFIG_GNU_C_EXTENSIONS",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      1422
+    ]
   ],
   [
     "CONFIG_CODING_GUIDELINE_CHECK",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      1423
+    ]
   ],
   [
     "CONFIG_COMPILER_FREESTANDING",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      1424
+    ]
   ],
   [
     "CONFIG_SIZE_OPTIMIZATIONS",
@@ -6322,35 +9015,44 @@
     "CONFIG_COMPILER_WARNINGS_AS_ERRORS",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      1430
+    ]
   ],
   [
     "CONFIG_DEPRECATION_TEST",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      1431
+    ]
   ],
   [
     "CONFIG_COMPILER_SAVE_TEMPS",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      1432
+    ]
   ],
   [
     "CONFIG_COMPILER_TRACK_MACRO_EXPANSION",
     "y",
     "bool",
     "y",
-    "default",
+    "assign",
     [
-      "C:\\Users\\razie\\OneDrive\\Documentos\\PowerShell\\STM32\\deps\\zephyr\\Kconfig.zephyr",
-      594
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      1433
     ]
   ],
   [
@@ -6358,10 +9060,10 @@
     "y",
     "bool",
     "y",
-    "default",
+    "assign",
     [
-      "C:\\Users\\razie\\OneDrive\\Documentos\\PowerShell\\STM32\\deps\\zephyr\\Kconfig.zephyr",
-      602
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      1434
     ]
   ],
   [
@@ -6377,11 +9079,8 @@
     "y",
     "bool",
     "y",
-    "default",
-    [
-      "C:\\Users\\razie\\OneDrive\\Documentos\\PowerShell\\STM32\\deps\\zephyr\\Kconfig.zephyr",
-      609
-    ]
+    "assign",
+    null
   ],
   [
     "CONFIG_FORTIFY_SOURCE_RUN_TIME",
@@ -6395,17 +9094,23 @@
     "CONFIG_COMPILER_OPT",
     "y",
     "string",
-    null,
-    "unset",
-    null
+    "",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      1438
+    ]
   ],
   [
     "CONFIG_MISRA_SANE",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      1439
+    ]
   ],
   [
     "CONFIG_TOOLCHAIN_SUPPORTS_VLA_IN_STATEMENTS",
@@ -6433,20 +9138,20 @@
     "CONFIG_SCOPE_CLEANUP_HELPERS",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      1442
+    ]
   ],
   [
     "CONFIG_COMPILER_CODEGEN_VLIW_AUTO",
     "y",
     "bool",
     "y",
-    "default",
-    [
-      "C:\\Users\\razie\\OneDrive\\Documentos\\PowerShell\\STM32\\deps\\zephyr\\Kconfig.zephyr",
-      681
-    ]
+    "assign",
+    null
   ],
   [
     "CONFIG_COMPILER_CODEGEN_VLIW_ENABLED",
@@ -6485,21 +9190,18 @@
     "y",
     "bool",
     "y",
-    "default",
-    [
-      "C:\\Users\\razie\\OneDrive\\Documentos\\PowerShell\\STM32\\deps\\zephyr\\Kconfig.zephyr",
-      712
-    ]
+    "assign",
+    null
   ],
   [
     "CONFIG_KERNEL_BIN_NAME",
     "y",
     "string",
     "zephyr",
-    "default",
+    "assign",
     [
-      "C:\\Users\\razie\\OneDrive\\Documentos\\PowerShell\\STM32\\deps\\zephyr\\Kconfig.zephyr",
-      736
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      1460
     ]
   ],
   [
@@ -6509,8 +9211,8 @@
     "y",
     "assign",
     [
-      "C:/zephyr/TM1638/prj.conf",
-      14
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      1461
     ]
   ],
   [
@@ -6520,8 +9222,8 @@
     "y",
     "assign",
     [
-      "C:/zephyr/TM1638/prj.conf",
-      13
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      1462
     ]
   ],
   [
@@ -6529,19 +9231,22 @@
     "y",
     "bool",
     "y",
-    "default",
+    "assign",
     [
-      "C:\\Users\\razie\\OneDrive\\Documentos\\PowerShell\\STM32\\deps\\zephyr\\Kconfig.zephyr",
-      766
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      1463
     ]
   ],
   [
     "CONFIG_OUTPUT_DISASSEMBLY_NO_ALIASES",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      1464
+    ]
   ],
   [
     "CONFIG_OUTPUT_PRINT_MEMORY_USAGE",
@@ -6550,124 +9255,163 @@
     "y",
     "assign",
     [
-      "C:/zephyr/TM1638/prj.conf",
-      16
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      1465
     ]
   ],
   [
     "CONFIG_CLEANUP_INTERMEDIATE_FILES",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      1466
+    ]
   ],
   [
     "CONFIG_BUILD_GAP_FILL_PATTERN",
     "y",
     "hex",
     "0xFF",
-    "default",
+    "assign",
     [
-      "C:\\Users\\razie\\OneDrive\\Documentos\\PowerShell\\STM32\\deps\\zephyr\\Kconfig.zephyr",
-      805
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      1467
     ]
   ],
   [
     "CONFIG_BUILD_NO_GAP_FILL",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      1468
+    ]
   ],
   [
     "CONFIG_BUILD_OUTPUT_HEX_GAP_FILL",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      1469
+    ]
   ],
   [
     "CONFIG_BUILD_OUTPUT_EXE",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      1470
+    ]
   ],
   [
     "CONFIG_BUILD_OUTPUT_S19_GAP_FILL",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      1471
+    ]
   ],
   [
     "CONFIG_BUILD_OUTPUT_VERILOG",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      1472
+    ]
   ],
   [
     "CONFIG_BUILD_OUTPUT_UF2",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      1473
+    ]
   ],
   [
     "CONFIG_BUILD_OUTPUT_MOT",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      1474
+    ]
   ],
   [
     "CONFIG_BUILD_OUTPUT_STRIPPED",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      1475
+    ]
   ],
   [
     "CONFIG_BUILD_OUTPUT_COMPRESS_DEBUG_SECTIONS",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      1476
+    ]
   ],
   [
     "CONFIG_BUILD_ALIGN_LMA",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      1477
+    ]
   ],
   [
     "CONFIG_APPLICATION_DEFINED_SYSCALL",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      1478
+    ]
   ],
   [
     "CONFIG_MAKEFILE_EXPORTS",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      1479
+    ]
   ],
   [
     "CONFIG_BUILD_OUTPUT_META",
@@ -6676,27 +9420,30 @@
     "y",
     "assign",
     [
-      "C:/zephyr/TM1638/prj.conf",
-      12
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      1480
     ]
   ],
   [
     "CONFIG_BUILD_OUTPUT_META_STATE_PROPAGATE",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      1481
+    ]
   ],
   [
     "CONFIG_BUILD_OUTPUT_STRIP_PATHS",
     "y",
     "bool",
     "y",
-    "default",
+    "assign",
     [
-      "C:\\Users\\razie\\OneDrive\\Documentos\\PowerShell\\STM32\\deps\\zephyr\\Kconfig.zephyr",
-      1064
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      1482
     ]
   ],
   [
@@ -6704,38 +9451,44 @@
     "y",
     "bool",
     "y",
-    "default",
+    "assign",
     [
-      "C:\\Users\\razie\\OneDrive\\Documentos\\PowerShell\\STM32\\deps\\zephyr\\Kconfig.zephyr",
-      1078
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      1483
     ]
   ],
   [
     "CONFIG_EMIT_ALL_SYSCALLS",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      1484
+    ]
   ],
   [
     "CONFIG_WARN_DEPRECATED",
     "y",
     "bool",
     "y",
-    "default",
+    "assign",
     [
-      "C:\\Users\\razie\\OneDrive\\Documentos\\PowerShell\\STM32\\deps\\zephyr\\Kconfig.zephyr",
-      1110
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      1487
     ]
   ],
   [
     "CONFIG_WARN_EXPERIMENTAL",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      1488
+    ]
   ],
   [
     "CONFIG_TAINT",
@@ -6752,37 +9505,43 @@
     "y",
     "bool",
     "y",
-    "default",
+    "assign",
     [
-      "C:\\Users\\razie\\OneDrive\\Documentos\\PowerShell\\STM32\\deps\\zephyr\\Kconfig.zephyr",
-      1146
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      1490
     ]
   ],
   [
     "CONFIG_IS_BOOTLOADER",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      1496
+    ]
   ],
   [
     "CONFIG_BOOTLOADER_BOSSA",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      1497
+    ]
   ],
   [
     "CONFIG_LEGACY_GENERATED_INCLUDE_PATH",
     "y",
     "bool",
     "y",
-    "default",
+    "assign",
     [
-      "C:\\Users\\razie\\OneDrive\\Documentos\\PowerShell\\STM32\\deps\\zephyr\\Kconfig.zephyr",
-      1216
+      "C:/zephyr/TM1638/build/primary/zephyr/.config",
+      1503
     ]
   ]
 ]

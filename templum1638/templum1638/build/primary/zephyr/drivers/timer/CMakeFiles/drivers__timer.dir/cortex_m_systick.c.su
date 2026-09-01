@@ -1,0 +1,10 @@
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/drivers/timer/cortex_m_systick.c:296:17:elapsed	0	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/drivers/timer/cortex_m_systick.c:657:12:sys_clock_driver_init	0	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/include/zephyr/drivers/timer/system_timer.h:205:20:sys_clock_announce	8	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/drivers/timer/cortex_m_systick.c:349:40:sys_clock_isr	16	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/drivers/timer/cortex_m_systick.c:412:6:sys_clock_set_timeout	24	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/drivers/timer/cortex_m_systick.c:539:10:sys_clock_elapsed	16	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/drivers/timer/cortex_m_systick.c:553:10:sys_clock_cycle_get_32	16	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/drivers/timer/cortex_m_systick.c:564:10:sys_clock_cycle_get_64	8	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/drivers/timer/cortex_m_systick.c:574:6:sys_clock_idle_exit	0	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/drivers/timer/cortex_m_systick.c:652:6:sys_clock_disable	0	static
