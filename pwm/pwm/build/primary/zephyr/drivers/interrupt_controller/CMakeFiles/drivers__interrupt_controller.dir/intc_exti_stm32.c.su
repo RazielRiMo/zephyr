@@ -1,0 +1,17 @@
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/drivers/interrupt_controller/intc_exti_stm32.c:132:12:stm32_exti_enable_clocks	16	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/drivers/interrupt_controller/intc_exti_stm32.c:149:12:stm32_exti_init	8	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/drivers/interrupt_controller/intc_exti_stm32.c:162:13:stm32_exti_enable_it	0	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/drivers/interrupt_controller/intc_exti_stm32.c:173:13:stm32_exti_disable_it	0	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/drivers/interrupt_controller/intc_exti_stm32.c:184:13:stm32_exti_enable_rising_trig	0	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/drivers/interrupt_controller/intc_exti_stm32.c:195:13:stm32_exti_disable_rising_trig	0	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/drivers/interrupt_controller/intc_exti_stm32.c:206:14:stm32_exti_enable_falling_trig	0	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/drivers/interrupt_controller/intc_exti_stm32.c:217:13:stm32_exti_disable_falling_trig	0	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/drivers/interrupt_controller/intc_exti_stm32.c:229:13:stm32_exti_select_line_trigger	16	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/drivers/interrupt_controller/intc_exti_stm32.c:261:13:stm32_exti_enable_event	0	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/drivers/interrupt_controller/intc_exti_stm32.c:272:13:stm32_exti_disable_event	0	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/drivers/interrupt_controller/intc_exti_stm32.c:284:13:stm32_exti_set_mode	16	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/drivers/interrupt_controller/intc_exti_stm32.c:72:6:stm32_exti_is_pending	0	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/drivers/interrupt_controller/intc_exti_stm32.c:95:5:stm32_exti_clear_pending	0	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/drivers/interrupt_controller/intc_exti_stm32.c:113:5:stm32_exti_sw_interrupt	0	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/drivers/interrupt_controller/intc_exti_stm32.c:310:5:stm32_exti_enable	16	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/drivers/interrupt_controller/intc_exti_stm32.c:330:5:stm32_exti_disable	16	static

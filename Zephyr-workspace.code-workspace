@@ -22,6 +22,10 @@
 		{
 			"name": "templum1638",
 			"path": "templum1638/templum1638"
+		},
+		{
+			"name": "pwm",
+			"path": "pwm/pwm"
 		}
 	],
 	"settings": {

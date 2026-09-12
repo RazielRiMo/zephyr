@@ -197,6 +197,7 @@ void actualizar_hora(void){
 		}
 		k_msgq_purge(&hora_act);
 		k_msgq_put(&hora_act, &time, K_NO_WAIT);
+		LOG_DBG("%d/%d/%d %d:%d:%d", time.tm_mday, time.tm_mon, time.tm_year, time.tm_hour, time.tm_min, time.tm_sec);
 		k_msleep(1000);
 	}
 }
@@ -316,7 +317,7 @@ uint16_t convlum (int16_t raw){
 }
 
 uint16_t convtemp (int16_t raw){
-	float a = 36.92, b = -2;
+	float a = 36.92, b = -1;
 	uint16_t final =(uint16_t)((raw/a)+b);
 	return final;
 }

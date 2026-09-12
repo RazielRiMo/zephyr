@@ -1,0 +1,126 @@
+modules:
+- name: cmsis_6
+  path: C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/modules/hal/cmsis_6
+  remote: https://github.com/zephyrproject-rtos/CMSIS_6
+  revision: 30a859f44ef8ab4dc8f84b03ed586fd16ccf9d74
+- name: hal_stm32
+  path: C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/modules/hal/stm32
+  remote: https://github.com/zephyrproject-rtos/hal_stm32
+  revision: fc11896dd39cfca37bf9b4aeaaa2df8861b81875
+- name: mbedtls
+  path: C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/modules/crypto/mbedtls
+  remote: https://github.com/zephyrproject-rtos/mbedtls
+  revision: a3e190fe44c78d1ba67f55979e1257328cc7d0d8
+  security:
+    external-references:
+    - cpe:2.3:a:arm:mbed_tls:4.1.0:*:*:*:*:*:*:*
+    - pkg:github/Mbed-TLS/mbedtls@v4.1.0
+- name: mcuboot
+  path: C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/bootloader/mcuboot
+  remote: https://github.com/zephyrproject-rtos/mcuboot
+  revision: 6d3b3d2c38ab20c242e5b9abb04d050086383eb2
+  tags:
+  - v2.4.0
+- name: percepio
+  path: C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/modules/debug/percepio
+  remote: https://github.com/zephyrproject-rtos/percepio
+  revision: f9159fe3c79578e8d90c8593e83f9862d9b8962c
+- name: picolibc
+  path: C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/modules/lib/picolibc
+  remote: https://github.com/zephyrproject-rtos/picolibc
+  revision: 01254932e8e81085817ed61fd858648584ffe37c
+- name: segger
+  path: C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/modules/debug/segger
+  remote: https://github.com/zephyrproject-rtos/segger
+  revision: 50892fdbcf2f570e67baa72b8894a66b16946f72
+- name: tf-psa-crypto
+  path: C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/modules/crypto/tf-psa-crypto
+  remote: https://github.com/zephyrproject-rtos/tf-psa-crypto
+  revision: dc575a2ddcc8cb16275d24c42a52eaf79ebe2231
+  security:
+    external-references:
+    - cpe:2.3:a:arm:tf-psa-crypto:1.1.0:*:*:*:*:*:*:*
+    - pkg:github/Mbed-TLS/TF-PSA-Crypto@v1.1.0
+- name: trusted-firmware-m
+  path: C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/modules/tee/tf-m/trusted-firmware-m
+  remote: https://github.com/zephyrproject-rtos/trusted-firmware-m
+  revision: 9a4cb1a280b63a5e66bd469e82eb75f2b3e05a78
+  security:
+    external-references:
+    - cpe:2.3:o:arm:trusted_firmware-m:2.2.2:-:*:*:*:*:*:*
+    - pkg:generic/trusted-firmware-m@TF-Mv2.2.2?vcs_url=git%2Bhttps://review.trustedfirmware.org/TF-M/trusted-firmware-m
+  tags:
+  - zephyr_tf-m_v2.2.2
+west:
+  manifest: C:\Users\razie\OneDrive\Documentos\PowerShell\STM32\manifest\west.yml
+  projects:
+  - path: C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/manifest
+    remote: https://github.com/RazielRiMo/razie.git
+    revision: ce72e75f946af6f5dd69fbfe6eb13ee4dae3b116-dirty
+  - path: C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr
+    remote: https://github.com/zephyrproject-rtos/zephyr
+    revision: dccb09599635bdff17633fa7e9dab014b91dce90
+    tags:
+    - v4.4.2
+  - name: cmsis_6
+    path: C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/modules/hal/cmsis_6
+    remote: https://github.com/zephyrproject-rtos/CMSIS_6
+    revision: 30a859f44ef8ab4dc8f84b03ed586fd16ccf9d74
+  - name: hal_stm32
+    path: C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/modules/hal/stm32
+    remote: https://github.com/zephyrproject-rtos/hal_stm32
+    revision: fc11896dd39cfca37bf9b4aeaaa2df8861b81875
+  - name: mbedtls
+    path: C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/modules/crypto/mbedtls
+    remote: https://github.com/zephyrproject-rtos/mbedtls
+    revision: a3e190fe44c78d1ba67f55979e1257328cc7d0d8
+    security:
+      external-references:
+      - cpe:2.3:a:arm:mbed_tls:4.1.0:*:*:*:*:*:*:*
+      - pkg:github/Mbed-TLS/mbedtls@v4.1.0
+  - name: mcuboot
+    path: C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/bootloader/mcuboot
+    remote: https://github.com/zephyrproject-rtos/mcuboot
+    revision: 6d3b3d2c38ab20c242e5b9abb04d050086383eb2
+    tags:
+    - v2.4.0
+  - name: percepio
+    path: C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/modules/debug/percepio
+    remote: https://github.com/zephyrproject-rtos/percepio
+    revision: f9159fe3c79578e8d90c8593e83f9862d9b8962c
+  - name: picolibc
+    path: C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/modules/lib/picolibc
+    remote: https://github.com/zephyrproject-rtos/picolibc
+    revision: 01254932e8e81085817ed61fd858648584ffe37c
+  - name: segger
+    path: C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/modules/debug/segger
+    remote: https://github.com/zephyrproject-rtos/segger
+    revision: 50892fdbcf2f570e67baa72b8894a66b16946f72
+  - name: tf-psa-crypto
+    path: C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/modules/crypto/tf-psa-crypto
+    remote: https://github.com/zephyrproject-rtos/tf-psa-crypto
+    revision: dc575a2ddcc8cb16275d24c42a52eaf79ebe2231
+    security:
+      external-references:
+      - cpe:2.3:a:arm:tf-psa-crypto:1.1.0:*:*:*:*:*:*:*
+      - pkg:github/Mbed-TLS/TF-PSA-Crypto@v1.1.0
+  - name: trusted-firmware-m
+    path: C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/modules/tee/tf-m/trusted-firmware-m
+    remote: https://github.com/zephyrproject-rtos/trusted-firmware-m
+    revision: 9a4cb1a280b63a5e66bd469e82eb75f2b3e05a78
+    security:
+      external-references:
+      - cpe:2.3:o:arm:trusted_firmware-m:2.2.2:-:*:*:*:*:*:*
+      - pkg:generic/trusted-firmware-m@TF-Mv2.2.2?vcs_url=git%2Bhttps://review.trustedfirmware.org/TF-M/trusted-firmware-m
+    tags:
+    - zephyr_tf-m_v2.2.2
+workspace:
+  dirty: true
+  extra: false
+  'off': false
+zephyr:
+  path: C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr
+  remote: https://github.com/zephyrproject-rtos/zephyr
+  revision: dccb09599635bdff17633fa7e9dab014b91dce90
+  tags:
+  - v4.4.2

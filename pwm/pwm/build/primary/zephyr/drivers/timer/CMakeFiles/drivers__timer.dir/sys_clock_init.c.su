@@ -1,0 +1,2 @@
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/drivers/timer/sys_clock_init.c:21:13:sys_clock_set_timeout	0	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/drivers/timer/sys_clock_init.c:25:13:sys_clock_idle_exit	0	static

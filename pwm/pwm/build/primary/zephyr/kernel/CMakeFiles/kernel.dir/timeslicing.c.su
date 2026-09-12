@@ -1,0 +1,5 @@
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/kernel/timeslicing.c:39:12:z_time_slice_size	0	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/kernel/timeslicing.c:61:13:slice_timeout	0	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/kernel/timeslicing.c:75:6:z_reset_time_slice	16	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/kernel/timeslicing.c:97:6:k_sched_time_slice_set	8	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/kernel/timeslicing.c:131:6:z_time_slice	16	static

@@ -1,0 +1,2 @@
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/soc/st/stm32/common/stm32_backup_domain.c:32:6:stm32_backup_domain_enable_access	0	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/soc/st/stm32/common/stm32_backup_domain.c:46:6:stm32_backup_domain_disable_access	0	static

@@ -1,0 +1,50 @@
+menu "cmsis_6 (C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/modules/hal/cmsis_6)"
+osource "$(ZEPHYR_CMSIS_6_KCONFIG)"
+config ZEPHYR_CMSIS_6_MODULE
+	bool
+	default y
+endmenu
+config ZEPHYR_HAL_STM32_MODULE
+	bool
+	default y
+	select TAINT_BLOBS
+
+config ZEPHYR_HAL_STM32_MODULE_BLOBS
+	bool
+	default y
+menu "mbedtls (C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/modules/crypto/mbedtls)"
+osource "$(ZEPHYR_MBEDTLS_KCONFIG)"
+config ZEPHYR_MBEDTLS_MODULE
+	bool
+	default y
+endmenu
+config ZEPHYR_MCUBOOT_MODULE
+	bool
+	default y
+menu "percepio (C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/modules/debug/percepio)"
+osource "C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/modules/debug/percepio/zephyr/Kconfig"
+config ZEPHYR_PERCEPIO_MODULE
+	bool
+	default y
+endmenu
+menu "picolibc (C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/modules/lib/picolibc)"
+osource "C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/modules/lib/picolibc/zephyr/Kconfig"
+config ZEPHYR_PICOLIBC_MODULE
+	bool
+	default y
+endmenu
+menu "segger (C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/modules/debug/segger)"
+osource "$(ZEPHYR_SEGGER_KCONFIG)"
+config ZEPHYR_SEGGER_MODULE
+	bool
+	default y
+endmenu
+config ZEPHYR_TF_PSA_CRYPTO_MODULE
+	bool
+	default y
+menu "trusted-firmware-m (C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/modules/tee/tf-m/trusted-firmware-m)"
+osource "$(ZEPHYR_TRUSTED_FIRMWARE_M_KCONFIG)"
+config ZEPHYR_TRUSTED_FIRMWARE_M_MODULE
+	bool
+	default y
+endmenu

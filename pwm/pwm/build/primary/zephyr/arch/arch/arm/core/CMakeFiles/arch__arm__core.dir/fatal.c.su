@@ -1,0 +1,3 @@
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/arch/arm/core/fatal.c:24:13:esf_dump	8	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/arch/arm/core/fatal.c:72:6:z_arm_fatal_error	16	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/arch/arm/core/fatal.c:113:6:z_do_kernel_oops	8	static

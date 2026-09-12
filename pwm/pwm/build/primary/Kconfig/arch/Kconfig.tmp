@@ -1,0 +1,12 @@
+# Load Zephyr Arch Kconfig descriptions.
+osource "C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/arch/rx/Kconfig"
+osource "C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/arch/x86/Kconfig"
+osource "C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/arch/xtensa/Kconfig"
+osource "C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/arch/sparc/Kconfig"
+osource "C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/arch/riscv/Kconfig"
+osource "C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/arch/posix/Kconfig"
+osource "C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/arch/openrisc/Kconfig"
+osource "C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/arch/mips/Kconfig"
+osource "C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/arch/arm64/Kconfig"
+osource "C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/arch/arm/Kconfig"
+osource "C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/arch/arc/Kconfig"

@@ -1,0 +1,12 @@
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/arch/arm/core/cortex_m/fault.c:138:13:memory_fault_recoverable	0	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/arch/arm/core/cortex_m/fault.c:629:20:z_arm_is_synchronous_svc	0	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/arch/arm/core/cortex_m/fault.c:885:32:get_esf	8	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/arch/arm/core/cortex_m/fault.c:336:12:bus_fault	24	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/arch/arm/core/cortex_m/fault.c:492:17:usage_fault	8	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/arch/arm/core/cortex_m/fault.c:604:13:debug_monitor	8	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/arch/arm/core/cortex_m/fault.c:769:13:reserved_exception	8	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/arch/arm/core/cortex_m/fault.c:180:17:mem_manage_fault	24	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/arch/arm/core/cortex_m/fault.c:704:17:hard_fault	16	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/arch/arm/core/cortex_m/fault.c:778:17:fault_handle	8	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/arch/arm/core/cortex_m/fault.c:1025:6:z_arm_fault	56	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/arch/arm/core/cortex_m/fault.c:1125:6:z_arm_fault_init	0	static

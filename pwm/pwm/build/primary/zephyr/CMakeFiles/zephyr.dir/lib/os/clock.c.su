@@ -1,0 +1,13 @@
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/include/zephyr/sys/timeutil.h:543:19:timespec_compare	12	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/include/zephyr/sys/timeutil.h:594:20:timespec_from_timeout	24	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/lib/os/clock.c:30:13:is_valid_clock_id	0	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/lib/os/clock.c:41:13:timespec_from_ticks	24	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/include/zephyr/sys/timeutil.h:439:20:timespec_add	16	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/include/zephyr/sys/timeutil.h:482:20:timespec_negate	8	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/include/zephyr/sys/timeutil.h:521:20:timespec_sub	24	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/include/zephyr/sys/timeutil.h:645:27:timespec_to_timeout	40	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/lib/os/clock.c:53:5:sys_clock_from_clockid	0	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/lib/os/clock.c:104:6:z_impl_sys_clock_getrtoffset	4	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/lib/os/clock.c:69:5:sys_clock_gettime	32	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/lib/os/clock.c:124:5:z_impl_sys_clock_settime	32	static
+C:/Users/razie/OneDrive/Documentos/PowerShell/STM32/deps/zephyr/lib/os/clock.c:156:5:z_impl_sys_clock_nanosleep	64	static
