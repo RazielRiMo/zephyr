@@ -1,0 +1,3 @@
+C:/zephyr/zephyrproject/deps/zephyr/include/zephyr/drivers/gpio.h:998:19:z_impl_gpio_pin_configure	16	static
+C:/zephyr/zephyrproject/deps/zephyr/include/zephyr/kernel.h:702:23:k_msleep	8	static
+C:/zephyr/zephyrproject/applications/blinky/src/main.c:25:5:main	8	static

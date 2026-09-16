@@ -1,0 +1,6 @@
+west:
+  command: C:\Users\razie\.zinstaller\.venv\Scripts\west build --pristine never --board
+    nucleo_f401re --build-dir c:\zephyr\zephyrproject\applications\blinky\build\primary
+    --source-dir c:\zephyr\zephyrproject\applications\blinky
+  topdir: c:\zephyr\zephyrproject
+  version: 1.5.0

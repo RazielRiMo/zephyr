@@ -1,0 +1,32 @@
+{
+    "zephyr-workbench.westWorkspace.applications": [
+        {
+            "build.configurations": [
+                {
+                    "name": "primary",
+                    "board": "nucleo_f401re",
+                    "active": "true",
+                    "default-runner": "stm32cubeprogrammer"
+                }
+            ],
+            "toolchain": "zephyr",
+            "sdk": "${workspaceFolder}/../../Users/razie/zephyr-sdk-1.0.1",
+            "intellisense.provider": "cpptools",
+            "path": "applications/blinky"
+        },
+        {
+            "build.configurations": [
+                {
+                    "name": "primary",
+                    "board": "nucleo_f401re",
+                    "active": "true"
+                }
+            ],
+            "toolchain": "zephyr",
+            "sdk": "${workspaceFolder}/../../Users/razie/zephyr-sdk-1.0.1",
+            "intellisense.provider": "cpptools",
+            "path": "applications/Puerta_paso_a_paso"
+        }
+    ],
+    "zephyr-workbench.westWorkspace.selectedApplication": "applications/Puerta_paso_a_paso"
+}

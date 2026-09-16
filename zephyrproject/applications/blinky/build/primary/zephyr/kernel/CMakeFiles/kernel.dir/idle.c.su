@@ -1,0 +1,2 @@
+C:/zephyr/zephyrproject/deps/zephyr/kernel/idle.c:22:6:idle	8	static
+C:/zephyr/zephyrproject/deps/zephyr/kernel/idle.c:97:13:arch_spin_relax	0	static

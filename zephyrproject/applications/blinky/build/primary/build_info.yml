@@ -1,0 +1,48 @@
+cmake:
+  application:
+    configuration-dir: 'C:/zephyr/zephyrproject/applications/blinky'
+    source-dir: 'C:/zephyr/zephyrproject/applications/blinky'
+  board:
+    name: 'nucleo_f401re'
+    path:
+     - 'C:/zephyr/zephyrproject/deps/zephyr/boards/st/nucleo_f401re'
+    qualifiers: 'stm32f401xe'
+    revision: ''
+  devicetree:
+    bindings-dirs:
+     - 'C:/zephyr/zephyrproject/deps/zephyr/dts/bindings'
+    files:
+     - 'C:/zephyr/zephyrproject/deps/zephyr/boards/st/nucleo_f401re/nucleo_f401re.dts'
+    include-dirs:
+     - 'C:/zephyr/zephyrproject/deps/modules/hal/stm32/dts'
+     - 'C:/zephyr/zephyrproject/deps/zephyr/include'
+     - 'C:/zephyr/zephyrproject/deps/zephyr/include/zephyr'
+     - 'C:/zephyr/zephyrproject/deps/zephyr/dts/common'
+     - 'C:/zephyr/zephyrproject/deps/zephyr/dts/vendor'
+     - 'C:/zephyr/zephyrproject/deps/zephyr/dts/rx'
+     - 'C:/zephyr/zephyrproject/deps/zephyr/dts/x86'
+     - 'C:/zephyr/zephyrproject/deps/zephyr/dts/xtensa'
+     - 'C:/zephyr/zephyrproject/deps/zephyr/dts/sparc'
+     - 'C:/zephyr/zephyrproject/deps/zephyr/dts/riscv'
+     - 'C:/zephyr/zephyrproject/deps/zephyr/dts/posix'
+     - 'C:/zephyr/zephyrproject/deps/zephyr/dts/arm64'
+     - 'C:/zephyr/zephyrproject/deps/zephyr/dts/arm'
+     - 'C:/zephyr/zephyrproject/deps/zephyr/dts/arc'
+     - 'C:/zephyr/zephyrproject/deps/zephyr/dts'
+  kconfig:
+    files:
+     - 'C:/zephyr/zephyrproject/deps/zephyr/boards/st/nucleo_f401re/nucleo_f401re_defconfig'
+     - 'C:/zephyr/zephyrproject/applications/blinky/prj.conf'
+    user-files:
+     - 'C:/zephyr/zephyrproject/applications/blinky/prj.conf'
+  toolchain:
+    name: 'zephyr'
+    path: 'C:/Users/razie/zephyr-sdk-1.0.1'
+  zephyr:
+    version: '4.4.2'
+    zephyr-base: 'C:/zephyr/zephyrproject/deps/zephyr'
+version: '0.1.0'
+west:
+  command: 'C:\Users\razie\.zinstaller\.venv\Scripts\west build --pristine never --board nucleo_f401re --build-dir c:\zephyr\zephyrproject\applications\blinky\build\primary --source-dir c:\zephyr\zephyrproject\applications\blinky'
+  topdir: 'c:\zephyr\zephyrproject'
+  version: '1.5.0'

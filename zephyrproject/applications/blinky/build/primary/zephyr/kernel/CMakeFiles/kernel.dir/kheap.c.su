@@ -1,0 +1,10 @@
+C:/zephyr/zephyrproject/deps/zephyr/kernel/kheap.c:79:14:z_heap_alloc_helper	72	static
+C:/zephyr/zephyrproject/deps/zephyr/kernel/kheap.c:15:5:k_heap_array_get	0	static
+C:/zephyr/zephyrproject/deps/zephyr/kernel/kheap.c:26:6:k_heap_init	8	static
+C:/zephyr/zephyrproject/deps/zephyr/kernel/kheap.c:35:12:statics_init	8	static
+C:/zephyr/zephyrproject/deps/zephyr/kernel/kheap.c:119:7:k_heap_alloc	24	static
+C:/zephyr/zephyrproject/deps/zephyr/kernel/kheap.c:131:7:k_heap_aligned_alloc	24	static
+C:/zephyr/zephyrproject/deps/zephyr/kernel/kheap.c:157:7:k_heap_calloc	16	static
+C:/zephyr/zephyrproject/deps/zephyr/kernel/kheap.c:176:7:k_heap_realloc	64	static
+C:/zephyr/zephyrproject/deps/zephyr/kernel/kheap.c:206:6:k_heap_free	16	static
+C:/zephyr/zephyrproject/deps/zephyr/kernel/kheap.c:227:6:k_heap_free_sched_locked	16	static
