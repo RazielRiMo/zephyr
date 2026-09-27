@@ -1,0 +1,27 @@
+#include <zephyr/dt-bindings/gpio/gpio.h>
+
+/*
+ * Patron "zephyr,user": forma estandar de Zephyr para pasarle GPIOs
+ * sueltos a la aplicacion sin necesidad de escribir un devicetree
+ * binding ni un driver formal.
+ *
+ * Al llamarse "app.overlay" y estar en la raiz del proyecto (no dentro
+ * de boards/), Zephyr lo aplica automaticamente sin importar la placa
+ * para la que compiles -- no hace falta pasar -DDTC_OVERLAY_FILE ni
+ * tocar el CMakeLists.txt.
+ *
+ * Pines elegidos sobre el header estilo Arduino del Nucleo-F401RE
+ * (libres por defecto, no pisan UART2/I2C1 que ya usa la placa):
+ *   D2 -> STB   (PA10)
+ *   D4 -> CLK   (PB5)
+ *   D7 -> DIO   (PA8)
+ * Para usar otros pines fisicos, solo hay que cambiar los numeros de
+ * &arduino_header aqui abajo -- el resto del proyecto no cambia.
+ */
+/ {
+	zephyr,user {
+		tm1638-stb-gpios = <&arduino_header 2 GPIO_ACTIVE_HIGH>;
+		tm1638-clk-gpios = <&arduino_header 4 GPIO_ACTIVE_HIGH>;
+		tm1638-dio-gpios = <&arduino_header 7 GPIO_ACTIVE_HIGH>;
+	};
+};
