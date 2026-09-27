@@ -1,0 +1,31 @@
+/*
+ * app.overlay
+ *
+ * Define un LED propio de la aplicación (independiente del board file) que
+ * representa la "acción local" disparada al recibir un valor numérico
+ * válido desde la PC. Se define aquí, en vez de depender de un alias
+ * "led0" que no todas las variantes de ESP32 DevKit exponen, para que el
+ * proyecto sea portable.
+ *
+ * AJUSTA el pin (propiedad "gpios") al GPIO libre que quieras usar en tu
+ * placa concreta. GPIO2 es común en muchos ESP32 DevKitC/DevKitM, pero
+ * verifica el pinout de tu módulo antes de conectar hardware externo.
+ *
+ * Si tu board.dts ya define "gpio0" con otro nombre de nodo, ajusta la
+ * referencia &gpio0 más abajo (revisa tu archivo de board en
+ * <ZEPHYR_BASE>/boards/.../*.dts).
+ */
+
+/ {
+	aliases {
+		action-led = &action_led0;
+	};
+
+	app_leds {
+		compatible = "gpio-leds";
+		action_led0: led_0 {
+			gpios = <&gpio0 2 GPIO_ACTIVE_HIGH>;
+			label = "LED de accion local (comando desde PC)";
+		};
+	};
+};

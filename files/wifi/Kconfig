@@ -1,0 +1,39 @@
+# Kconfig
+# Opciones de configuración propias de la aplicación. Se fijan con valores
+# por defecto aquí y se sobrescriben en prj.conf (o con `west build -t menuconfig`).
+
+menu "Configuración del puente TCP/JSON (ESP32)"
+
+config APP_WIFI_SSID
+	string "SSID de la red Wi-Fi local"
+	default "MI_RED_WIFI"
+	help
+	  Nombre (SSID) de la red Wi-Fi 2.4 GHz a la que se conectará la ESP32.
+
+config APP_WIFI_PSK
+	string "Contraseña (PSK) de la red Wi-Fi"
+	default "MI_CONTRASENA"
+	help
+	  Contraseña de la red Wi-Fi (WPA2-PSK). Evita dejar credenciales reales
+	  versionadas en un repositorio; en un proyecto productivo, inyéctalas
+	  por variable de entorno de compilación o por un prj.conf local
+	  ignorado por git.
+
+config APP_TCP_PORT
+	int "Puerto TCP en el que escucha la ESP32"
+	default 5000
+	range 1 65535
+	help
+	  La ESP32 actúa como servidor TCP: escucha en este puerto a la espera
+	  de que la aplicación de PC se conecte como cliente.
+
+config APP_TELEMETRY_PERIOD_MS
+	int "Período de envío de telemetría (ms)"
+	default 2000
+	help
+	  Cada cuánto tiempo la ESP32 arma y envía una trama JSON de telemetría
+	  al cliente TCP conectado (si hay alguno).
+
+endmenu
+
+source "Kconfig.zephyr"

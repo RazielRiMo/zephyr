@@ -1,0 +1,1 @@
+# Sin dependencias externas. Tkinter forma parte de la instalación estándar de Python en Windows.

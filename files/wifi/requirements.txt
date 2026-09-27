@@ -1,0 +1,10 @@
+# Este proyecto usa unicamente la libreria estandar de Python
+# (socket, threading, queue, tkinter, json) -- no hay dependencias externas
+# que instalar con pip.
+#
+# En algunas distribuciones de Linux, Tkinter no viene incluido con el
+# interprete de Python y debe instalarse aparte, por ejemplo:
+#   sudo apt install python3-tk        (Debian/Ubuntu)
+#   sudo dnf install python3-tkinter   (Fedora)
+#
+# Se recomienda Python 3.9 o superior.
