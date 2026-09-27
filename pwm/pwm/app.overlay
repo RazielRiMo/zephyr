@@ -1,0 +1,50 @@
+#include <zephyr/dt-bindings/pwm/pwm.h>
+#include <zephyr/dt-bindings/pwm/stm32_pwm.h>
+#include <zephyr/dt-bindings/pinctrl/stm32-pinctrl.h>
+#include <zephyr/dt-bindings/timer/stm32-timer.h>
+#include <zephyr/dt-bindings/gpio/gpio.h>
+
+/ {
+    aliases {
+        pwmserv = &pwm_motor;
+    };
+    pwm_motor: salida_servo {
+        pwms = <&servo 1 PWM_MSEC(20) PWM_POLARITY_NORMAL>;
+        pwm-names = "motor";
+    };
+
+    /* GPIO N1 */
+    n01: nodo_n1 {
+        gpios = <&gpiob 13 GPIO_ACTIVE_HIGH>;
+    };
+
+    /* GPIO N2 */
+    n02: nodo_n2 {
+        gpios = <&gpiob 14 GPIO_ACTIVE_HIGH>;
+    };
+
+    /* GPIO N3 */
+    n03: nodo_n3 {
+        gpios = <&gpiob 15 GPIO_ACTIVE_HIGH>;
+    };
+
+    /* GPIO N4 */
+    n04: nodo_n4 {
+        gpios = <&gpiob 1 GPIO_ACTIVE_HIGH>;
+    };
+};
+
+/* DEVICETREE-MANAGER-BEGIN: generated region, do not edit inside this block */
+&timers1 {
+    status = "okay";
+
+    servo: pwm {
+        pinctrl-0 = <&analog_pa8>;
+        pinctrl-names = "default";
+    };
+};
+
+&gpiob {
+    status = "okay";
+};
+/* DEVICETREE-MANAGER-END */

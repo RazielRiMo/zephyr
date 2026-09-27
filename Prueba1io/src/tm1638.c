@@ -2,7 +2,6 @@
 #include <zephyr/kernel.h>
 #include <stdbool.h>
 #include <errno.h>
-#include <zephyr/sys/printk.h>
 
 #define TM1638_DEBOUNCE_MS 30
 #define TM1638_MAX_VALUE   99999999
@@ -108,19 +107,6 @@ static void write_at(uint8_t addr, uint8_t data)
 	send_byte(0xC0 | (addr & 0x0F));
 	send_byte(data);
 	gpio_pin_set_dt(&tm.stb, 1);
-
-	/*
-	 * Pequeno margen tras cada transaccion. No es requisito del
-	 * protocolo (el TM1638 no lo necesita para funcionar), pero
-	 * clear()/clear_digits()/clear_leds()/display() llaman a esta
-	 * funcion hasta 16 veces seguidas sin ninguna pausa -- eso
-	 * concentra muchas conmutaciones de segmentos/LEDs (y su consumo
-	 * de corriente asociado) en una ventana muy corta. Si la
-	 * alimentacion del modulo esta al limite, espaciar un poco las
-	 * escrituras reduce la probabilidad de que esos picos se sumen.
-	 * No sustituye revisar VCC/GND si el problema persiste.
-	 */
-	k_busy_wait(50);
 }
 
 /* Lee el estado crudo (sin antirrebote) de los 8 botones. */
@@ -171,13 +157,10 @@ int tm1638_init(struct gpio_dt_spec stb, struct gpio_dt_spec clk, struct gpio_dt
 	    !gpio_is_ready_dt(&tm.dio)) {
 		return -ENODEV;
 	}
-	printk("A\n");
+
 	ret = gpio_pin_configure_dt(&tm.stb, GPIO_OUTPUT_ACTIVE);
-	printk("B\n");
 	ret |= gpio_pin_configure_dt(&tm.clk, GPIO_OUTPUT_ACTIVE);
-	printk("C\n");
 	ret |= gpio_pin_configure_dt(&tm.dio, GPIO_OUTPUT_ACTIVE);
-	printk("D\n");
 	if (ret) {
 		return -EIO;
 	}
@@ -185,7 +168,6 @@ int tm1638_init(struct gpio_dt_spec stb, struct gpio_dt_spec clk, struct gpio_dt
 	tm.initialized = true;
 
 	tm1638_clear();
-	printk("E\n");
 	tm1638_set_brightness(4);
 	return 0;
 }
