@@ -1,12 +1,24 @@
 /*
  * main.c - Puente TCP/JSON entre una ESP32 (Zephyr RTOS) y una PC.
  *
- * Responsabilidades de este archivo:
- *   1. Conectar la Wi-Fi (wifi_manager.c) y esperar IP por DHCP.
- *   2. Arrancar el servidor TCP (tcp_server.c), que valida el CRC de cada
- *      trama entrante y, si es válida, invoca apply_local_action().
- *   3. En un bucle periódico, armar y enviar una trama JSON de telemetría
- *      con CRC (json_protocol.c) al cliente conectado (si lo hay).
+ * Arquitectura de tareas (una vez conectada la Wi-Fi):
+ *
+ *   [tcp_server_thread]  --recv()-->  notify_data_available()
+ *         |  (rol de "ISR": trabajo minimo + k_sem_give)         |
+ *         v                                                       v
+ *   tcp_server_rx_ready (semaforo binario) <---- k_sem_take ---- [rx_processor_thread_fn]
+ *                                                                  |
+ *                                                     valida CRC, extrae "value"
+ *                                                                  |
+ *                                                                  v
+ *                                                       apply_local_action()  (aqui, en main.c)
+ *
+ *   [telemetry_tx_thread_fn] --> arma JSON con dato simulado que cambia
+ *                                cada ciclo --> tcp_server_send()
+ *
+ * main() solo se encarga de la inicialización (GPIO, Wi-Fi) y de arrancar
+ * las tres tareas; luego retorna. Las tareas, creadas con K_THREAD_DEFINE,
+ * siguen ejecutándose de forma independiente.
  */
 
 #include <stdint.h>
@@ -20,7 +32,8 @@
 
 #include "wifi_manager.h"
 #include "tcp_server.h"
-#include "json_protocol.h"
+#include "rx_processor.h"
+#include "telemetry_tx.h"
 
 LOG_MODULE_REGISTER(main, LOG_LEVEL_INF);
 
@@ -31,14 +44,15 @@ LOG_MODULE_REGISTER(main, LOG_LEVEL_INF);
 static const struct gpio_dt_spec action_led = GPIO_DT_SPEC_GET(ACTION_LED_NODE, gpios);
 
 /*
- * Se ejecuta en el contexto del hilo del servidor TCP cada vez que llega
- * una trama JSON con CRC valido y un campo "value" numerico.
+ * Se ejecuta en el CONTEXTO DE LA TAREA DE PROCESAMIENTO (rx_processor.c),
+ * nunca en el hilo notificador de tcp_server.c, cada vez que llega una
+ * trama con CRC valido y un campo "value" numerico.
  *
  * Aqui interpretamos "value" como un numero de parpadeos del LED local,
  * acotado por seguridad. Sustituye el cuerpo de esta funcion por la accion
  * real que necesites (activar un rele, mover un actuador, ajustar un ciclo
- * de trabajo PWM mediante el driver LEDC de la ESP32, etc.) sin tener que
- * tocar nada del protocolo de red/CRC.
+ * de trabajo PWM mediante el driver LEDC de la ESP32, etc.) sin tocar nada
+ * del protocolo de red, CRC o la sincronizacion por semaforo.
  */
 static void apply_local_action(int value, bool has_value)
 {
@@ -63,6 +77,8 @@ static void apply_local_action(int value, bool has_value)
 int main(void)
 {
 	LOG_INF("=== Puente TCP/JSON ESP32 <-> PC (Zephyr RTOS) ===");
+	LOG_INF("SSID configurado: \"%s\" (edita CONFIG_APP_WIFI_SSID en prj.conf para cambiarlo)",
+		CONFIG_APP_WIFI_SSID);
 
 	if (!gpio_is_ready_dt(&action_led)) {
 		LOG_ERR("El GPIO del LED de accion no esta listo (revisa app.overlay)");
@@ -77,32 +93,18 @@ int main(void)
 		return ret;
 	}
 
-	tcp_server_start(apply_local_action);
+	/* Orden de arranque: primero quien va a ESCUCHAR el semaforo
+	 * (rx_processor), despues quien lo va a LIBERAR (tcp_server), y por
+	 * ultimo la telemetria. El orden entre las dos primeras no es
+	 * estrictamente critico gracias a K_SEM_DEFINE (el semaforo ya
+	 * existe y vale 0 desde antes de main()), pero mantenerlo asi deja
+	 * el flujo de arranque mas facil de leer. */
+	rx_processor_start(apply_local_action);
+	tcp_server_start();
+	telemetry_tx_start();
 
-	uint32_t seq = 0;
-
-	for (;;) {
-		char frame[JSON_FRAME_MAX_LEN];
-
-		/* Valor de telemetria simulado (patron 0..99). Sustituyelo por
-		 * una lectura real (p. ej. un sensor por I2C) si tu proyecto
-		 * lo incluye; mantén el valor como entero para no depender de
-		 * soporte de punto flotante en printf/snprintf del firmware. */
-		int simulated_value = (int)(seq % 100);
-
-		int frame_len = json_build_telemetry_frame(
-			frame, sizeof(frame), seq, (uint32_t)k_uptime_get(),
-			simulated_value, tcp_server_get_crc_error_count());
-
-		if (frame_len > 0) {
-			if (!tcp_server_send(frame, (size_t)frame_len)) {
-				LOG_DBG("Sin cliente conectado: telemetria no enviada");
-			}
-		}
-
-		seq++;
-		k_msleep(CONFIG_APP_TELEMETRY_PERIOD_MS);
-	}
+	LOG_INF("Sistema listo: 3 tareas activas "
+		"(notificador TCP tipo ISR, procesador RX por semaforo, emisor de telemetria)");
 
 	return 0;
 }

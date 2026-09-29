@@ -13,10 +13,8 @@
 
 LOG_MODULE_REGISTER(wifi_manager, LOG_LEVEL_INF);
 
-/* Eventos del stack de red que nos interesan. Se atienden mediante
- * callbacks asíncronos (net_mgmt), NUNCA sondeando el estado en un bucle:
- * esto es lo que este proyecto usa para cumplir con el requisito de
- * "mecanismos asíncronos / callbacks del stack de red de Zephyr". */
+/* Eventos del stack de red que nos interesan. Se atienden con callbacks
+ * asíncronos (net_mgmt), nunca sondeando el estado en un bucle. */
 #define WIFI_MGMT_EVENTS (NET_EVENT_WIFI_CONNECT_RESULT | NET_EVENT_WIFI_DISCONNECT_RESULT)
 #define IPV4_MGMT_EVENTS (NET_EVENT_IPV4_ADDR_ADD)
 

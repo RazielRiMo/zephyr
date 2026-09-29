@@ -18,7 +18,9 @@ int json_build_telemetry_frame(char *out, size_t out_size,
 {
 	char payload[JSON_FRAME_MAX_LEN];
 
-	/* 1. Se arma el objeto JSON COMPLETO (sin el campo "crc" todavía). */
+	/* 1. Se arma el objeto JSON COMPLETO (sin el campo "crc" todavía).
+	 *    'value' cambia en cada llamada (ver telemetry_tx.c), por lo que
+	 *    el CRC resultante también cambia trama a trama. */
 	int payload_len = snprintf(payload, sizeof(payload),
 		"{\"type\":\"telemetry\",\"seq\":%u,\"uptime_ms\":%u,"
 		"\"value\":%d,\"esp32_crc_errors\":%u}",
@@ -136,7 +138,8 @@ void json_validate_frame(const char *line, size_t len, struct json_frame_result 
 	result->format_ok = true;
 	result->crc_ok = (result->crc_computed == result->crc_received);
 
-	/* 4. Extraer "value" del bloque ya reconstruido (válido solo si el
-	 *    CRC coincide es responsabilidad de quien llama). */
+	/* 4. Extraer "value" del bloque ya reconstruido (independientemente
+	 *    de si el CRC coincidió; es responsabilidad de quien llama
+	 *    decidir si confía en 'value' cuando crc_ok es false). */
 	result->has_value = extract_int_field(protected_block, protected_len + 1, "value", &result->value);
 }

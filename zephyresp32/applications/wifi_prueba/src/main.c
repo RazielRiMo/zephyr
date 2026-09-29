@@ -428,20 +428,20 @@ static int wifi_connect(void)
 
 static int tcp_connect_to_pc(void)
 {
-	struct zsock_sockaddr_in server = {0};
+	struct net_sockaddr_in server = {0};
 	int sock;
 	int ret;
 
-	sock = zsock_socket(ZSOCK_AF_INET, ZSOCK_SOCK_STREAM, IPPROTO_TCP);
+	sock = zsock_socket(NET_AF_INET, NET_SOCK_STREAM, NET_IPPROTO_TCP);
 	if (sock < 0) {
 		LOG_ERR("socket() fallo: errno=%d", errno);
 		return -errno;
 	}
 
-	server.sin_family = ZSOCK_AF_INET;
-	server.sin_port = zsock_htons(PC_SERVER_PORT);
+	server.sin_family = NET_AF_INET;
+	server.sin_port = net_htons(PC_SERVER_PORT);
 
-	ret = zsock_inet_pton(ZSOCK_AF_INET, PC_SERVER_IP, &server.sin_addr);
+	ret = zsock_inet_pton(NET_AF_INET, PC_SERVER_IP, &server.sin_addr);
 	if (ret != 1) {
 		LOG_ERR("IP del PC invalida: %s", PC_SERVER_IP);
 		(void)zsock_close(sock);
@@ -451,7 +451,7 @@ static int tcp_connect_to_pc(void)
 	LOG_INF("Conectando TCP a %s:%d...", PC_SERVER_IP, PC_SERVER_PORT);
 
 	ret = zsock_connect(sock,
-			    (struct zsock_sockaddr *)&server,
+			    (struct net_sockaddr *)&server,
 			    sizeof(server));
 	if (ret < 0) {
 		LOG_WRN("connect() fallo: errno=%d", errno);

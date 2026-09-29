@@ -53,11 +53,11 @@ class FrameError(Exception):
 def parse_and_validate_frame(line: str) -> dict:
     """Valida el CRC de una linea recibida y devuelve su contenido como dict.
 
-    Lanza FrameError si no se encuentra el campo "crc" (trama corrupta o
-    con otro formato). Si el campo SI esta presente pero el CRC no
-    coincide, igual devuelve el dict parseado, con "_crc_ok" en False, para
-    que el llamador decida que hacer (aqui: contarlo como error y avisar,
-    sin frenar la aplicacion).
+    Lanza FrameError si no se encuentra el campo "crc" (trama corrupta o de
+    otro formato). Si el campo SI esta presente pero el CRC no coincide,
+    igual devuelve el dict parseado, con "_crc_ok" en False, para que el
+    llamador decida que hacer (aqui: contarlo como error y avisar, sin
+    frenar la aplicacion).
     """
     idx = line.find(CRC_MARKER)
 

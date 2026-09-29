@@ -7,9 +7,9 @@
 /**
  * @brief Calcula el CRC-16/CCITT-FALSE de un bloque de datos.
  *
- * Implementación manual (no depende de zephyr/sys/crc.h) para poder
- * documentar y replicar EXACTAMENTE el mismo algoritmo, bit a bit, en el
- * lado PC (ver protocol.py). Parámetros del algoritmo:
+ * Implementación manual, bit a bit (no depende de zephyr/sys/crc.h), para
+ * poder documentar y replicar EXACTAMENTE el mismo algoritmo en el lado
+ * PC (ver protocol.py). Parámetros del algoritmo:
  *
  *   - Polinomio:       0x1021
  *   - Valor inicial:   0xFFFF

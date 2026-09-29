@@ -13,10 +13,10 @@
  */
 struct json_frame_result {
 	bool format_ok;      /* true si se encontró el marcador ,"crc":"XXXX" */
-	bool crc_ok;         /* true si crc_computed == crc_received */
+	bool crc_ok;          /* true si crc_computed == crc_received */
 	uint16_t crc_received;
 	uint16_t crc_computed;
-	bool has_value;       /* true si el campo entero "value" estaba presente */
+	bool has_value;        /* true si el campo entero "value" estaba presente */
 	int value;
 };
 
@@ -28,8 +28,8 @@ struct json_frame_result {
  *    "esp32_crc_errors":0,"crc":"3F2A"}\n
  *
  * El CRC se calcula sobre el objeto JSON tal como quedaría SIN el campo
- * "crc" (es decir, cerrado con la llave '}' que sigue a "esp32_crc_errors").
- * Ver el comentario de diseño en json_protocol.c para el detalle exacto.
+ * "crc" (cerrado con la '}' que sigue a "esp32_crc_errors"). Ver el
+ * comentario de diseño en json_protocol.c para el detalle exacto.
  *
  * @return Longitud de la trama generada (excluyendo el '\0'), o -1 si el
  *         buffer de salida era demasiado pequeño.

@@ -1,3 +1,24 @@
+/*
+ * tcp_server.c
+ *
+ * Este módulo escucha conexiones TCP entrantes y, cuando llegan datos,
+ * actúa como el "manejador de interrupción" pedido en el enunciado:
+ *
+ *   - Zephyr, igual que cualquier RTOS con pila TCP/IP, NO expone a la
+ *     aplicación una IRQ de hardware para "el socket tiene datos": la
+ *     interrupción real del hardware Wi-Fi la atiende internamente el
+ *     driver, varias capas por debajo del API de sockets. Simular eso
+ *     aquí sería falso.
+ *   - Lo que SÍ se implementa, fielmente, es la disciplina que se le
+ *     exige a una ISR: el hilo de este módulo hace el trabajo MÍNIMO
+ *     posible (mover los bytes ya disponibles del socket a un buffer
+ *     interno) y de inmediato libera un semáforo binario
+ *     (tcp_server_rx_ready), delegando TODO el procesamiento pesado
+ *     (parseo JSON, verificación de CRC, log detallado, acción local) a
+ *     una tarea separada y bloqueada -- rx_processor.c -- tal como una
+ *     ISR real delega su trabajo a un hilo en vez de hacerlo ella misma.
+ */
+
 #include <string.h>
 #include <errno.h>
 
@@ -5,21 +26,32 @@
 #include <zephyr/logging/log.h>
 #include <zephyr/net/socket.h>
 #include <zephyr/net/net_ip.h>
+#include <zephyr/sys/util.h>
 
 #include "tcp_server.h"
-#include "json_protocol.h"
 
 LOG_MODULE_REGISTER(tcp_server, LOG_LEVEL_INF);
 
 #define TCP_SERVER_STACK_SIZE 4096
 #define TCP_SERVER_PRIORITY   5
-#define RX_BUF_SIZE           JSON_FRAME_MAX_LEN
 #define POLL_TIMEOUT_MS       500
+#define RECV_CHUNK_SIZE       128
+#define SHARED_BUF_SIZE       256
 
-static struct k_mutex client_mutex;
+/* K_MUTEX_DEFINE / K_SEM_DEFINE inicializan estos objetos de forma
+ * ESTÁTICA (antes de que main() empiece a correr), a diferencia de
+ * k_mutex_init()/k_sem_init() llamados dentro de un hilo en tiempo de
+ * ejecución. Esto elimina cualquier condición de carrera entre el orden
+ * de arranque de los hilos de la aplicación y el primer uso de estos
+ * objetos (p. ej. rx_processor arrancando antes de que este módulo
+ * termine de inicializar el semáforo). */
+K_MUTEX_DEFINE(client_mutex);
+K_MUTEX_DEFINE(shared_buf_mutex);
+K_SEM_DEFINE(tcp_server_rx_ready, 0, 1);
+
 static int client_fd = -1;
-static uint32_t crc_error_count;
-static tcp_server_on_command_t command_callback;
+static char shared_buf[SHARED_BUF_SIZE];
+static size_t shared_buf_len;
 
 static void set_client_fd(int fd)
 {
@@ -44,66 +76,54 @@ bool tcp_server_send(const char *frame, size_t len)
 		return false;
 	}
 
-	ssize_t sent = zsock_send(fd, frame, len, 0);
-
-	if (sent < 0) {
+	if (zsock_send(fd, frame, len, 0) < 0) {
 		LOG_WRN("Error enviando datos al cliente (errno=%d)", errno);
 	}
 
 	return true;
 }
 
-uint32_t tcp_server_get_crc_error_count(void)
+size_t tcp_server_drain_rx(char *dst, size_t dst_max)
 {
-	return crc_error_count;
-}
+	k_mutex_lock(&shared_buf_mutex, K_FOREVER);
 
-/* El buffer de recepción puede contener 0, 1 o varias tramas separadas por
- * '\n' (framing por delimitador: TCP es un flujo de bytes sin límites de
- * mensaje propios, así que hace falta un criterio para saber dónde termina
- * cada trama JSON). Procesa todas las tramas completas y conserva el resto
- * incompleto al inicio del buffer para la próxima recepción. */
-static void process_rx_buffer(char *buf, size_t *len)
-{
-	char *start = buf;
-	char *buf_end = buf + *len;
+	size_t n = MIN(dst_max, shared_buf_len);
 
-	for (;;) {
-		char *newline = memchr(start, '\n', (size_t)(buf_end - start));
-
-		if (newline == NULL) {
-			break;
-		}
-
-		size_t line_len = (size_t)(newline - start);
-		struct json_frame_result result;
-
-		json_validate_frame(start, line_len, &result);
-
-		if (!result.format_ok) {
-			LOG_WRN("Trama descartada: no se encontro el campo \"crc\"");
-		} else if (!result.crc_ok) {
-			crc_error_count++;
-			LOG_WRN("=== ERROR DE CRC EN TRAMA RECIBIDA DESDE LA PC ===");
-			LOG_WRN("  CRC recibido  : 0x%04X", result.crc_received);
-			LOG_WRN("  CRC calculado : 0x%04X", result.crc_computed);
-			LOG_WRN("  Trama (%d bytes) descartada por integridad", (int)line_len);
-			LOG_WRN("  Contador total de errores de CRC: %u", crc_error_count);
-		} else {
-			LOG_INF("Trama valida recibida (value=%d, has_value=%d)",
-				result.value, result.has_value);
-			if (command_callback != NULL) {
-				command_callback(result.value, result.has_value);
-			}
-		}
-
-		start = newline + 1;
+	if (n > 0) {
+		memcpy(dst, shared_buf, n);
+		memmove(shared_buf, shared_buf + n, shared_buf_len - n);
+		shared_buf_len -= n;
 	}
 
-	size_t remaining = (size_t)(buf_end - start);
+	k_mutex_unlock(&shared_buf_mutex);
 
-	memmove(buf, start, remaining);
-	*len = remaining;
+	return n;
+}
+
+/* Equivalente, a nivel de aplicación, del "cuerpo de la ISR": trabajo
+ * mínimo (copiar bytes a un buffer compartido) y señalización inmediata.
+ * NO parsea JSON, NO valida CRC, NO imprime detalles del contenido. */
+static void notify_data_available(const char *data, size_t len)
+{
+	k_mutex_lock(&shared_buf_mutex, K_FOREVER);
+
+	size_t space = sizeof(shared_buf) - shared_buf_len;
+	size_t to_copy = MIN(len, space);
+
+	if (to_copy < len) {
+		LOG_WRN("Buffer compartido de RX lleno: se descartan %d bytes "
+			"(la tarea de procesamiento no está drenando a tiempo)",
+			(int)(len - to_copy));
+	}
+
+	memcpy(shared_buf + shared_buf_len, data, to_copy);
+	shared_buf_len += to_copy;
+
+	k_mutex_unlock(&shared_buf_mutex);
+
+	/* "Interrupción" de aplicación: despierta a rx_processor_thread_fn,
+	 * que está bloqueada en k_sem_take(&tcp_server_rx_ready, K_FOREVER). */
+	k_sem_give(&tcp_server_rx_ready);
 }
 
 static void tcp_server_thread(void *p1, void *p2, void *p3)
@@ -111,8 +131,6 @@ static void tcp_server_thread(void *p1, void *p2, void *p3)
 	ARG_UNUSED(p1);
 	ARG_UNUSED(p2);
 	ARG_UNUSED(p3);
-
-	k_mutex_init(&client_mutex);
 
 	int listen_fd = zsock_socket(AF_INET, SOCK_STREAM, IPPROTO_TCP);
 
@@ -146,8 +164,6 @@ static void tcp_server_thread(void *p1, void *p2, void *p3)
 
 	LOG_INF("Servidor TCP escuchando en el puerto %d", CONFIG_APP_TCP_PORT);
 
-	char rx_buf[RX_BUF_SIZE];
-
 	for (;;) {
 		LOG_INF("Esperando conexion de un cliente (la app de PC)...");
 
@@ -169,12 +185,12 @@ static void tcp_server_thread(void *p1, void *p2, void *p3)
 
 		set_client_fd(fd);
 
-		size_t rx_len = 0;
 		bool client_connected = true;
 
-		/* Bucle de atencion al cliente: usa poll() con timeout para
-		 * comprobar la llegada de datos de forma asincrona en vez de
-		 * bloquear este hilo indefinidamente en un unico recv(). */
+		/* Bucle "notificador": usa poll() con timeout para detectar
+		 * datos de forma asincrona (sin bloquear indefinidamente en
+		 * un unico recv()), y en cuanto llegan, hace el traspaso
+		 * minimo descrito arriba. */
 		while (client_connected) {
 			struct zsock_pollfd pfd = {
 				.fd = fd,
@@ -193,16 +209,14 @@ static void tcp_server_thread(void *p1, void *p2, void *p3)
 			}
 
 			if (pfd.revents & ZSOCK_POLLIN) {
-				ssize_t n = zsock_recv(fd, rx_buf + rx_len,
-							sizeof(rx_buf) - rx_len - 1, 0);
+				char chunk[RECV_CHUNK_SIZE];
+				ssize_t n = zsock_recv(fd, chunk, sizeof(chunk), 0);
 
 				if (n <= 0) {
 					LOG_INF("Cliente desconectado");
 					client_connected = false;
 				} else {
-					rx_len += (size_t)n;
-					rx_buf[rx_len] = '\0';
-					process_rx_buffer(rx_buf, &rx_len);
+					notify_data_available(chunk, (size_t)n);
 				}
 			}
 
@@ -223,8 +237,7 @@ static void tcp_server_thread(void *p1, void *p2, void *p3)
 K_THREAD_DEFINE(tcp_server_tid, TCP_SERVER_STACK_SIZE, tcp_server_thread,
 		 NULL, NULL, NULL, TCP_SERVER_PRIORITY, 0, K_FOREVER);
 
-void tcp_server_start(tcp_server_on_command_t on_command)
+void tcp_server_start(void)
 {
-	command_callback = on_command;
 	k_thread_start(tcp_server_tid);
 }
