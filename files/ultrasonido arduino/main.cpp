@@ -56,8 +56,10 @@ void setup() {
   mutex = xSemaphoreCreateMutex();
   enc = xSemaphoreCreateBinary();
   res = xSemaphoreCreateBinary();
+
   attachInterrupt(digitalPinToInterrupt(ECHO_PIN), isr_echo, CHANGE);
   attachInterrupt(digitalPinToInterrupt(ENCODER_PIN), isr_encoder, RISING);// Botón de reset conectado al pin B1
+  
   xTaskCreate(run_trigger, "Trigger Task", 128, NULL, 4, NULL);
   xTaskCreate(readUltrasonic, "Read Ultrasonic Task", 128, NULL, 3, NULL);
   xTaskCreate(run_timer, "Run Timer", 128, NULL, 3, NULL);

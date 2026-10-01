@@ -1,0 +1,8 @@
+#include <zephyr/dt-bindings/gpio/gpio.h>
+
+/{
+	zephyr,user {
+		trigger-gpios = <&gpioa 8 GPIO_ACTIVE_HIGH>;
+		eccho-gpios = <&gpiob 10 GPIO_ACTIVE_HIGH>;
+	};
+};
