@@ -51,7 +51,7 @@ void isr_eccho(const struct device *dev, struct gpio_callback *cb, uint32_t pins
 void inicio_timer(void){
 	while(1){
 		k_sem_take(&start,K_FOREVER);
-		fin = k_cycle_get_32();
+		inicio = k_cycle_get_32(); //ciclos de maquina
 	}
 }
 
@@ -59,7 +59,7 @@ void fin_timer(void){
 	while(1){
 		k_sem_take(&end, K_FOREVER);
 		fin = k_cycle_get_32();
-		us = k_cyc_to_us_floor32(inicio - fin);
+		us = k_cyc_to_us_floor32(inicio - fin); //ciclos a microsegundos
 		dis = (long) us / 58.2;
 		if (dis >= 400 || dis<=2) LOG_ERR("FUERA DE RANGO");
 		else LOG_INF("%ld cm", dis);
